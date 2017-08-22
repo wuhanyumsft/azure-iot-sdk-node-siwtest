@@ -31,16 +31,16 @@
         ]
       },
       "ECMA2Yaml": {
-        "SourceXmlFolder": "dotnet/xml",
-        "OutputYamlFolder": "dotnet/api",
+        "SourceXmlFolder": "azure-iot-sdk-node/xml",
+        "OutputYamlFolder": "azure-iot-sdk-node/api",
         "Flatten": true,
-        "id": "dotnet-template"
+        "id": "azure-iot-sdk-node-siwtest"
       },
       "SplitTOC": [
-        "dotnet/api/dotnet-template/toc.yml"
+        "azure-iot-sdk-node/api/azure-iot-sdk-node-siwtest/toc.yml"
       ],
       "DiffFolder": [
-        "dotnet/api"
+        "azure-iot-sdk-node/api"
       ]
     }
   ],

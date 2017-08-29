@@ -1,0 +1,9 @@
+- uid: azure-iot-device.BlobSasError
+  name: BlobSasError
+  children: []
+  langs:
+    - js
+  type: Class
+  summary: >
+    Error used when the client fails to get a blob shared access signature from
+    the IoT Hub service.

@@ -1,0 +1,9 @@
+- uid: azure-iot-device.FileUploadApi
+  name: FileUploadApi
+  children: []
+  langs:
+    - js
+  type: Class
+  summary: >
+    Provides methods to use Azure IoT Hub APIs that enable simple upload to a
+    blob.

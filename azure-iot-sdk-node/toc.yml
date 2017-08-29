@@ -1,0 +1,55 @@
+- uid: azure-iot-device.BlobSasError
+  name: BlobSasError
+  items: []
+- uid: azure-iot-device.BlobUploadNotificationError
+  name: BlobUploadNotificationError
+  items: []
+- uid: azure-iot-device.BlobUploadResult
+  name: BlobUploadResult
+  items:
+    - uid: 'azure-iot-device.BlobUploadResult#fromAzureStorageCallbackArgs'
+      name: fromAzureStorageCallbackArgs
+- uid: azure-iot-device.FileUploadApi
+  name: FileUploadApi
+  items: []
+- uid: azure-iot-device.Client
+  name: Client
+  items:
+    - uid: 'azure-iot-device.Client#abandon'
+      name: abandon
+    - uid: 'azure-iot-device.Client#close'
+      name: close
+    - uid: 'azure-iot-device.Client#complete'
+      name: complete
+    - uid: 'azure-iot-device.Client#getTwin'
+      name: getTwin
+    - uid: 'azure-iot-device.Client#onDeviceMethod'
+      name: onDeviceMethod
+    - uid: 'azure-iot-device.Client#open'
+      name: open
+    - uid: 'azure-iot-device.Client#reject'
+      name: reject
+    - uid: 'azure-iot-device.Client#sendEvent'
+      name: sendEvent
+    - uid: 'azure-iot-device.Client#sendEventBatch'
+      name: sendEventBatch
+    - uid: 'azure-iot-device.Client#setOptions'
+      name: setOptions
+    - uid: 'azure-iot-device.Client#setTransportOptions'
+      name: setTransportOptions
+    - uid: 'azure-iot-device.Client#updateSharedAccessSignature'
+      name: updateSharedAccessSignature
+    - uid: 'azure-iot-device.Client#uploadToBlob'
+      name: uploadToBlob
+    - uid: 'azure-iot-device.Client#fromConnectionString'
+      name: fromConnectionString
+    - uid: 'azure-iot-device.Client#fromSharedAccessSignature'
+      name: fromSharedAccessSignature
+- uid: azure-iot-device.DeviceMethodRequest
+  name: DeviceMethodRequest
+  items: []
+- uid: azure-iot-device.DeviceMethodResponse
+  name: DeviceMethodResponse
+  items:
+    - uid: 'azure-iot-device.DeviceMethodResponse#send'
+      name: send

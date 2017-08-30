@@ -2,7 +2,7 @@
 items:
   - uid: azure-iot-device.FileUploadApi
     name: FileUploadApi
-    fullname: FileUploadApi
+    fullName: FileUploadApi
     children: []
     langs:
       - js

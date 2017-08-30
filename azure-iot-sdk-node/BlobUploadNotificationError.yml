@@ -2,7 +2,7 @@
 items:
   - uid: azure-iot-device.BlobUploadNotificationError
     name: BlobUploadNotificationError
-    fullname: BlobUploadNotificationError
+    fullName: BlobUploadNotificationError
     children: []
     langs:
       - js

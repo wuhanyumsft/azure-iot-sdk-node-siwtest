@@ -2,7 +2,7 @@
 items:
   - uid: azure-iot-device.BlobSasError
     name: BlobSasError
-    fullname: BlobSasError
+    fullName: BlobSasError
     children: []
     langs:
       - js

@@ -2,7 +2,7 @@
 items:
   - uid: azure-iot-device.BlobUploadResult
     name: BlobUploadResult
-    fullname: BlobUploadResult
+    fullName: BlobUploadResult
     children:
       - 'azure-iot-device.BlobUploadResult#fromAzureStorageCallbackArgs'
     langs:

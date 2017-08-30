@@ -35,5 +35,5 @@ items:
             - Object
           description: |
             The HTTP response object.
-      content: ''
+      content: 'function fromAzureStorageCallbackArgs(err, body, response)'
     type: Function

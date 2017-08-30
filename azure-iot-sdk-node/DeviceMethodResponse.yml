@@ -45,5 +45,5 @@ items:
                                            the service. An error object is passed as an
                                            argument to the function in case an error
                                            occurs.
-      content: ''
+      content: 'function send(status, payload, done)'
     type: Function

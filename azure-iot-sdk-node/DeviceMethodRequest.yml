@@ -3,7 +3,8 @@ items:
   - uid: azure-iot-device.DeviceMethodRequest
     name: DeviceMethodRequest
     fullName: DeviceMethodRequest
-    children: []
+    children:
+      - azure-iot-device.DeviceMethodRequest.constructor
     langs:
       - js
     type: Class
@@ -13,3 +14,25 @@ items:
                        made. An instance of this class is passed as the second
                        parameter to the callback registered via the
                        {@link module:azure-iot-device.Client#onDeviceMethod} method.
+  - uid: azure-iot-device.DeviceMethodRequest.constructor
+    name: constructor
+    children: []
+    langs:
+      - js
+    summary: ''
+    syntax:
+      parameters:
+        - id: requestId
+          type:
+            - string
+          description: ''
+        - id: methodName
+          type:
+            - string
+          description: ''
+        - id: body
+          type:
+            - any
+          description: ''
+      content: 'new DeviceMethodRequest(requestId, methodName, body)'
+    type: Constructor

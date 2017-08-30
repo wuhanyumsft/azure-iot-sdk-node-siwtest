@@ -4,6 +4,7 @@ items:
     name: DeviceMethodResponse
     fullName: DeviceMethodResponse
     children:
+      - azure-iot-device.DeviceMethodResponse.constructor
       - azure-iot-device.DeviceMethodResponse.send
     langs:
       - js
@@ -16,6 +17,24 @@ items:
                        to the callback registered via the
                        {@link module:azure-iot-device.Client#onDeviceMethod} method.
                        method.
+  - uid: azure-iot-device.DeviceMethodResponse.constructor
+    name: constructor
+    children: []
+    langs:
+      - js
+    summary: ''
+    syntax:
+      parameters:
+        - id: requestId
+          type:
+            - string
+          description: ''
+        - id: transport
+          type:
+            - Transport
+          description: ''
+      content: 'new DeviceMethodResponse(requestId, transport)'
+    type: Constructor
   - uid: azure-iot-device.DeviceMethodResponse.send
     name: send
     children: []

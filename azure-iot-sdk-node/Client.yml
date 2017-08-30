@@ -4,6 +4,7 @@ items:
     name: Client
     fullName: Client
     children:
+      - azure-iot-device.Client.constructor
       - azure-iot-device.Client.abandon
       - azure-iot-device.Client.close
       - azure-iot-device.Client.complete
@@ -27,6 +28,28 @@ items:
                        call the factory method,
                        {@link module:azure-iot-device.Client.fromConnectionString|fromConnectionString},
                        to create an IoT Hub device client.
+  - uid: azure-iot-device.Client.constructor
+    name: constructor
+    children: []
+    langs:
+      - js
+    summary: ''
+    syntax:
+      parameters:
+        - id: transport
+          type:
+            - Transport
+          description: ''
+        - id: connStr
+          type:
+            - string
+          description: ''
+        - id: blobUploadClient
+          type:
+            - BlobUploadClient
+          description: ''
+      content: 'new Client(transport, connStr, blobUploadClient)'
+    type: Constructor
   - uid: azure-iot-device.Client.abandon
     name: abandon
     children: []

@@ -2,6 +2,7 @@
 items:
   - uid: azure-iot-device.DeviceMethodResponse
     name: DeviceMethodResponse
+    fullname: DeviceMethodResponse
     children:
       - 'azure-iot-device.DeviceMethodResponse#send'
     langs:

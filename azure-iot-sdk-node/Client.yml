@@ -2,6 +2,7 @@
 items:
   - uid: azure-iot-device.Client
     name: Client
+    fullname: Client
     children:
       - 'azure-iot-device.Client#abandon'
       - 'azure-iot-device.Client#close'

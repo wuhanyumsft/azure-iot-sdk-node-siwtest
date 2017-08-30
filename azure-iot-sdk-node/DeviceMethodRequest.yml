@@ -2,6 +2,7 @@
 items:
   - uid: azure-iot-device.DeviceMethodRequest
     name: DeviceMethodRequest
+    fullname: DeviceMethodRequest
     children: []
     langs:
       - js

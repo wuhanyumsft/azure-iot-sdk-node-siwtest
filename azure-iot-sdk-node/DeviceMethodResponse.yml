@@ -24,4 +24,19 @@ items:
       Sends the device method's response back to the service via
                          the underlying transport object using the status parameter
                          as the status of the method call.
+    syntax:
+      parameters:
+        - id: status
+          type:
+            - number
+          description: ''
+        - id: payload
+          type:
+            - any
+          description: ''
+        - id: done
+          type:
+            - null
+          description: ''
+      content: ''
     type: Function

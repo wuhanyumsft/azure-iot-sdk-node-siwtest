@@ -20,4 +20,19 @@ items:
       The `fromAzureStorageCallbackArgs` static method creates a new
       BlobUploadResult instance from the arguments passed to the callback of the
       azure storage upload method.
+    syntax:
+      parameters:
+        - id: err
+          type:
+            - Error
+          description: ''
+        - id: body
+          type:
+            - any
+          description: ''
+        - id: response
+          type:
+            - null
+          description: ''
+      content: ''
     type: Function

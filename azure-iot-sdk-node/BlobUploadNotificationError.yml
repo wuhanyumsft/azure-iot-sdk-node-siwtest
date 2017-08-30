@@ -1,9 +1,11 @@
-- uid: azure-iot-device.BlobUploadNotificationError
-  name: BlobUploadNotificationError
-  children: []
-  langs:
-    - js
-  type: Class
-  summary: >
-    Error used when the client fails to notify the IoT Hub service that the
-    upload is complete.
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.BlobUploadNotificationError
+    name: BlobUploadNotificationError
+    children: []
+    langs:
+      - js
+    type: Class
+    summary: >
+      Error used when the client fails to notify the IoT Hub service that the
+      upload is complete.

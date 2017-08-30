@@ -1,12 +1,14 @@
-- uid: azure-iot-device.DeviceMethodRequest
-  name: DeviceMethodRequest
-  children: []
-  langs:
-    - js
-  type: Class
-  summary: |-
-    `DeviceMethodRequest` is a class that captures the data
-                     passed in from the service when a device method call is
-                     made. An instance of this class is passed as the second
-                     parameter to the callback registered via the
-                     {@link module:azure-iot-device.Client#onDeviceMethod} method.
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.DeviceMethodRequest
+    name: DeviceMethodRequest
+    children: []
+    langs:
+      - js
+    type: Class
+    summary: |-
+      `DeviceMethodRequest` is a class that captures the data
+                       passed in from the service when a device method call is
+                       made. An instance of this class is passed as the second
+                       parameter to the callback registered via the
+                       {@link module:azure-iot-device.Client#onDeviceMethod} method.

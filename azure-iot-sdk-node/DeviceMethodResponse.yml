@@ -1,25 +1,27 @@
-- uid: azure-iot-device.DeviceMethodResponse
-  name: DeviceMethodResponse
-  children:
-    - 'azure-iot-device.DeviceMethodResponse#send'
-  langs:
-    - js
-  type: Class
-  summary: |-
-    `DeviceMethodResponse` provides functionality that allows
-                     a device method implementation to construct and send a
-                     response back to the service for a device method call. An
-                     instance of this class is passed as the second parameter
-                     to the callback registered via the
-                     {@link module:azure-iot-device.Client#onDeviceMethod} method.
-                     method.
-- uid: 'azure-iot-device.DeviceMethodResponse#send'
-  name: send
-  children: []
-  langs:
-    - js
-  summary: |
-    Sends the device method's response back to the service via
-                       the underlying transport object using the status parameter
-                       as the status of the method call.
-  type: Function
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.DeviceMethodResponse
+    name: DeviceMethodResponse
+    children:
+      - 'azure-iot-device.DeviceMethodResponse#send'
+    langs:
+      - js
+    type: Class
+    summary: |-
+      `DeviceMethodResponse` provides functionality that allows
+                       a device method implementation to construct and send a
+                       response back to the service for a device method call. An
+                       instance of this class is passed as the second parameter
+                       to the callback registered via the
+                       {@link module:azure-iot-device.Client#onDeviceMethod} method.
+                       method.
+  - uid: 'azure-iot-device.DeviceMethodResponse#send'
+    name: send
+    children: []
+    langs:
+      - js
+    summary: |
+      Sends the device method's response back to the service via
+                         the underlying transport object using the status parameter
+                         as the status of the method call.
+    type: Function

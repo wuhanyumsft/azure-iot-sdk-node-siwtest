@@ -1,164 +1,164 @@
 ### YamlMime:UniversalReference
 items:
-    - uid: azure-iot-device.Client
-      name: Client
-      children:
-        - 'azure-iot-device.Client#abandon'
-        - 'azure-iot-device.Client#close'
-        - 'azure-iot-device.Client#complete'
-        - 'azure-iot-device.Client#fromConnectionString'
-        - 'azure-iot-device.Client#fromSharedAccessSignature'
-        - 'azure-iot-device.Client#getTwin'
-        - 'azure-iot-device.Client#onDeviceMethod'
-        - 'azure-iot-device.Client#open'
-        - 'azure-iot-device.Client#reject'
-        - 'azure-iot-device.Client#sendEvent'
-        - 'azure-iot-device.Client#sendEventBatch'
-        - 'azure-iot-device.Client#setOptions'
-        - 'azure-iot-device.Client#setTransportOptions'
-        - 'azure-iot-device.Client#updateSharedAccessSignature'
-        - 'azure-iot-device.Client#uploadToBlob'
-      langs:
-        - js
-      type: Class
-      summary: |-
-        Creates an IoT Hub device client. Normally, consumers will
-                         call the factory method,
-                         {@link module:azure-iot-device.Client.fromConnectionString|fromConnectionString},
-                         to create an IoT Hub device client.
-    - uid: 'azure-iot-device.Client#abandon'
-      name: abandon
-      children: []
-      langs:
-        - js
-      summary: >
-        The `abandon` method directs the transport to settle the message passed as
-        argument as 'abandoned'.
-      type: Function
-    - uid: 'azure-iot-device.Client#close'
-      name: close
-      children: []
-      langs:
-        - js
-      summary: >
-        The `close` method directs the transport to close the current connection to
-        the IoT Hub instance
-      type: Function
-    - uid: 'azure-iot-device.Client#complete'
-      name: complete
-      children: []
-      langs:
-        - js
-      summary: >
-        The `complete` method directs the transport to settle the message passed as
-        argument as 'completed'.
-      type: Function
-    - uid: 'azure-iot-device.Client#fromConnectionString'
-      name: fromConnectionString
-      children: []
-      langs:
-        - js
-      summary: |
-        Creates an IoT Hub device client from the given
-                           connection string using the given transport type.
-      type: Function
-    - uid: 'azure-iot-device.Client#fromSharedAccessSignature'
-      name: fromSharedAccessSignature
-      children: []
-      langs:
-        - js
-      summary: |
-        Creates an IoT Hub device client from the given
-                           shared access signature using the given transport type.
-      type: Function
-    - uid: 'azure-iot-device.Client#getTwin'
-      name: getTwin
-      children: []
-      langs:
-        - js
-      summary: >
-        The `getTwin` method creates a Twin object and establishes a connection with
-        the Twin service.
-      type: Function
-    - uid: 'azure-iot-device.Client#onDeviceMethod'
-      name: onDeviceMethod
-      children: []
-      langs:
-        - js
-      summary: |
-        Registers the `callback` to be invoked when a
-                           cloud-to-device method call is received by the client
-                           for the given `methodName`.
-      type: Function
-    - uid: 'azure-iot-device.Client#open'
-      name: open
-      children: []
-      langs:
-        - js
-      summary: |
-        Call the transport layer CONNECT function if the
-                           transport layer implements it
-      type: Function
-    - uid: 'azure-iot-device.Client#reject'
-      name: reject
-      children: []
-      langs:
-        - js
-      summary: >
-        The `reject` method directs the transport to settle the message passed as
-        argument as 'rejected'.
-      type: Function
-    - uid: 'azure-iot-device.Client#sendEvent'
-      name: sendEvent
-      children: []
-      langs:
-        - js
-      summary: |
-        The [sendEvent]{@linkcode Client#sendEvent} method sends an event message
-                           to the IoT Hub as the device indicated by the connection string passed
-                           via the constructor.
-      type: Function
-    - uid: 'azure-iot-device.Client#sendEventBatch'
-      name: sendEventBatch
-      children: []
-      langs:
-        - js
-      summary: |
-        The [sendEventBatch]{@linkcode Client#sendEventBatch} method sends a list
-                           of event messages to the IoT Hub as the device indicated by the connection
-                           string passed via the constructor.
-      type: Function
-    - uid: 'azure-iot-device.Client#setOptions'
-      name: setOptions
-      children: []
-      langs:
-        - js
-      summary: |
-        The `setOptions` method let the user configure the client.
-      type: Function
-    - uid: 'azure-iot-device.Client#setTransportOptions'
-      name: setTransportOptions
-      children: []
-      langs:
-        - js
-      summary: >
-        The `setTransportOptions` method configures transport-specific options for
-        the client and its underlying transport object.
-      type: Function
-    - uid: 'azure-iot-device.Client#updateSharedAccessSignature'
-      name: updateSharedAccessSignature
-      children: []
-      langs:
-        - js
-      summary: >
-        Updates the Shared Access Signature token used by the transport to
-        authenticate with the IoT Hub service.
-      type: Function
-    - uid: 'azure-iot-device.Client#uploadToBlob'
-      name: uploadToBlob
-      children: []
-      langs:
-        - js
-      summary: |
-        The `uploadToBlob` method uploads a stream to a blob.
-      type: Function
+  - uid: azure-iot-device.Client
+    name: Client
+    children:
+      - 'azure-iot-device.Client#abandon'
+      - 'azure-iot-device.Client#close'
+      - 'azure-iot-device.Client#complete'
+      - 'azure-iot-device.Client#fromConnectionString'
+      - 'azure-iot-device.Client#fromSharedAccessSignature'
+      - 'azure-iot-device.Client#getTwin'
+      - 'azure-iot-device.Client#onDeviceMethod'
+      - 'azure-iot-device.Client#open'
+      - 'azure-iot-device.Client#reject'
+      - 'azure-iot-device.Client#sendEvent'
+      - 'azure-iot-device.Client#sendEventBatch'
+      - 'azure-iot-device.Client#setOptions'
+      - 'azure-iot-device.Client#setTransportOptions'
+      - 'azure-iot-device.Client#updateSharedAccessSignature'
+      - 'azure-iot-device.Client#uploadToBlob'
+    langs:
+      - js
+    type: Class
+    summary: |-
+      Creates an IoT Hub device client. Normally, consumers will
+                       call the factory method,
+                       {@link module:azure-iot-device.Client.fromConnectionString|fromConnectionString},
+                       to create an IoT Hub device client.
+  - uid: 'azure-iot-device.Client#abandon'
+    name: abandon
+    children: []
+    langs:
+      - js
+    summary: >
+      The `abandon` method directs the transport to settle the message passed as
+      argument as 'abandoned'.
+    type: Function
+  - uid: 'azure-iot-device.Client#close'
+    name: close
+    children: []
+    langs:
+      - js
+    summary: >
+      The `close` method directs the transport to close the current connection
+      to the IoT Hub instance
+    type: Function
+  - uid: 'azure-iot-device.Client#complete'
+    name: complete
+    children: []
+    langs:
+      - js
+    summary: >
+      The `complete` method directs the transport to settle the message passed
+      as argument as 'completed'.
+    type: Function
+  - uid: 'azure-iot-device.Client#fromConnectionString'
+    name: fromConnectionString
+    children: []
+    langs:
+      - js
+    summary: |
+      Creates an IoT Hub device client from the given
+                         connection string using the given transport type.
+    type: Function
+  - uid: 'azure-iot-device.Client#fromSharedAccessSignature'
+    name: fromSharedAccessSignature
+    children: []
+    langs:
+      - js
+    summary: |
+      Creates an IoT Hub device client from the given
+                         shared access signature using the given transport type.
+    type: Function
+  - uid: 'azure-iot-device.Client#getTwin'
+    name: getTwin
+    children: []
+    langs:
+      - js
+    summary: >
+      The `getTwin` method creates a Twin object and establishes a connection
+      with the Twin service.
+    type: Function
+  - uid: 'azure-iot-device.Client#onDeviceMethod'
+    name: onDeviceMethod
+    children: []
+    langs:
+      - js
+    summary: |
+      Registers the `callback` to be invoked when a
+                         cloud-to-device method call is received by the client
+                         for the given `methodName`.
+    type: Function
+  - uid: 'azure-iot-device.Client#open'
+    name: open
+    children: []
+    langs:
+      - js
+    summary: |
+      Call the transport layer CONNECT function if the
+                         transport layer implements it
+    type: Function
+  - uid: 'azure-iot-device.Client#reject'
+    name: reject
+    children: []
+    langs:
+      - js
+    summary: >
+      The `reject` method directs the transport to settle the message passed as
+      argument as 'rejected'.
+    type: Function
+  - uid: 'azure-iot-device.Client#sendEvent'
+    name: sendEvent
+    children: []
+    langs:
+      - js
+    summary: |
+      The [sendEvent]{@linkcode Client#sendEvent} method sends an event message
+                         to the IoT Hub as the device indicated by the connection string passed
+                         via the constructor.
+    type: Function
+  - uid: 'azure-iot-device.Client#sendEventBatch'
+    name: sendEventBatch
+    children: []
+    langs:
+      - js
+    summary: |
+      The [sendEventBatch]{@linkcode Client#sendEventBatch} method sends a list
+                         of event messages to the IoT Hub as the device indicated by the connection
+                         string passed via the constructor.
+    type: Function
+  - uid: 'azure-iot-device.Client#setOptions'
+    name: setOptions
+    children: []
+    langs:
+      - js
+    summary: |
+      The `setOptions` method let the user configure the client.
+    type: Function
+  - uid: 'azure-iot-device.Client#setTransportOptions'
+    name: setTransportOptions
+    children: []
+    langs:
+      - js
+    summary: >
+      The `setTransportOptions` method configures transport-specific options for
+      the client and its underlying transport object.
+    type: Function
+  - uid: 'azure-iot-device.Client#updateSharedAccessSignature'
+    name: updateSharedAccessSignature
+    children: []
+    langs:
+      - js
+    summary: >
+      Updates the Shared Access Signature token used by the transport to
+      authenticate with the IoT Hub service.
+    type: Function
+  - uid: 'azure-iot-device.Client#uploadToBlob'
+    name: uploadToBlob
+    children: []
+    langs:
+      - js
+    summary: |
+      The `uploadToBlob` method uploads a stream to a blob.
+    type: Function

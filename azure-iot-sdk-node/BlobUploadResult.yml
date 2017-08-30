@@ -32,7 +32,7 @@ items:
           description: The body of the HTTP response.
         - id: response
           type:
-            - Object
+            - function
           description: |
             The HTTP response object.
       content: 'function fromAzureStorageCallbackArgs(err, body, response)'

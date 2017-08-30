@@ -38,7 +38,7 @@ items:
           description: The payload of the method response.
         - id: done
           type:
-            - Object
+            - function
           description: |
             A callback function which will be
                                            called once the response has been sent back to

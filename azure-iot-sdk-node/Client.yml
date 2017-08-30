@@ -42,7 +42,7 @@ items:
           description: The message to settle.
         - id: abandonCallback
           type:
-            - Object
+            - function
           description: |
             The callback to call when the message is abandoned.
       content: 'function abandon(message, abandonCallback)'
@@ -59,7 +59,7 @@ items:
       parameters:
         - id: closeCallback
           type:
-            - Object
+            - function
           description: |
             The callback to be invoked when the connection has been closed.
       content: function close(closeCallback)
@@ -80,7 +80,7 @@ items:
           description: The message to settle.
         - id: completeCallback
           type:
-            - Object
+            - function
           description: |
             The callback to call when the message is completed.
       content: 'function complete(message, completeCallback)'
@@ -141,7 +141,7 @@ items:
       parameters:
         - id: done
           type:
-            - Object
+            - function
           description: |+
             The callback to call when the connection is established.
 
@@ -170,7 +170,7 @@ items:
                                            is to be registered.
         - id: callback
           type:
-            - Object
+            - function
           description: |
             The callback to be invoked when the C2D method
                                            call is received.
@@ -188,7 +188,7 @@ items:
       parameters:
         - id: openCallback
           type:
-            - Object
+            - function
           description: |
             The callback to be invoked when `open`
                                             completes execution.
@@ -210,7 +210,7 @@ items:
           description: The message to settle.
         - id: rejectCallback
           type:
-            - Object
+            - function
           description: |
             The callback to call when the message is rejected.
       content: 'function reject(message, rejectCallback)'
@@ -234,7 +234,7 @@ items:
                                                  to be sent.
         - id: sendEventCallback
           type:
-            - Object
+            - function
           description: |-
             The callback to be invoked when `sendEvent`
                                                  completes execution.
@@ -253,13 +253,13 @@ items:
       parameters:
         - id: messages
           type:
-            - Object
+            - function
           description: |-
             Array of [Message]{@linkcode module:common/message.Message}
                                                            objects to be sent as a batch.
         - id: sendEventBatchCallback
           type:
-            - Object
+            - function
           description: |
             The callback to be invoked when
                                                            `sendEventBatch` completes execution.
@@ -280,7 +280,7 @@ items:
           description: The options structure
         - id: done
           type:
-            - Object
+            - function
           description: |
             The callback that shall be called when setOptions is finished.
       content: 'function setOptions(options, done)'
@@ -301,7 +301,7 @@ items:
           description: The options that shall be set (see transports documentation).
         - id: done
           type:
-            - Object
+            - function
           description: >
             The callback that shall be invoked with either an error or a result
             object.
@@ -323,7 +323,7 @@ items:
           description: The new SAS token to use.
         - id: updateSasCallback
           type:
-            - Object
+            - function
           description: ''
       content: >-
         function updateSharedAccessSignature(sharedAccessSignature,
@@ -354,7 +354,7 @@ items:
           description: The size of the data to that should be uploaded to the blob.
         - id: done
           type:
-            - Object
+            - function
           description: |
             The callback to call when the upload is complete.
       content: 'function uploadToBlob(blobName, stream, streamLength, done)'

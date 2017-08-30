@@ -4,7 +4,7 @@ items:
     name: BlobUploadResult
     fullName: BlobUploadResult
     children:
-      - 'azure-iot-device.BlobUploadResult#fromAzureStorageCallbackArgs'
+      - azure-iot-device.BlobUploadResult.fromAzureStorageCallbackArgs
     langs:
       - js
     type: Class
@@ -12,7 +12,7 @@ items:
       Result object used by the {@link
       module:azure-iot-device.blobUpload.BlobUploader} class to describe a
       successful upload to a blob.
-  - uid: 'azure-iot-device.BlobUploadResult#fromAzureStorageCallbackArgs'
+  - uid: azure-iot-device.BlobUploadResult.fromAzureStorageCallbackArgs
     name: fromAzureStorageCallbackArgs
     children: []
     langs:

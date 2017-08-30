@@ -34,6 +34,7 @@ items:
             - string
           description: ''
       content: 'new BlobUploadResult(isSuccess, statusCode, statusDescription)'
+    fullName: 'BlobUploadResult(isSuccess, statusCode, statusDescription)'
     type: Constructor
   - uid: azure-iot-device.BlobUploadResult.fromAzureStorageCallbackArgs
     name: fromAzureStorageCallbackArgs
@@ -60,4 +61,5 @@ items:
           description: |
             The HTTP response object.
       content: 'function fromAzureStorageCallbackArgs(err, body, response)'
+    fullName: 'fromAzureStorageCallbackArgs(err, body, response)'
     type: Function

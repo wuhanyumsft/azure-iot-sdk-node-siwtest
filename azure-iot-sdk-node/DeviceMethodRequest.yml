@@ -15,7 +15,7 @@ items:
                        parameter to the callback registered via the
                        {@link module:azure-iot-device.Client#onDeviceMethod} method.
   - uid: azure-iot-device.DeviceMethodRequest.constructor
-    name: constructor
+    name: 'DeviceMethodRequest(requestId, methodName, body)'
     children: []
     langs:
       - js
@@ -34,6 +34,5 @@ items:
           type:
             - any
           description: ''
-      content: 'new DeviceMethodRequest(requestId, methodName, body)'
-    fullName: 'DeviceMethodRequest(requestId, methodName, body)'
+      content: new undefined
     type: Constructor

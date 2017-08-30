@@ -12,7 +12,7 @@ items:
       Provides methods to use Azure IoT Hub APIs that enable simple upload to a
       blob.
   - uid: azure-iot-device.FileUploadApi.constructor
-    name: constructor
+    name: 'FileUploadApi(deviceId, hostname, httpTransport)'
     children: []
     langs:
       - js
@@ -31,6 +31,5 @@ items:
           type:
             - any
           description: ''
-      content: 'new FileUploadApi(deviceId, hostname, httpTransport)'
-    fullName: 'FileUploadApi(deviceId, hostname, httpTransport)'
+      content: new undefined
     type: Constructor

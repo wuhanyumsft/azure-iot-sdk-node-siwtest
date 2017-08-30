@@ -4,8 +4,8 @@ items:
     name: Client
     fullName: Client
     children:
-      - azure-iot-device.Client.constructor
       - azure-iot-device.Client.abandon
+      - azure-iot-device.Client.constructor
       - azure-iot-device.Client.close
       - azure-iot-device.Client.complete
       - azure-iot-device.Client.fromConnectionString
@@ -28,8 +28,29 @@ items:
                        call the factory method,
                        {@link module:azure-iot-device.Client.fromConnectionString|fromConnectionString},
                        to create an IoT Hub device client.
+  - uid: azure-iot-device.Client.abandon
+    name: 'abandon(message, abandonCallback)'
+    children: []
+    langs:
+      - js
+    summary: >
+      The `abandon` method directs the transport to settle the message passed as
+      argument as 'abandoned'.
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - Message
+          description: The message to settle.
+        - id: abandonCallback
+          type:
+            - function
+          description: |
+            The callback to call when the message is abandoned.
+      content: function undefined
+    type: Function
   - uid: azure-iot-device.Client.constructor
-    name: constructor
+    name: 'Client(transport, connStr, blobUploadClient)'
     children: []
     langs:
       - js
@@ -48,33 +69,10 @@ items:
           type:
             - BlobUploadClient
           description: ''
-      content: 'new Client(transport, connStr, blobUploadClient)'
-    fullName: 'Client(transport, connStr, blobUploadClient)'
+      content: new undefined
     type: Constructor
-  - uid: azure-iot-device.Client.abandon
-    name: abandon
-    children: []
-    langs:
-      - js
-    summary: >
-      The `abandon` method directs the transport to settle the message passed as
-      argument as 'abandoned'.
-    syntax:
-      parameters:
-        - id: message
-          type:
-            - Message
-          description: The message to settle.
-        - id: abandonCallback
-          type:
-            - function
-          description: |
-            The callback to call when the message is abandoned.
-      content: 'function abandon(message, abandonCallback)'
-    fullName: 'abandon(message, abandonCallback)'
-    type: Function
   - uid: azure-iot-device.Client.close
-    name: close
+    name: close(closeCallback)
     children: []
     langs:
       - js
@@ -88,11 +86,10 @@ items:
             - function
           description: |
             The callback to be invoked when the connection has been closed.
-      content: function close(closeCallback)
-    fullName: close(closeCallback)
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.complete
-    name: complete
+    name: 'complete(message, completeCallback)'
     children: []
     langs:
       - js
@@ -110,11 +107,10 @@ items:
             - function
           description: |
             The callback to call when the message is completed.
-      content: 'function complete(message, completeCallback)'
-    fullName: 'complete(message, completeCallback)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.fromConnectionString
-    name: fromConnectionString
+    name: 'fromConnectionString(connStr, transportCtor)'
     children: []
     langs:
       - js
@@ -133,11 +129,10 @@ items:
           type:
             - any
           description: ''
-      content: 'function fromConnectionString(connStr, transportCtor)'
-    fullName: 'fromConnectionString(connStr, transportCtor)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.fromSharedAccessSignature
-    name: fromSharedAccessSignature
+    name: 'fromSharedAccessSignature(sharedAccessSignature, transportCtor)'
     children: []
     langs:
       - js
@@ -156,11 +151,10 @@ items:
           type:
             - any
           description: ''
-      content: 'function fromSharedAccessSignature(sharedAccessSignature, transportCtor)'
-    fullName: 'fromSharedAccessSignature(sharedAccessSignature, transportCtor)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.getTwin
-    name: getTwin
+    name: 'getTwin(done, twin)'
     children: []
     langs:
       - js
@@ -179,11 +173,10 @@ items:
           type:
             - Twin
           description: ''
-      content: 'function getTwin(done, twin)'
-    fullName: 'getTwin(done, twin)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.onDeviceMethod
-    name: onDeviceMethod
+    name: 'onDeviceMethod(methodName, callback)'
     children: []
     langs:
       - js
@@ -205,11 +198,10 @@ items:
           description: |
             The callback to be invoked when the C2D method
                                            call is received.
-      content: 'function onDeviceMethod(methodName, callback)'
-    fullName: 'onDeviceMethod(methodName, callback)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.open
-    name: open
+    name: open(openCallback)
     children: []
     langs:
       - js
@@ -224,11 +216,10 @@ items:
           description: |
             The callback to be invoked when `open`
                                             completes execution.
-      content: function open(openCallback)
-    fullName: open(openCallback)
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.reject
-    name: reject
+    name: 'reject(message, rejectCallback)'
     children: []
     langs:
       - js
@@ -246,11 +237,10 @@ items:
             - function
           description: |
             The callback to call when the message is rejected.
-      content: 'function reject(message, rejectCallback)'
-    fullName: 'reject(message, rejectCallback)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.sendEvent
-    name: sendEvent
+    name: 'sendEvent(message, sendEventCallback)'
     children: []
     langs:
       - js
@@ -272,11 +262,10 @@ items:
           description: |-
             The callback to be invoked when `sendEvent`
                                                  completes execution.
-      content: 'function sendEvent(message, sendEventCallback)'
-    fullName: 'sendEvent(message, sendEventCallback)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.sendEventBatch
-    name: sendEventBatch
+    name: 'sendEventBatch(messages, sendEventBatchCallback)'
     children: []
     langs:
       - js
@@ -298,11 +287,10 @@ items:
           description: |
             The callback to be invoked when
                                                            `sendEventBatch` completes execution.
-      content: 'function sendEventBatch(messages, sendEventBatchCallback)'
-    fullName: 'sendEventBatch(messages, sendEventBatchCallback)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.setOptions
-    name: setOptions
+    name: 'setOptions(options, done)'
     children: []
     langs:
       - js
@@ -319,11 +307,10 @@ items:
             - function
           description: |
             The callback that shall be called when setOptions is finished.
-      content: 'function setOptions(options, done)'
-    fullName: 'setOptions(options, done)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.setTransportOptions
-    name: setTransportOptions
+    name: 'setTransportOptions(options, done)'
     children: []
     langs:
       - js
@@ -342,11 +329,10 @@ items:
           description: >
             The callback that shall be invoked with either an error or a result
             object.
-      content: 'function setTransportOptions(options, done)'
-    fullName: 'setTransportOptions(options, done)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.updateSharedAccessSignature
-    name: updateSharedAccessSignature
+    name: 'updateSharedAccessSignature(sharedAccessSignature, updateSasCallback)'
     children: []
     langs:
       - js
@@ -363,13 +349,10 @@ items:
           type:
             - function
           description: ''
-      content: >-
-        function updateSharedAccessSignature(sharedAccessSignature,
-        updateSasCallback)
-    fullName: 'updateSharedAccessSignature(sharedAccessSignature, updateSasCallback)'
+      content: function undefined
     type: Function
   - uid: azure-iot-device.Client.uploadToBlob
-    name: uploadToBlob
+    name: 'uploadToBlob(blobName, stream, streamLength, done)'
     children: []
     langs:
       - js
@@ -396,6 +379,5 @@ items:
             - function
           description: |
             The callback to call when the upload is complete.
-      content: 'function uploadToBlob(blobName, stream, streamLength, done)'
-    fullName: 'uploadToBlob(blobName, stream, streamLength, done)'
+      content: function undefined
     type: Function

@@ -18,7 +18,7 @@ items:
                        {@link module:azure-iot-device.Client#onDeviceMethod} method.
                        method.
   - uid: azure-iot-device.DeviceMethodResponse.constructor
-    name: constructor
+    name: 'DeviceMethodResponse(requestId, transport)'
     children: []
     langs:
       - js
@@ -33,11 +33,10 @@ items:
           type:
             - Transport
           description: ''
-      content: 'new DeviceMethodResponse(requestId, transport)'
-    fullName: 'DeviceMethodResponse(requestId, transport)'
+      content: new undefined
     type: Constructor
   - uid: azure-iot-device.DeviceMethodResponse.send
-    name: send
+    name: 'send(status, payload, done)'
     children: []
     langs:
       - js
@@ -66,6 +65,5 @@ items:
                                            the service. An error object is passed as an
                                            argument to the function in case an error
                                            occurs.
-      content: 'function send(status, payload, done)'
-    fullName: 'send(status, payload, done)'
+      content: function undefined
     type: Function

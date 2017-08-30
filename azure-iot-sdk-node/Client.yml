@@ -39,11 +39,12 @@ items:
         - id: message
           type:
             - Message
-          description: ''
+          description: The message to settle.
         - id: abandonCallback
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The callback to call when the message is abandoned.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#close'
@@ -58,8 +59,9 @@ items:
       parameters:
         - id: closeCallback
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The callback to be invoked when the connection has been closed.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#complete'
@@ -75,11 +77,12 @@ items:
         - id: message
           type:
             - Message
-          description: ''
+          description: The message to settle.
         - id: completeCallback
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The callback to call when the message is completed.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#fromConnectionString'
@@ -95,7 +98,9 @@ items:
         - id: connStr
           type:
             - string
-          description: ''
+          description: |-
+            A connection string which encapsulates "device
+                                             connect" permissions on an IoT hub.
         - id: transportCtor
           type:
             - any
@@ -115,7 +120,9 @@ items:
         - id: sharedAccessSignature
           type:
             - string
-          description: ''
+          description: |-
+            A shared access signature which encapsulates "device
+                                             connect" permissions on an IoT hub.
         - id: transportCtor
           type:
             - any
@@ -134,8 +141,10 @@ items:
       parameters:
         - id: done
           type:
-            - null
-          description: ''
+            - Object
+          description: |+
+            The callback to call when the connection is established.
+
         - id: twin
           type:
             - Twin
@@ -156,11 +165,15 @@ items:
         - id: methodName
           type:
             - string
-          description: ''
+          description: |-
+            The name of the method for which the callback
+                                           is to be registered.
         - id: callback
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The callback to be invoked when the C2D method
+                                           call is received.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#open'
@@ -175,8 +188,10 @@ items:
       parameters:
         - id: openCallback
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The callback to be invoked when `open`
+                                            completes execution.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#reject'
@@ -192,11 +207,12 @@ items:
         - id: message
           type:
             - Message
-          description: ''
+          description: The message to settle.
         - id: rejectCallback
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The callback to call when the message is rejected.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#sendEvent'
@@ -213,11 +229,15 @@ items:
         - id: message
           type:
             - Message
-          description: ''
+          description: |-
+            The [message]{@linkcode module:common/message.Message}
+                                                 to be sent.
         - id: sendEventCallback
           type:
-            - null
-          description: ''
+            - Object
+          description: |-
+            The callback to be invoked when `sendEvent`
+                                                 completes execution.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#sendEventBatch'
@@ -233,12 +253,16 @@ items:
       parameters:
         - id: messages
           type:
-            - null
-          description: ''
+            - Object
+          description: |-
+            Array of [Message]{@linkcode module:common/message.Message}
+                                                           objects to be sent as a batch.
         - id: sendEventBatchCallback
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The callback to be invoked when
+                                                           `sendEventBatch` completes execution.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#setOptions'
@@ -253,11 +277,12 @@ items:
         - id: options
           type:
             - any
-          description: ''
+          description: The options structure
         - id: done
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The callback that shall be called when setOptions is finished.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#setTransportOptions'
@@ -273,11 +298,13 @@ items:
         - id: options
           type:
             - any
-          description: ''
+          description: The options that shall be set (see transports documentation).
         - id: done
           type:
-            - null
-          description: ''
+            - Object
+          description: >
+            The callback that shall be invoked with either an error or a result
+            object.
       content: ''
     type: Function
   - uid: 'azure-iot-device.Client#updateSharedAccessSignature'
@@ -293,10 +320,10 @@ items:
         - id: sharedAccessSignature
           type:
             - string
-          description: ''
+          description: The new SAS token to use.
         - id: updateSasCallback
           type:
-            - null
+            - Object
           description: ''
       content: ''
     type: Function
@@ -312,18 +339,21 @@ items:
         - id: blobName
           type:
             - string
-          description: ''
+          description: >-
+            The name to use for the blob that will be created with the content
+            of the stream.
         - id: stream
           type:
             - Stream
-          description: ''
+          description: The data to that should be uploaded to the blob.
         - id: streamLength
           type:
             - number
-          description: ''
+          description: The size of the data to that should be uploaded to the blob.
         - id: done
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The callback to call when the upload is complete.
       content: ''
     type: Function

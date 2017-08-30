@@ -25,14 +25,15 @@ items:
         - id: err
           type:
             - Error
-          description: ''
+          description: The error object that is passed to the callback.
         - id: body
           type:
             - any
-          description: ''
+          description: The body of the HTTP response.
         - id: response
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            The HTTP response object.
       content: ''
     type: Function

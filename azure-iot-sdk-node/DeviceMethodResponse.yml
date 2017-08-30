@@ -29,14 +29,21 @@ items:
         - id: status
           type:
             - number
-          description: ''
+          description: |-
+            A numeric status code to be sent back to the
+                                           service.
         - id: payload
           type:
             - any
-          description: ''
+          description: The payload of the method response.
         - id: done
           type:
-            - null
-          description: ''
+            - Object
+          description: |
+            A callback function which will be
+                                           called once the response has been sent back to
+                                           the service. An error object is passed as an
+                                           argument to the function in case an error
+                                           occurs.
       content: ''
     type: Function

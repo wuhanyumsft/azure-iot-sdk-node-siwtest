@@ -48,6 +48,9 @@ items:
           description: |
             The callback to call when the message is abandoned.
       content: 'function abandon(message, abandonCallback)'
+      exceptions:
+        - type: ReferenceException
+          description: If the message is falsy.
     type: method
   - uid: azure-iot-device.Client.constructor
     name: 'Client(transport, connStr, blobUploadClient)'
@@ -111,6 +114,9 @@ items:
           description: |
             The callback to call when the message is completed.
       content: 'function complete(message, completeCallback)'
+      exceptions:
+        - type: ReferenceError
+          description: If the message is falsy.
     type: method
   - uid: azure-iot-device.Client.fromConnectionString
     name: 'fromConnectionString(connStr, transportCtor)'
@@ -136,6 +142,9 @@ items:
       return:
         type:
           - Client
+      exceptions:
+        - type: ReferenceError
+          description: If the connStr parameter is falsy.
     type: method
   - uid: azure-iot-device.Client.fromSharedAccessSignature
     name: 'fromSharedAccessSignature(sharedAccessSignature, transportCtor)'
@@ -161,6 +170,9 @@ items:
       return:
         type:
           - Client
+      exceptions:
+        - type: ReferenceError
+          description: If the connStr parameter is falsy.
     type: method
   - uid: azure-iot-device.Client.getTwin
     name: 'getTwin(done, twin)'
@@ -208,6 +220,11 @@ items:
             The callback to be invoked when the C2D method
                                            call is received.
       content: 'function onDeviceMethod(methodName, callback)'
+      exceptions:
+        - type: ReferenceError
+          description: If the `methodName` or `callback` parameter
+        - type: TypeError
+          description: If the `methodName` parameter is not a string
     type: method
   - uid: azure-iot-device.Client.open
     name: open(openCallback)
@@ -247,6 +264,9 @@ items:
           description: |
             The callback to call when the message is rejected.
       content: 'function reject(message, rejectCallback)'
+      exceptions:
+        - type: ReferenceException
+          description: If the message is falsy.
     type: method
   - uid: azure-iot-device.Client.sendEvent
     name: 'sendEvent(message, sendEventCallback)'
@@ -319,6 +339,9 @@ items:
           description: |
             The callback that shall be called when setOptions is finished.
       content: 'function setOptions(options, done)'
+      exceptions:
+        - type: ReferenceError
+          description: If the options structure is falsy
     type: method
   - uid: azure-iot-device.Client.setTransportOptions
     name: 'setTransportOptions(options, done)'
@@ -363,6 +386,11 @@ items:
       content: >-
         function updateSharedAccessSignature(sharedAccessSignature,
         updateSasCallback)
+      exceptions:
+        - type: ReferenceError
+          description: If the sharedAccessSignature parameter is falsy.
+        - type: ReferenceError
+          description: If the client uses x509 authentication.
     type: method
   - uid: azure-iot-device.Client.uploadToBlob
     name: 'uploadToBlob(blobName, stream, streamLength, done)'
@@ -393,4 +421,7 @@ items:
           description: |
             The callback to call when the upload is complete.
       content: 'function uploadToBlob(blobName, stream, streamLength, done)'
+      exceptions:
+        - type: ReferenceException
+          description: If blobName or stream or streamLength is falsy.
     type: method

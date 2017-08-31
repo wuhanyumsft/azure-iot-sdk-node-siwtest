@@ -65,4 +65,7 @@ items:
       return:
         type:
           - BlobUploadResult
+      exceptions:
+        - type: ReferenceException
+          description: If err is null and either body or response are also falsy.
     type: method

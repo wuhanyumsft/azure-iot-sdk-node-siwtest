@@ -2,68 +2,80 @@
   name: BlobSasError
   items:
     - uid: azure-iot-device.BlobSasError.constructor
-      name: BlobSasError(message)
+      name: 'BlobSasError(message: string)'
 - uid: azure-iot-device.BlobUploadNotificationError
   name: BlobUploadNotificationError
   items:
     - uid: azure-iot-device.BlobUploadNotificationError.constructor
-      name: BlobUploadNotificationError(message)
+      name: 'BlobUploadNotificationError(message: string)'
 - uid: azure-iot-device.BlobUploadResult
   name: BlobUploadResult
   items:
     - uid: azure-iot-device.BlobUploadResult.constructor
-      name: 'BlobUploadResult(isSuccess, statusCode, statusDescription)'
+      name: >-
+        BlobUploadResult(isSuccess: boolean, statusCode: number,
+        statusDescription: string)
     - uid: azure-iot-device.BlobUploadResult.fromAzureStorageCallbackArgs
-      name: 'fromAzureStorageCallbackArgs(err, body, response)'
+      name: >-
+        fromAzureStorageCallbackArgs(err?: Error, body?: any, response?:
+        function)
 - uid: azure-iot-device.FileUploadApi
   name: FileUploadApi
   items:
     - uid: azure-iot-device.FileUploadApi.constructor
-      name: 'FileUploadApi(deviceId, hostname, httpTransport)'
+      name: 'FileUploadApi(deviceId: string, hostname: string, httpTransport?: any)'
 - uid: azure-iot-device.Client
   name: Client
   items:
     - uid: azure-iot-device.Client.constructor
-      name: 'Client(transport, connStr, blobUploadClient)'
+      name: >-
+        Client(transport: Transport, connStr?: string, blobUploadClient?:
+        BlobUploadClient)
     - uid: azure-iot-device.Client.abandon
-      name: 'abandon(message, abandonCallback)'
+      name: 'abandon(message: Message, abandonCallback: function)'
     - uid: azure-iot-device.Client.close
-      name: close(closeCallback)
+      name: 'close(closeCallback?: function)'
     - uid: azure-iot-device.Client.complete
-      name: 'complete(message, completeCallback)'
+      name: 'complete(message: Message, completeCallback: function)'
     - uid: azure-iot-device.Client.getTwin
-      name: 'getTwin(done, twin)'
+      name: 'getTwin(done: function, twin?: Twin)'
     - uid: azure-iot-device.Client.onDeviceMethod
-      name: 'onDeviceMethod(methodName, callback)'
+      name: 'onDeviceMethod(methodName: string, callback: function)'
     - uid: azure-iot-device.Client.open
-      name: open(openCallback)
+      name: 'open(openCallback: function)'
     - uid: azure-iot-device.Client.reject
-      name: 'reject(message, rejectCallback)'
+      name: 'reject(message: Message, rejectCallback: function)'
     - uid: azure-iot-device.Client.sendEvent
-      name: 'sendEvent(message, sendEventCallback)'
+      name: 'sendEvent(message: Message, sendEventCallback?: function)'
     - uid: azure-iot-device.Client.sendEventBatch
-      name: 'sendEventBatch(messages, sendEventBatchCallback)'
+      name: 'sendEventBatch(messages: function, sendEventBatchCallback?: function)'
     - uid: azure-iot-device.Client.setOptions
-      name: 'setOptions(options, done)'
+      name: 'setOptions(options: any, done?: function)'
     - uid: azure-iot-device.Client.setTransportOptions
-      name: 'setTransportOptions(options, done)'
+      name: 'setTransportOptions(options: any, done?: function)'
     - uid: azure-iot-device.Client.updateSharedAccessSignature
-      name: 'updateSharedAccessSignature(sharedAccessSignature, updateSasCallback)'
+      name: >-
+        updateSharedAccessSignature(sharedAccessSignature: string,
+        updateSasCallback?: function)
     - uid: azure-iot-device.Client.uploadToBlob
-      name: 'uploadToBlob(blobName, stream, streamLength, done)'
+      name: >-
+        uploadToBlob(blobName: string, stream: Stream, streamLength: number,
+        done: function)
     - uid: azure-iot-device.Client.fromConnectionString
-      name: 'fromConnectionString(connStr, transportCtor)'
+      name: 'fromConnectionString(connStr: string, transportCtor: any)'
     - uid: azure-iot-device.Client.fromSharedAccessSignature
-      name: 'fromSharedAccessSignature(sharedAccessSignature, transportCtor)'
+      name: >-
+        fromSharedAccessSignature(sharedAccessSignature: string, transportCtor:
+        any)
 - uid: azure-iot-device.DeviceMethodRequest
   name: DeviceMethodRequest
   items:
     - uid: azure-iot-device.DeviceMethodRequest.constructor
-      name: 'DeviceMethodRequest(requestId, methodName, body)'
+      name: 'DeviceMethodRequest(requestId: string, methodName: string, body?: any)'
 - uid: azure-iot-device.DeviceMethodResponse
   name: DeviceMethodResponse
   items:
     - uid: azure-iot-device.DeviceMethodResponse.constructor
-      name: 'DeviceMethodResponse(requestId, transport)'
+      name: 'DeviceMethodResponse(requestId: string, transport: Transport)'
     - uid: azure-iot-device.DeviceMethodResponse.send
-      name: 'send(status, payload, done)'
+      name: 'send(status: number, payload?: any, done?: function)'

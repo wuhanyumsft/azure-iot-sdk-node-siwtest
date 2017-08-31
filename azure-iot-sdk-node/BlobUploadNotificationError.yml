@@ -12,7 +12,7 @@ items:
       Error used when the client fails to notify the IoT Hub service that the
       upload is complete.
   - uid: azure-iot-device.BlobUploadNotificationError.constructor
-    name: BlobUploadNotificationError(message)
+    name: 'BlobUploadNotificationError(message: string)'
     children: []
     langs:
       - typeScript
@@ -23,7 +23,7 @@ items:
           type:
             - string
           description: ''
-      content: new BlobUploadNotificationError(message)
+      content: 'new BlobUploadNotificationError(message: string)'
       return:
         type:
           - BlobUploadNotificationError

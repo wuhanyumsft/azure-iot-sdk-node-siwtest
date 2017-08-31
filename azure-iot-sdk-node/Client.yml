@@ -29,7 +29,7 @@ items:
                        [fromConnectionString](xref:azure-iot-device.Client.fromConnectionString),
                        to create an IoT Hub device client.
   - uid: azure-iot-device.Client.abandon
-    name: 'abandon(message, abandonCallback)'
+    name: 'abandon(message: Message, abandonCallback: function)'
     children: []
     langs:
       - typeScript
@@ -47,13 +47,15 @@ items:
             - function
           description: |
             The callback to call when the message is abandoned.
-      content: 'function abandon(message, abandonCallback)'
+      content: 'function abandon(message: Message, abandonCallback: function)'
     exceptions:
       - type: ReferenceException
         description: If the message is falsy.
     type: method
   - uid: azure-iot-device.Client.constructor
-    name: 'Client(transport, connStr, blobUploadClient)'
+    name: >-
+      Client(transport: Transport, connStr?: string, blobUploadClient?:
+      BlobUploadClient)
     children: []
     langs:
       - typeScript
@@ -74,13 +76,15 @@ items:
             - BlobUploadClient
           description: ''
           optional: true
-      content: 'new Client(transport, connStr, blobUploadClient)'
+      content: >-
+        new Client(transport: Transport, connStr?: string, blobUploadClient?:
+        BlobUploadClient)
       return:
         type:
           - Client
     type: constructor
   - uid: azure-iot-device.Client.close
-    name: close(closeCallback)
+    name: 'close(closeCallback?: function)'
     children: []
     langs:
       - typeScript
@@ -95,10 +99,10 @@ items:
           description: |
             The callback to be invoked when the connection has been closed.
           optional: true
-      content: function close(closeCallback)
+      content: 'function close(closeCallback?: function)'
     type: method
   - uid: azure-iot-device.Client.complete
-    name: 'complete(message, completeCallback)'
+    name: 'complete(message: Message, completeCallback: function)'
     children: []
     langs:
       - typeScript
@@ -116,13 +120,13 @@ items:
             - function
           description: |
             The callback to call when the message is completed.
-      content: 'function complete(message, completeCallback)'
+      content: 'function complete(message: Message, completeCallback: function)'
     exceptions:
       - type: ReferenceError
         description: If the message is falsy.
     type: method
   - uid: azure-iot-device.Client.fromConnectionString
-    name: 'fromConnectionString(connStr, transportCtor)'
+    name: 'fromConnectionString(connStr: string, transportCtor: any)'
     children: []
     langs:
       - typeScript
@@ -141,7 +145,7 @@ items:
           type:
             - any
           description: ''
-      content: 'function fromConnectionString(connStr, transportCtor)'
+      content: 'function fromConnectionString(connStr: string, transportCtor: any)'
       return:
         type:
           - Client
@@ -150,7 +154,9 @@ items:
         description: If the connStr parameter is falsy.
     type: method
   - uid: azure-iot-device.Client.fromSharedAccessSignature
-    name: 'fromSharedAccessSignature(sharedAccessSignature, transportCtor)'
+    name: >-
+      fromSharedAccessSignature(sharedAccessSignature: string, transportCtor:
+      any)
     children: []
     langs:
       - typeScript
@@ -169,7 +175,9 @@ items:
           type:
             - any
           description: ''
-      content: 'function fromSharedAccessSignature(sharedAccessSignature, transportCtor)'
+      content: >-
+        function fromSharedAccessSignature(sharedAccessSignature: string,
+        transportCtor: any)
       return:
         type:
           - Client
@@ -178,7 +186,7 @@ items:
         description: If the connStr parameter is falsy.
     type: method
   - uid: azure-iot-device.Client.getTwin
-    name: 'getTwin(done, twin)'
+    name: 'getTwin(done: function, twin?: Twin)'
     children: []
     langs:
       - typeScript
@@ -198,10 +206,10 @@ items:
             - Twin
           description: ''
           optional: true
-      content: 'function getTwin(done, twin)'
+      content: 'function getTwin(done: function, twin?: Twin)'
     type: method
   - uid: azure-iot-device.Client.onDeviceMethod
-    name: 'onDeviceMethod(methodName, callback)'
+    name: 'onDeviceMethod(methodName: string, callback: function)'
     children: []
     langs:
       - typeScript
@@ -223,7 +231,7 @@ items:
           description: |
             The callback to be invoked when the C2D method
                                            call is received.
-      content: 'function onDeviceMethod(methodName, callback)'
+      content: 'function onDeviceMethod(methodName: string, callback: function)'
     exceptions:
       - type: ReferenceError
         description: If the `methodName` or `callback` parameter
@@ -231,7 +239,7 @@ items:
         description: If the `methodName` parameter is not a string
     type: method
   - uid: azure-iot-device.Client.open
-    name: open(openCallback)
+    name: 'open(openCallback: function)'
     children: []
     langs:
       - typeScript
@@ -246,10 +254,10 @@ items:
           description: |
             The callback to be invoked when `open`
                                             completes execution.
-      content: function open(openCallback)
+      content: 'function open(openCallback: function)'
     type: method
   - uid: azure-iot-device.Client.reject
-    name: 'reject(message, rejectCallback)'
+    name: 'reject(message: Message, rejectCallback: function)'
     children: []
     langs:
       - typeScript
@@ -267,13 +275,13 @@ items:
             - function
           description: |
             The callback to call when the message is rejected.
-      content: 'function reject(message, rejectCallback)'
+      content: 'function reject(message: Message, rejectCallback: function)'
     exceptions:
       - type: ReferenceException
         description: If the message is falsy.
     type: method
   - uid: azure-iot-device.Client.sendEvent
-    name: 'sendEvent(message, sendEventCallback)'
+    name: 'sendEvent(message: Message, sendEventCallback?: function)'
     children: []
     langs:
       - typeScript
@@ -297,10 +305,10 @@ items:
             The callback to be invoked when `sendEvent`
                                                  completes execution.
           optional: true
-      content: 'function sendEvent(message, sendEventCallback)'
+      content: 'function sendEvent(message: Message, sendEventCallback?: function)'
     type: method
   - uid: azure-iot-device.Client.sendEventBatch
-    name: 'sendEventBatch(messages, sendEventBatchCallback)'
+    name: 'sendEventBatch(messages: function, sendEventBatchCallback?: function)'
     children: []
     langs:
       - typeScript
@@ -324,10 +332,12 @@ items:
             The callback to be invoked when
                                                            `sendEventBatch` completes execution.
           optional: true
-      content: 'function sendEventBatch(messages, sendEventBatchCallback)'
+      content: >-
+        function sendEventBatch(messages: function, sendEventBatchCallback?:
+        function)
     type: method
   - uid: azure-iot-device.Client.setOptions
-    name: 'setOptions(options, done)'
+    name: 'setOptions(options: any, done?: function)'
     children: []
     langs:
       - typeScript
@@ -345,13 +355,13 @@ items:
           description: |
             The callback that shall be called when setOptions is finished.
           optional: true
-      content: 'function setOptions(options, done)'
+      content: 'function setOptions(options: any, done?: function)'
     exceptions:
       - type: ReferenceError
         description: If the options structure is falsy
     type: method
   - uid: azure-iot-device.Client.setTransportOptions
-    name: 'setTransportOptions(options, done)'
+    name: 'setTransportOptions(options: any, done?: function)'
     children: []
     langs:
       - typeScript
@@ -371,10 +381,12 @@ items:
             The callback that shall be invoked with either an error or a result
             object.
           optional: true
-      content: 'function setTransportOptions(options, done)'
+      content: 'function setTransportOptions(options: any, done?: function)'
     type: method
   - uid: azure-iot-device.Client.updateSharedAccessSignature
-    name: 'updateSharedAccessSignature(sharedAccessSignature, updateSasCallback)'
+    name: >-
+      updateSharedAccessSignature(sharedAccessSignature: string,
+      updateSasCallback?: function)
     children: []
     langs:
       - typeScript
@@ -393,8 +405,8 @@ items:
           description: ''
           optional: true
       content: >-
-        function updateSharedAccessSignature(sharedAccessSignature,
-        updateSasCallback)
+        function updateSharedAccessSignature(sharedAccessSignature: string,
+        updateSasCallback?: function)
     exceptions:
       - type: ReferenceError
         description: If the sharedAccessSignature parameter is falsy.
@@ -402,7 +414,9 @@ items:
         description: If the client uses x509 authentication.
     type: method
   - uid: azure-iot-device.Client.uploadToBlob
-    name: 'uploadToBlob(blobName, stream, streamLength, done)'
+    name: >-
+      uploadToBlob(blobName: string, stream: Stream, streamLength: number, done:
+      function)
     children: []
     langs:
       - typeScript
@@ -429,7 +443,9 @@ items:
             - function
           description: |
             The callback to call when the upload is complete.
-      content: 'function uploadToBlob(blobName, stream, streamLength, done)'
+      content: >-
+        function uploadToBlob(blobName: string, stream: Stream, streamLength:
+        number, done: function)
     exceptions:
       - type: ReferenceException
         description: If blobName or stream or streamLength is falsy.

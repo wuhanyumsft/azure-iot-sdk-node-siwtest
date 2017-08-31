@@ -12,7 +12,7 @@ items:
       Error used when the client fails to get a blob shared access signature
       from the IoT Hub service.
   - uid: azure-iot-device.BlobSasError.constructor
-    name: BlobSasError(message)
+    name: 'BlobSasError(message: string)'
     children: []
     langs:
       - typeScript
@@ -23,7 +23,7 @@ items:
           type:
             - string
           description: ''
-      content: new BlobSasError(message)
+      content: 'new BlobSasError(message: string)'
       return:
         type:
           - BlobSasError

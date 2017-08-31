@@ -13,7 +13,9 @@ items:
       Result object used by the <xref:azure-iot-device.blobUpload.BlobUploader>
       class to describe a successful upload to a blob.
   - uid: azure-iot-device.BlobUploadResult.constructor
-    name: 'BlobUploadResult(isSuccess, statusCode, statusDescription)'
+    name: >-
+      BlobUploadResult(isSuccess: boolean, statusCode: number,
+      statusDescription: string)
     children: []
     langs:
       - typeScript
@@ -32,13 +34,15 @@ items:
           type:
             - string
           description: ''
-      content: 'new BlobUploadResult(isSuccess, statusCode, statusDescription)'
+      content: >-
+        new BlobUploadResult(isSuccess: boolean, statusCode: number,
+        statusDescription: string)
       return:
         type:
           - BlobUploadResult
     type: constructor
   - uid: azure-iot-device.BlobUploadResult.fromAzureStorageCallbackArgs
-    name: 'fromAzureStorageCallbackArgs(err, body, response)'
+    name: 'fromAzureStorageCallbackArgs(err?: Error, body?: any, response?: function)'
     children: []
     langs:
       - typeScript
@@ -64,7 +68,9 @@ items:
           description: |
             The HTTP response object.
           optional: true
-      content: 'function fromAzureStorageCallbackArgs(err, body, response)'
+      content: >-
+        function fromAzureStorageCallbackArgs(err?: Error, body?: any,
+        response?: function)
       return:
         type:
           - BlobUploadResult

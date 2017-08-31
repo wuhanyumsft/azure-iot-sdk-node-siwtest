@@ -15,7 +15,7 @@ items:
                        parameter to the callback registered via the
                        <xref:azure-iot-device.Client%23onDeviceMethod> method.
   - uid: azure-iot-device.DeviceMethodRequest.constructor
-    name: 'DeviceMethodRequest(requestId, methodName, body)'
+    name: 'DeviceMethodRequest(requestId: string, methodName: string, body?: any)'
     children: []
     langs:
       - typeScript
@@ -35,7 +35,9 @@ items:
             - any
           description: ''
           optional: true
-      content: 'new DeviceMethodRequest(requestId, methodName, body)'
+      content: >-
+        new DeviceMethodRequest(requestId: string, methodName: string, body?:
+        any)
       return:
         type:
           - DeviceMethodRequest

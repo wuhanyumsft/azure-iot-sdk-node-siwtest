@@ -32,4 +32,4 @@ items:
             - any
           description: ''
       content: 'new FileUploadApi(deviceId, hostname, httpTransport)'
-    type: Constructor
+    type: constructor

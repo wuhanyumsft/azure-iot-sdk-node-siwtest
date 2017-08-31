@@ -35,4 +35,4 @@ items:
             - any
           description: ''
       content: 'new DeviceMethodRequest(requestId, methodName, body)'
-    type: Constructor
+    type: constructor

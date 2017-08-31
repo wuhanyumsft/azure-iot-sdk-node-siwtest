@@ -59,6 +59,7 @@ items:
           type:
             - any
           description: The payload of the method response.
+          optional: true
         - id: done
           type:
             - function
@@ -68,6 +69,7 @@ items:
                                            the service. An error object is passed as an
                                            argument to the function in case an error
                                            occurs.
+          optional: true
       content: 'function send(status, payload, done)'
     exceptions:
       - type: ReferenceError

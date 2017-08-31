@@ -68,10 +68,12 @@ items:
           type:
             - string
           description: ''
+          optional: true
         - id: blobUploadClient
           type:
             - BlobUploadClient
           description: ''
+          optional: true
       content: 'new Client(transport, connStr, blobUploadClient)'
       return:
         type:
@@ -92,6 +94,7 @@ items:
             - function
           description: |
             The callback to be invoked when the connection has been closed.
+          optional: true
       content: function close(closeCallback)
     type: method
   - uid: azure-iot-device.Client.complete
@@ -194,6 +197,7 @@ items:
           type:
             - Twin
           description: ''
+          optional: true
       content: 'function getTwin(done, twin)'
     type: method
   - uid: azure-iot-device.Client.onDeviceMethod
@@ -292,6 +296,7 @@ items:
           description: |-
             The callback to be invoked when `sendEvent`
                                                  completes execution.
+          optional: true
       content: 'function sendEvent(message, sendEventCallback)'
     type: method
   - uid: azure-iot-device.Client.sendEventBatch
@@ -318,6 +323,7 @@ items:
           description: |
             The callback to be invoked when
                                                            `sendEventBatch` completes execution.
+          optional: true
       content: 'function sendEventBatch(messages, sendEventBatchCallback)'
     type: method
   - uid: azure-iot-device.Client.setOptions
@@ -338,6 +344,7 @@ items:
             - function
           description: |
             The callback that shall be called when setOptions is finished.
+          optional: true
       content: 'function setOptions(options, done)'
     exceptions:
       - type: ReferenceError
@@ -363,6 +370,7 @@ items:
           description: >
             The callback that shall be invoked with either an error or a result
             object.
+          optional: true
       content: 'function setTransportOptions(options, done)'
     type: method
   - uid: azure-iot-device.Client.updateSharedAccessSignature
@@ -383,6 +391,7 @@ items:
           type:
             - function
           description: ''
+          optional: true
       content: >-
         function updateSharedAccessSignature(sharedAccessSignature,
         updateSasCallback)

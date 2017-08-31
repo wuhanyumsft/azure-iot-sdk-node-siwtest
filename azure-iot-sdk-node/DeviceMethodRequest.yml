@@ -34,6 +34,7 @@ items:
           type:
             - any
           description: ''
+          optional: true
       content: 'new DeviceMethodRequest(requestId, methodName, body)'
       return:
         type:

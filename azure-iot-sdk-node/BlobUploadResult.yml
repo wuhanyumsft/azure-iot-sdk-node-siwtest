@@ -52,15 +52,18 @@ items:
           type:
             - Error
           description: The error object that is passed to the callback.
+          optional: true
         - id: body
           type:
             - any
           description: The body of the HTTP response.
+          optional: true
         - id: response
           type:
             - function
           description: |
             The HTTP response object.
+          optional: true
       content: 'function fromAzureStorageCallbackArgs(err, body, response)'
       return:
         type:

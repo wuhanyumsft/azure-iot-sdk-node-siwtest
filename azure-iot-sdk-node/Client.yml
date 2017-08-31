@@ -296,7 +296,7 @@ items:
           type:
             - Message
           description: |-
-            The [message]{@linkcode module:common/message.Message}
+            The [<code>message</code>](xref:common%2Fmessage.Message)
                                                  to be sent.
         - id: sendEventCallback
           type:
@@ -323,7 +323,7 @@ items:
           type:
             - function
           description: |-
-            Array of [Message]{@linkcode module:common/message.Message}
+            Array of [<code>Message</code>](xref:common%2Fmessage.Message)
                                                            objects to be sent as a batch.
         - id: sendEventBatchCallback
           type:

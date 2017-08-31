@@ -6,7 +6,7 @@ items:
     children:
       - azure-iot-device.FileUploadApi.constructor
     langs:
-      - js
+      - typeScript
     type: Class
     summary: >
       Provides methods to use Azure IoT Hub APIs that enable simple upload to a
@@ -15,7 +15,7 @@ items:
     name: 'FileUploadApi(deviceId, hostname, httpTransport)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: ''
     syntax:
       parameters:

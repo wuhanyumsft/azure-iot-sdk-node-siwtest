@@ -7,7 +7,7 @@ items:
       - azure-iot-device.DeviceMethodResponse.constructor
       - azure-iot-device.DeviceMethodResponse.send
     langs:
-      - js
+      - typeScript
     type: Class
     summary: |-
       `DeviceMethodResponse` provides functionality that allows
@@ -21,7 +21,7 @@ items:
     name: 'DeviceMethodResponse(requestId, transport)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: ''
     syntax:
       parameters:
@@ -39,7 +39,7 @@ items:
     name: 'send(status, payload, done)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: |
       Sends the device method's response back to the service via
                          the underlying transport object using the status parameter

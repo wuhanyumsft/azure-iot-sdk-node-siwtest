@@ -6,7 +6,7 @@ items:
     children:
       - azure-iot-device.BlobSasError.constructor
     langs:
-      - js
+      - typeScript
     type: Class
     summary: >
       Error used when the client fails to get a blob shared access signature
@@ -15,7 +15,7 @@ items:
     name: BlobSasError(message)
     children: []
     langs:
-      - js
+      - typeScript
     summary: ''
     syntax:
       parameters:

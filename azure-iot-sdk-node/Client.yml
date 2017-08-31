@@ -21,7 +21,7 @@ items:
       - azure-iot-device.Client.updateSharedAccessSignature
       - azure-iot-device.Client.uploadToBlob
     langs:
-      - js
+      - typeScript
     type: Class
     summary: |-
       Creates an IoT Hub device client. Normally, consumers will
@@ -32,7 +32,7 @@ items:
     name: 'abandon(message, abandonCallback)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       The `abandon` method directs the transport to settle the message passed as
       argument as 'abandoned'.
@@ -53,7 +53,7 @@ items:
     name: 'Client(transport, connStr, blobUploadClient)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: ''
     syntax:
       parameters:
@@ -75,7 +75,7 @@ items:
     name: close(closeCallback)
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       The `close` method directs the transport to close the current connection
       to the IoT Hub instance
@@ -92,7 +92,7 @@ items:
     name: 'complete(message, completeCallback)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       The `complete` method directs the transport to settle the message passed
       as argument as 'completed'.
@@ -113,7 +113,7 @@ items:
     name: 'fromConnectionString(connStr, transportCtor)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: |
       Creates an IoT Hub device client from the given
                          connection string using the given transport type.
@@ -135,7 +135,7 @@ items:
     name: 'fromSharedAccessSignature(sharedAccessSignature, transportCtor)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: |
       Creates an IoT Hub device client from the given
                          shared access signature using the given transport type.
@@ -157,7 +157,7 @@ items:
     name: 'getTwin(done, twin)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       The `getTwin` method creates a Twin object and establishes a connection
       with the Twin service.
@@ -179,7 +179,7 @@ items:
     name: 'onDeviceMethod(methodName, callback)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: |
       Registers the `callback` to be invoked when a
                          cloud-to-device method call is received by the client
@@ -204,7 +204,7 @@ items:
     name: open(openCallback)
     children: []
     langs:
-      - js
+      - typeScript
     summary: |
       Call the transport layer CONNECT function if the
                          transport layer implements it
@@ -222,7 +222,7 @@ items:
     name: 'reject(message, rejectCallback)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       The `reject` method directs the transport to settle the message passed as
       argument as 'rejected'.
@@ -243,7 +243,7 @@ items:
     name: 'sendEvent(message, sendEventCallback)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       The [<code>sendEvent</code>](xref:Client%23sendEvent) method sends an
       event message
@@ -269,7 +269,7 @@ items:
     name: 'sendEventBatch(messages, sendEventBatchCallback)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       The [<code>sendEventBatch</code>](xref:Client%23sendEventBatch) method
       sends a list
@@ -295,7 +295,7 @@ items:
     name: 'setOptions(options, done)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: |
       The `setOptions` method let the user configure the client.
     syntax:
@@ -315,7 +315,7 @@ items:
     name: 'setTransportOptions(options, done)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       The `setTransportOptions` method configures transport-specific options for
       the client and its underlying transport object.
@@ -337,7 +337,7 @@ items:
     name: 'updateSharedAccessSignature(sharedAccessSignature, updateSasCallback)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       Updates the Shared Access Signature token used by the transport to
       authenticate with the IoT Hub service.
@@ -359,7 +359,7 @@ items:
     name: 'uploadToBlob(blobName, stream, streamLength, done)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: |
       The `uploadToBlob` method uploads a stream to a blob.
     syntax:

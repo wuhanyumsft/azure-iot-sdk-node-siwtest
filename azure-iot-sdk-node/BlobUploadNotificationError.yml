@@ -6,7 +6,7 @@ items:
     children:
       - azure-iot-device.BlobUploadNotificationError.constructor
     langs:
-      - js
+      - typeScript
     type: Class
     summary: >
       Error used when the client fails to notify the IoT Hub service that the
@@ -15,7 +15,7 @@ items:
     name: BlobUploadNotificationError(message)
     children: []
     langs:
-      - js
+      - typeScript
     summary: ''
     syntax:
       parameters:

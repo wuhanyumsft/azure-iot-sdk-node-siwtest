@@ -7,7 +7,7 @@ items:
       - azure-iot-device.BlobUploadResult.constructor
       - azure-iot-device.BlobUploadResult.fromAzureStorageCallbackArgs
     langs:
-      - js
+      - typeScript
     type: Class
     summary: >
       Result object used by the <xref:azure-iot-device.blobUpload.BlobUploader>
@@ -16,7 +16,7 @@ items:
     name: 'BlobUploadResult(isSuccess, statusCode, statusDescription)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: ''
     syntax:
       parameters:
@@ -38,7 +38,7 @@ items:
     name: 'fromAzureStorageCallbackArgs(err, body, response)'
     children: []
     langs:
-      - js
+      - typeScript
     summary: >
       The `fromAzureStorageCallbackArgs` static method creates a new
       BlobUploadResult instance from the arguments passed to the callback of the

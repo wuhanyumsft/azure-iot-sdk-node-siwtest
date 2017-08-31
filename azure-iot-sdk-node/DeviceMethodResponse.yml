@@ -15,7 +15,7 @@ items:
                        response back to the service for a device method call. An
                        instance of this class is passed as the second parameter
                        to the callback registered via the
-                       {@link module:azure-iot-device.Client#onDeviceMethod} method.
+                       <xref:azure-iot-device.Client%23onDeviceMethod> method.
                        method.
   - uid: azure-iot-device.DeviceMethodResponse.constructor
     name: 'DeviceMethodResponse(requestId, transport)'

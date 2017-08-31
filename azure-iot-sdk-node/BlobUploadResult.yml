@@ -10,9 +10,8 @@ items:
       - js
     type: Class
     summary: >
-      Result object used by the {@link
-      module:azure-iot-device.blobUpload.BlobUploader} class to describe a
-      successful upload to a blob.
+      Result object used by the <xref:azure-iot-device.blobUpload.BlobUploader>
+      class to describe a successful upload to a blob.
   - uid: azure-iot-device.BlobUploadResult.constructor
     name: 'BlobUploadResult(isSuccess, statusCode, statusDescription)'
     children: []

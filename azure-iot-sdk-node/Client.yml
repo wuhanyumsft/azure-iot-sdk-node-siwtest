@@ -26,7 +26,7 @@ items:
     summary: |-
       Creates an IoT Hub device client. Normally, consumers will
                        call the factory method,
-                       {@link module:azure-iot-device.Client.fromConnectionString|fromConnectionString},
+                       [fromConnectionString](xref:azure-iot-device.Client.fromConnectionString),
                        to create an IoT Hub device client.
   - uid: azure-iot-device.Client.abandon
     name: 'abandon(message, abandonCallback)'
@@ -244,8 +244,9 @@ items:
     children: []
     langs:
       - js
-    summary: |
-      The [sendEvent]{@linkcode Client#sendEvent} method sends an event message
+    summary: >
+      The [<code>sendEvent</code>](xref:Client%23sendEvent) method sends an
+      event message
                          to the IoT Hub as the device indicated by the connection string passed
                          via the constructor.
     syntax:
@@ -269,8 +270,9 @@ items:
     children: []
     langs:
       - js
-    summary: |
-      The [sendEventBatch]{@linkcode Client#sendEventBatch} method sends a list
+    summary: >
+      The [<code>sendEventBatch</code>](xref:Client%23sendEventBatch) method
+      sends a list
                          of event messages to the IoT Hub as the device indicated by the connection
                          string passed via the constructor.
     syntax:

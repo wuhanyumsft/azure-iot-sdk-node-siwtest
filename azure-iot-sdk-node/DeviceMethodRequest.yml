@@ -13,7 +13,7 @@ items:
                        passed in from the service when a device method call is
                        made. An instance of this class is passed as the second
                        parameter to the callback registered via the
-                       {@link module:azure-iot-device.Client#onDeviceMethod} method.
+                       <xref:azure-iot-device.Client%23onDeviceMethod> method.
   - uid: azure-iot-device.DeviceMethodRequest.constructor
     name: 'DeviceMethodRequest(requestId, methodName, body)'
     children: []

@@ -31,5 +31,5 @@ items:
           type:
             - any
           description: ''
-      content: new undefined
+      content: 'new FileUploadApi(deviceId, hostname, httpTransport)'
     type: Constructor

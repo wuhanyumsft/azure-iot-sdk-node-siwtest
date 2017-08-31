@@ -23,5 +23,5 @@ items:
           type:
             - string
           description: ''
-      content: new undefined
+      content: new BlobSasError(message)
     type: Constructor

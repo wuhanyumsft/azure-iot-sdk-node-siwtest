@@ -69,9 +69,9 @@ items:
                                            argument to the function in case an error
                                            occurs.
       content: 'function send(status, payload, done)'
-      exceptions:
-        - type: ReferenceError
-          description: If the `status` parameter is not a number.
-        - type: Error
-          description: If this response has already been sent to the
+    exceptions:
+      - type: ReferenceError
+        description: If the `status` parameter is not a number.
+      - type: Error
+        description: If this response has already been sent to the
     type: method

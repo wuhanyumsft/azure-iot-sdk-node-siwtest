@@ -69,7 +69,4 @@ items:
                                            argument to the function in case an error
                                            occurs.
       content: 'function send(status, payload, done)'
-      return:
-        type:
-          - void
     type: method

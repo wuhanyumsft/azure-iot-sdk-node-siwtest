@@ -35,4 +35,7 @@ items:
             - any
           description: ''
       content: 'new DeviceMethodRequest(requestId, methodName, body)'
+      return:
+        type:
+          - DeviceMethodRequest
     type: constructor

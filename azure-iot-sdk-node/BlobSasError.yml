@@ -24,4 +24,7 @@ items:
             - string
           description: ''
       content: new BlobSasError(message)
+      return:
+        type:
+          - BlobSasError
     type: constructor

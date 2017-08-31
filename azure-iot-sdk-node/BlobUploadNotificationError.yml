@@ -24,4 +24,7 @@ items:
             - string
           description: ''
       content: new BlobUploadNotificationError(message)
+      return:
+        type:
+          - BlobUploadNotificationError
     type: constructor

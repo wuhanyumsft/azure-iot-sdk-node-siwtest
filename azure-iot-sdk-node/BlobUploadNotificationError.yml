@@ -26,5 +26,5 @@ items:
       content: 'new BlobUploadNotificationError(message: string)'
       return:
         type:
-          - BlobUploadNotificationError
+          - azure-iot-device.BlobUploadNotificationError
     type: constructor

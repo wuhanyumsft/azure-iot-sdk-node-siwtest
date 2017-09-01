@@ -40,5 +40,5 @@ items:
         any)
       return:
         type:
-          - DeviceMethodRequest
+          - azure-iot-device.DeviceMethodRequest
     type: constructor

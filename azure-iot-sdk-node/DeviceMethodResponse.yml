@@ -36,7 +36,7 @@ items:
       content: 'new DeviceMethodResponse(requestId: string, transport: Transport)'
       return:
         type:
-          - DeviceMethodResponse
+          - azure-iot-device.DeviceMethodResponse
     type: constructor
   - uid: azure-iot-device.DeviceMethodResponse.send
     name: 'send(status: number, payload?: any, done?: function)'

@@ -26,5 +26,5 @@ items:
       content: 'new BlobSasError(message: string)'
       return:
         type:
-          - BlobSasError
+          - azure-iot-device.BlobSasError
     type: constructor

@@ -39,7 +39,7 @@ items:
         statusDescription: string)
       return:
         type:
-          - BlobUploadResult
+          - azure-iot-device.BlobUploadResult
     type: constructor
   - uid: azure-iot-device.BlobUploadResult.fromAzureStorageCallbackArgs
     name: 'fromAzureStorageCallbackArgs(err?: Error, body?: any, response?: function)'
@@ -73,7 +73,7 @@ items:
         response?: function)
       return:
         type:
-          - BlobUploadResult
+          - azure-iot-device.BlobUploadResult
     exceptions:
       - type: ReferenceException
         description: If err is null and either body or response are also falsy.

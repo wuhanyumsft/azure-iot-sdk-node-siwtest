@@ -23,7 +23,7 @@ items:
     langs:
       - typeScript
     type: Class
-    summary: |-
+    summary: |
       Creates an IoT Hub device client. Normally, consumers will
                        call the factory method,
                        [fromConnectionString](xref:azure-iot-device.Client.fromConnectionString),
@@ -65,16 +65,23 @@ items:
         - id: transport
           type:
             - Transport
-          description: ''
+          description: |-
+            An object that implements the interface
+                                               expected of a transport object, e.g.,
+                                               [Http](xref:azure-iot-device~Http).
         - id: connStr
           type:
             - string
-          description: ''
+          description: >-
+            A connection string (optional: when not provided,
+            updateSharedAccessSignature must be called to set the
+            SharedAccessSignature token directly).
           optional: true
         - id: blobUploadClient
           type:
             - BlobUploadClient
-          description: ''
+          description: |
+            An object that is capable of uploading a stream to a blob.
           optional: true
       content: >-
         new Client(transport: Transport, connStr?: string, blobUploadClient?:

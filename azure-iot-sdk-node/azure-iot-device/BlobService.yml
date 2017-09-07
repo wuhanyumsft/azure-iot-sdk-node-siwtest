@@ -1,0 +1,11 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.BlobService
+    name: BlobService
+    fullName: BlobService
+    children: []
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device

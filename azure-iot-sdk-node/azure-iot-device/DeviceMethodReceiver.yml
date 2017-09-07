@@ -1,0 +1,11 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.DeviceMethodReceiver
+    name: DeviceMethodReceiver
+    fullName: DeviceMethodReceiver
+    children: []
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device

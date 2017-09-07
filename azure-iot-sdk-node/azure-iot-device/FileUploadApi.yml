@@ -4,13 +4,29 @@ items:
     name: FileUploadApi
     fullName: FileUploadApi
     children:
+      - azure-iot-device.FileUploadApi.deviceId
       - azure-iot-device.FileUploadApi.constructor
+      - azure-iot-device.FileUploadApi.hostname
+      - azure-iot-device.FileUploadApi.http
     langs:
       - typeScript
-    type: Class
-    summary: >
+    type: class
+    summary: >-
       Provides methods to use Azure IoT Hub APIs that enable simple upload to a
       blob.
+    package: azure-iot-device
+  - uid: azure-iot-device.FileUploadApi.deviceId
+    name: deviceId
+    fullName: deviceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iot-device.FileUploadApi.constructor
     name: 'FileUploadApi(deviceId: string, hostname: string, httpTransport?: any)'
     children: []
@@ -35,7 +51,28 @@ items:
       content: >-
         new FileUploadApi(deviceId: string, hostname: string, httpTransport?:
         any)
+    type: constructor
+  - uid: azure-iot-device.FileUploadApi.hostname
+    name: hostname
+    fullName: hostname
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
       return:
         type:
-          - azure-iot-device.FileUploadApi
-    type: constructor
+          - string
+  - uid: azure-iot-device.FileUploadApi.http
+    name: http
+    fullName: http
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - any

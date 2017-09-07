@@ -1,0 +1,142 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.Twin
+    name: Twin
+    fullName: Twin
+    children:
+      - azure-iot-device.Twin.desiredPath
+      - azure-iot-device.Twin.errorEvent
+      - azure-iot-device.Twin.fromDeviceClient
+      - azure-iot-device.Twin.postEvent
+      - azure-iot-device.Twin.properties
+      - azure-iot-device.Twin.responseEvent
+      - azure-iot-device.Twin.subscribedEvent
+      - azure-iot-device.Twin.timeout
+      - azure-iot-device.Twin.constructor
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-iot-device
+  - uid: azure-iot-device.Twin.desiredPath
+    name: desiredPath
+    fullName: desiredPath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.Twin.errorEvent
+    name: errorEvent
+    fullName: errorEvent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.Twin.fromDeviceClient
+    name: 'fromDeviceClient(client: Client, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: Get a Twin object for the given client connection
+    syntax:
+      parameters:
+        - id: client
+          type:
+            - azure-iot-device.Client
+          description: >
+            The [client](xref:azure-iot-device.Client) object that this Twin
+            object is associated with.
+        - id: done
+          type:
+            - function
+          description: |
+            the callback to be invoked when this function completes.
+      content: 'function fromDeviceClient(client: Client, done: function)'
+    exceptions:
+      - type: ReferenceError
+        description: One of the required parameters is falsy
+    type: method
+  - uid: azure-iot-device.Twin.postEvent
+    name: postEvent
+    fullName: postEvent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.Twin.properties
+    name: properties
+    fullName: properties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - any
+  - uid: azure-iot-device.Twin.responseEvent
+    name: responseEvent
+    fullName: responseEvent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.Twin.subscribedEvent
+    name: subscribedEvent
+    fullName: subscribedEvent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.Twin.timeout
+    name: timeout
+    fullName: timeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iot-device.Twin.constructor
+    name: 'Twin(client: Client)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: client
+          type:
+            - azure-iot-device.Client
+          description: ''
+      content: 'new Twin(client: Client)'
+    type: constructor

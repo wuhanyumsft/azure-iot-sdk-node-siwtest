@@ -1,0 +1,42 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "azure-iot-sdk-node",
+        "dest": "api",
+        "exclude": [
+          "**/*..yml"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg"
+        ],
+        "src": "docs-ref-conceptual",
+        "dest": "azure",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {},
+    "fileMetadata": {
+      "ms.topic": {
+        "azure-iot-sdk-node/**": "reference"
+      }
+    },
+    "template": [],
+    "dest": "_site"
+  }
+}

@@ -1,0 +1,11 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.StorageApi
+    name: StorageApi
+    fullName: StorageApi
+    children: []
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device

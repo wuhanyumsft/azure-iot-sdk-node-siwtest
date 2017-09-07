@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.ClientConfig
+    name: ClientConfig
+    fullName: ClientConfig
+    children:
+      - azure-iot-device.ClientConfig.deviceId
+      - azure-iot-device.ClientConfig.host
+      - azure-iot-device.ClientConfig.hubName
+      - azure-iot-device.ClientConfig.sharedAccessSignature
+      - azure-iot-device.ClientConfig.symmetricKey
+      - azure-iot-device.ClientConfig.x509
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device
+  - uid: azure-iot-device.ClientConfig.deviceId
+    name: deviceId
+    fullName: deviceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.ClientConfig.host
+    name: host
+    fullName: host
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.ClientConfig.hubName
+    name: hubName
+    fullName: hubName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.ClientConfig.sharedAccessSignature
+    name: sharedAccessSignature
+    fullName: sharedAccessSignature
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.ClientConfig.symmetricKey
+    name: symmetricKey
+    fullName: symmetricKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.ClientConfig.x509
+    name: x509
+    fullName: x509
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - X509

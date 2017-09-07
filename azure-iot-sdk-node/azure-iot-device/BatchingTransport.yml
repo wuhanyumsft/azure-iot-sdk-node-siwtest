@@ -1,0 +1,11 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.BatchingTransport
+    name: BatchingTransport
+    fullName: BatchingTransport
+    children: []
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device

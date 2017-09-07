@@ -1,0 +1,11 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.FileUpload
+    name: FileUpload
+    fullName: FileUpload
+    children: []
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device

@@ -5,10 +5,14 @@ items:
     fullName: DeviceMethodResponse
     children:
       - azure-iot-device.DeviceMethodResponse.constructor
+      - azure-iot-device.DeviceMethodResponse.isResponseComplete
+      - azure-iot-device.DeviceMethodResponse.payload
+      - azure-iot-device.DeviceMethodResponse.requestId
       - azure-iot-device.DeviceMethodResponse.send
+      - azure-iot-device.DeviceMethodResponse.status
     langs:
       - typeScript
-    type: Class
+    type: class
     summary: |-
       `DeviceMethodResponse` provides functionality that allows
                        a device method implementation to construct and send a
@@ -17,6 +21,7 @@ items:
                        to the callback registered via the
                        <xref:azure-iot-device.Client%23onDeviceMethod> method.
                        method.
+    package: azure-iot-device
   - uid: azure-iot-device.DeviceMethodResponse.constructor
     name: 'DeviceMethodResponse(requestId: string, transport: Transport)'
     children: []
@@ -31,19 +36,52 @@ items:
           description: ''
         - id: transport
           type:
-            - Transport
+            - azure-iot-device.Client.Transport
           description: ''
       content: 'new DeviceMethodResponse(requestId: string, transport: Transport)'
+    type: constructor
+  - uid: azure-iot-device.DeviceMethodResponse.isResponseComplete
+    name: isResponseComplete
+    fullName: isResponseComplete
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
       return:
         type:
-          - azure-iot-device.DeviceMethodResponse
-    type: constructor
+          - boolean
+  - uid: azure-iot-device.DeviceMethodResponse.payload
+    name: payload
+    fullName: payload
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - any
+  - uid: azure-iot-device.DeviceMethodResponse.requestId
+    name: requestId
+    fullName: requestId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iot-device.DeviceMethodResponse.send
     name: 'send(status: number, payload?: any, done?: function)'
     children: []
     langs:
       - typeScript
-    summary: |
+    summary: |-
       Sends the device method's response back to the service via
                          the underlying transport object using the status parameter
                          as the status of the method call.
@@ -77,3 +115,15 @@ items:
       - type: Error
         description: If this response has already been sent to the
     type: method
+  - uid: azure-iot-device.DeviceMethodResponse.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number

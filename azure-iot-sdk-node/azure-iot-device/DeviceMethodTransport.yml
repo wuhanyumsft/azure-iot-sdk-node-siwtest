@@ -1,0 +1,11 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.DeviceMethodTransport
+    name: DeviceMethodTransport
+    fullName: DeviceMethodTransport
+    children: []
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device

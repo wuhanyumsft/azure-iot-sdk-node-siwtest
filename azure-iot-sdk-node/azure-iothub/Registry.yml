@@ -88,9 +88,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: DeviceRegistryOperationError
-                typeId: 693
-                isArray: true
+              - azure-iothub.Registry.DeviceRegistryOperationError
       - uid: azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
         name: isSuccessful
         fullName: isSuccessful
@@ -102,7 +100,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: boolean
+              - boolean
     langs:
       - typeScript
     type: interface
@@ -233,7 +231,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface
@@ -254,7 +252,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorCode
         name: errorCode
         fullName: errorCode
@@ -266,7 +264,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: Error
+              - Error
       - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorStatus
         name: errorStatus
         fullName: errorStatus
@@ -278,7 +276,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface
@@ -547,7 +545,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface
@@ -587,7 +585,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: number
+              - number
       - uid: azure-iothub.Registry.RegistryStatistics.enabledDeviceCount
         name: enabledDeviceCount
         fullName: enabledDeviceCount
@@ -599,7 +597,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: number
+              - number
       - uid: azure-iothub.Registry.RegistryStatistics.totalDeviceCount
         name: totalDeviceCount
         fullName: totalDeviceCount
@@ -611,7 +609,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: number
+              - number
     langs:
       - typeScript
     type: interface
@@ -670,7 +668,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iothub.Registry.TransportConfig.sharedAccessSignature
         name: sharedAccessSignature
         fullName: sharedAccessSignature
@@ -682,7 +680,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface

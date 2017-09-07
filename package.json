@@ -1,0 +1,27 @@
+{
+  "name": "azure-iot-sdk-node-siwtest",
+  "version": "1.0.0",
+  "description": "This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).\r For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^4.0.1",
+    "glob": "^7.1.2",
+    "js-yaml": "^3.9.1",
+    "path": "^0.12.7",
+    "type2docfx": "^0.9.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuhanyumsft/azure-iot-sdk-node-siwtest.git"
+  },
+  "author": "Simon Wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuhanyumsft/azure-iot-sdk-node-siwtest/issues"
+  },
+  "homepage": "https://github.com/wuhanyumsft/azure-iot-sdk-node-siwtest#readme"
+}

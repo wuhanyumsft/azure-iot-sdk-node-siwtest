@@ -291,7 +291,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: number
+              - number
     langs:
       - typeScript
     type: interface
@@ -312,7 +312,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iothub.Client.TransportConfigOptions.hubName
         name: hubName
         fullName: hubName
@@ -324,7 +324,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iothub.Client.TransportConfigOptions.keyName
         name: keyName
         fullName: keyName
@@ -336,7 +336,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iothub.Client.TransportConfigOptions.sharedAccessSignature
         name: sharedAccessSignature
         fullName: sharedAccessSignature
@@ -348,7 +348,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface

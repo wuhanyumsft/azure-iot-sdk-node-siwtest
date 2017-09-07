@@ -129,7 +129,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iothub.RestApiClient.TransportConfig.sharedAccessSignature
         name: sharedAccessSignature
         fullName: sharedAccessSignature
@@ -141,7 +141,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface

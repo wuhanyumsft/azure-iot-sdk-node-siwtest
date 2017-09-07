@@ -11,4 +11,4 @@ items:
     syntax:
       return:
         type:
-          - typeName: string
+          - string

@@ -156,7 +156,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface
@@ -189,7 +189,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iot-device.Client.DeviceMethodRequest.payload
         name: payload
         fullName: payload
@@ -201,7 +201,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: Buffer
+              - Buffer
       - uid: azure-iot-device.Client.DeviceMethodRequest.requestId
         name: requestId
         fullName: requestId
@@ -213,7 +213,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface
@@ -234,7 +234,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: boolean
+              - boolean
       - uid: azure-iot-device.Client.DeviceMethodResponse.payload
         name: payload
         fullName: payload
@@ -246,7 +246,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: any
+              - any
       - uid: azure-iot-device.Client.DeviceMethodResponse.requestId
         name: requestId
         fullName: requestId
@@ -258,7 +258,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iot-device.Client.DeviceMethodResponse.status
         name: status
         fullName: status
@@ -270,7 +270,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: number
+              - number
     langs:
       - typeScript
     type: interface
@@ -560,7 +560,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: number
+              - number
     langs:
       - typeScript
     type: interface

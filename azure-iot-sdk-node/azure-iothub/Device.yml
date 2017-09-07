@@ -41,8 +41,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: _SymmetricKey
-                typeId: 548
+              - azure-iothub.Device._SymmetricKey
       - uid: azure-iothub.Device.Authentication.symmetricKey
         name: symmetricKey
         fullName: symmetricKey
@@ -54,8 +53,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: _SymmetricKey
-                typeId: 548
+              - azure-iothub.Device._SymmetricKey
       - uid: azure-iothub.Device.Authentication.x509Thumbprint
         name: x509Thumbprint
         fullName: x509Thumbprint
@@ -67,8 +65,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: X509Thumbprints
-                typeId: 555
+              - azure-iothub.Device.X509Thumbprints
     langs:
       - typeScript
     type: interface
@@ -236,7 +233,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iothub.Device.X509Thumbprints.secondaryThumbprint
         name: secondaryThumbprint
         fullName: secondaryThumbprint
@@ -248,7 +245,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface
@@ -269,7 +266,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
       - uid: azure-iothub.Device._SymmetricKey.secondaryKey
         name: secondaryKey
         fullName: secondaryKey
@@ -281,7 +278,7 @@ items:
         syntax:
           return:
             type:
-              - typeName: string
+              - string
     langs:
       - typeScript
     type: interface

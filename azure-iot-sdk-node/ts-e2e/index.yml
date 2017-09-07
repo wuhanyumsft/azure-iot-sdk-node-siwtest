@@ -1,0 +1,13 @@
+### YamlMime:UniversalReference
+items:
+  - uid: ts-e2e
+    name: ts-e2e
+    summary: ''
+    children:
+      - ts-e2e.TestDevice
+    type: package
+    langs:
+      - typeScript
+references:
+  - uid: ts-e2e.TestDevice
+    name: TestDevice

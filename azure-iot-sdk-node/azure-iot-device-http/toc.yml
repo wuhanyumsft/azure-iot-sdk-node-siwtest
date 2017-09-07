@@ -1,0 +1,6 @@
+- uid: azure-iot-device-http.Http
+  name: Http
+- uid: azure-iot-device-http.HttpReceiverOptions
+  name: HttpReceiverOptions
+- uid: azure-iot-device-http.HttpTransportError
+  name: HttpTransportError

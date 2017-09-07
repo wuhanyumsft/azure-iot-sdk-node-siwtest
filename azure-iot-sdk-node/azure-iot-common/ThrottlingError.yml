@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-common.ThrottlingError
+    name: ThrottlingError
+    fullName: ThrottlingError
+    children:
+      - azure-iot-common.ThrottlingError.Error
+      - azure-iot-common.ThrottlingError.message
+      - azure-iot-common.ThrottlingError.name
+      - azure-iot-common.ThrottlingError.stack
+      - azure-iot-common.ThrottlingError.constructor
+    langs:
+      - typeScript
+    type: class
+    summary: Error thrown when IoT Hub is throttled due to excessive activity.
+    package: azure-iot-common
+  - uid: azure-iot-common.ThrottlingError.Error
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - ErrorConstructor
+  - uid: azure-iot-common.ThrottlingError.message
+    name: message
+    fullName: message
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.ThrottlingError.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.ThrottlingError.stack
+    name: stack
+    fullName: stack
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.ThrottlingError.constructor
+    name: 'ThrottlingError(message?: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - string
+          description: ''
+          optional: true
+      content: 'new ThrottlingError(message?: string)'
+    type: constructor

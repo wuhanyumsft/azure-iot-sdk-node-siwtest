@@ -3,9 +3,22 @@ items:
   - uid: azure-iot-device.StableConnectionTransport
     name: StableConnectionTransport
     fullName: StableConnectionTransport
-    children: []
+    children:
+      - azure-iot-device.StableConnectionTransport.defaultMaxListeners
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iot-device
+  - uid: azure-iot-device.StableConnectionTransport.defaultMaxListeners
+    name: defaultMaxListeners
+    fullName: defaultMaxListeners
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number

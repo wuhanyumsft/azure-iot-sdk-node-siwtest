@@ -6,3 +6,4 @@ _themes*/
 src/
 
 .openpublishing.buildcore.ps1
+package-lock.json

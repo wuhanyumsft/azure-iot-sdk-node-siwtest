@@ -1,0 +1,221 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device-http.Http
+    name: Http
+    fullName: Http
+    children:
+      - azure-iot-device-http.Http.abandon
+      - azure-iot-device-http.Http.complete
+      - azure-iot-device-http.Http.defaultMaxListeners
+      - azure-iot-device-http.Http.getReceiver
+      - azure-iot-device-http.Http.constructor
+      - azure-iot-device-http.Http.reject
+      - azure-iot-device-http.Http.sendEvent
+      - azure-iot-device-http.Http.sendEventBatch
+      - azure-iot-device-http.Http.setOptions
+      - azure-iot-device-http.Http.updateSharedAccessSignature
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+      Provide HTTP transport to the device
+      [client](xref:azure-iot-device.Client).
+    package: azure-iot-device-http
+  - uid: azure-iot-device-http.Http.abandon
+    name: 'abandon(message: Message, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Settles the message as abandoned and calls the done callback with the
+      result.
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - Message
+          description: The message to settle as abandoned.
+        - id: done
+          type:
+            - function
+          description: |
+            The callback that shall be called with the error or result object.
+      content: 'function abandon(message: Message, done: function)'
+    type: method
+  - uid: azure-iot-device-http.Http.complete
+    name: 'complete(message: Message, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Settles the message as complete and calls the done callback with the
+      result.
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - Message
+          description: The message to settle as complete.
+        - id: done
+          type:
+            - function
+          description: |
+            The callback that shall be called with the error or result object.
+      content: 'function complete(message: Message, done: function)'
+    type: method
+  - uid: azure-iot-device-http.Http.defaultMaxListeners
+    name: defaultMaxListeners
+    fullName: defaultMaxListeners
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iot-device-http.Http.getReceiver
+    name: 'getReceiver(done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      This methods gets the unique instance of the receiver that is used to
+      asynchronously retrieve messages from the IoT Hub service.
+    syntax:
+      parameters:
+        - id: done
+          type:
+            - function
+          description: >
+            The callback to be invoked when `getReceiver` completes execution,
+            passing the receiver object as an argument.
+      content: 'function getReceiver(done: function)'
+    type: method
+  - uid: azure-iot-device-http.Http.constructor
+    name: 'Http(config: ClientConfig)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: config
+          type:
+            - ClientConfig
+          description: ''
+      content: 'new Http(config: ClientConfig)'
+    type: constructor
+  - uid: azure-iot-device-http.Http.reject
+    name: 'reject(message: Message, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Settles the message as rejected and calls the done callback with the
+      result.
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - Message
+          description: The message to settle as rejected.
+        - id: done
+          type:
+            - function
+          description: |
+            The callback that shall be called with the error or result object.
+      content: 'function reject(message: Message, done: function)'
+    type: method
+  - uid: azure-iot-device-http.Http.sendEvent
+    name: 'sendEvent(message: Message, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: |-
+      This method sends an event to the IoT Hub as the device indicated in the
+                       `config` parameter.
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - Message
+          description: |-
+            The [<code>message</code>](xref:common%2Fmessage.Message)
+                                         to be sent.
+        - id: done
+          type:
+            - function
+          description: |
+            The callback to be invoked when `sendEvent`
+                                         completes execution.
+      content: 'function sendEvent(message: Message, done: function)'
+    type: method
+  - uid: azure-iot-device-http.Http.sendEventBatch
+    name: 'sendEventBatch(messages: Message[], done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: |-
+      The `sendEventBatch` method sends a list of event messages to the IoT Hub
+                       as the device indicated in the `config` parameter.
+    syntax:
+      parameters:
+        - id: messages
+          type:
+            - Message
+          description: |-
+            Array of [<code>Message</code>](xref:common%2Fmessage.Message)
+                                               objects to be sent as a batch.
+        - id: done
+          type:
+            - function
+          description: |
+            The callback to be invoked when
+                                             `sendEventBatch` completes execution.
+      content: 'function sendEventBatch(messages: Message[], done: function)'
+    type: method
+  - uid: azure-iot-device-http.Http.setOptions
+    name: 'setOptions(options: any, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: This methods sets the HTTP specific options of the transport.
+    syntax:
+      parameters:
+        - id: options
+          type:
+            - any
+          description: ''
+        - id: done
+          type:
+            - function
+          description: |
+            The callback to be invoked when `setOptions` completes.
+      content: 'function setOptions(options: any, done: function)'
+    type: method
+  - uid: azure-iot-device-http.Http.updateSharedAccessSignature
+    name: 'updateSharedAccessSignature(sharedAccessSignature: string, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      This methods sets the SAS token used to authenticate with the IoT Hub
+      service.
+    syntax:
+      parameters:
+        - id: sharedAccessSignature
+          type:
+            - string
+          description: The new SAS token.
+        - id: done
+          type:
+            - function
+          description: >
+            The callback to be invoked when `updateSharedAccessSignature`
+            completes.
+      content: >-
+        function updateSharedAccessSignature(sharedAccessSignature: string,
+        done: function)
+    type: method

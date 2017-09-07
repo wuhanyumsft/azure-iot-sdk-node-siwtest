@@ -1,0 +1,14 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-common.ConnectionString.HostName
+    name: HostName
+    fullName: HostName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - typeName: string

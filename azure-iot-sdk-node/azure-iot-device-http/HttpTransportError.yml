@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device-http.HttpTransportError
+    name: HttpTransportError
+    fullName: HttpTransportError
+    children:
+      - azure-iot-device-http.HttpTransportError.Error
+      - azure-iot-device-http.HttpTransportError.message
+      - azure-iot-device-http.HttpTransportError.name
+      - azure-iot-device-http.HttpTransportError.response
+      - azure-iot-device-http.HttpTransportError.responseBody
+      - azure-iot-device-http.HttpTransportError.stack
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-iot-device-http
+  - uid: azure-iot-device-http.HttpTransportError.Error
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - ErrorConstructor
+  - uid: azure-iot-device-http.HttpTransportError.message
+    name: message
+    fullName: message
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device-http.HttpTransportError.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device-http.HttpTransportError.response
+    name: response
+    fullName: response
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - IncomingMessage
+  - uid: azure-iot-device-http.HttpTransportError.responseBody
+    name: responseBody
+    fullName: responseBody
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - any
+  - uid: azure-iot-device-http.HttpTransportError.stack
+    name: stack
+    fullName: stack
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

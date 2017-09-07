@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-common.JobNotFoundError
+    name: JobNotFoundError
+    fullName: JobNotFoundError
+    children:
+      - azure-iot-common.JobNotFoundError.Error
+      - azure-iot-common.JobNotFoundError.constructor
+      - azure-iot-common.JobNotFoundError.message
+      - azure-iot-common.JobNotFoundError.name
+      - azure-iot-common.JobNotFoundError.stack
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-iot-common
+  - uid: azure-iot-common.JobNotFoundError.Error
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - ErrorConstructor
+  - uid: azure-iot-common.JobNotFoundError.constructor
+    name: 'JobNotFoundError(message?: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - string
+          description: ''
+          optional: true
+      content: 'new JobNotFoundError(message?: string)'
+    type: constructor
+  - uid: azure-iot-common.JobNotFoundError.message
+    name: message
+    fullName: message
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.JobNotFoundError.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.JobNotFoundError.stack
+    name: stack
+    fullName: stack
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

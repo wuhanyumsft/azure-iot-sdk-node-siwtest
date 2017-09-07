@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - summary: ''
+    children:
+      - azure-iot-device-mqtt.constructor
+      - azure-iot-device-mqtt.MethodDescription
+      - azure-iot-device-mqtt.MethodMessage
+      - azure-iot-device-mqtt.Mqtt
+      - azure-iot-device-mqtt.MqttBase
+      - azure-iot-device-mqtt.MqttTransportError
+      - azure-iot-device-mqtt.MqttTwinReceiver
+      - azure-iot-device-mqtt.MqttWs
+      - azure-iot-device-mqtt.TopicDescription
+    type: package
+    langs:
+      - typeScript
+references:
+  - uid: azure-iot-device-mqtt.constructor
+    name: 'azure-iot-device-mqtt(mqttClient: MqttClient, topicMessage: string)'
+  - uid: azure-iot-device-mqtt.MethodDescription
+    name: MethodDescription
+  - uid: azure-iot-device-mqtt.MethodMessage
+    name: MethodMessage
+  - uid: azure-iot-device-mqtt.Mqtt
+    name: Mqtt
+  - uid: azure-iot-device-mqtt.MqttBase
+    name: MqttBase
+  - uid: azure-iot-device-mqtt.MqttTransportError
+    name: MqttTransportError
+  - uid: azure-iot-device-mqtt.MqttTwinReceiver
+    name: MqttTwinReceiver
+  - uid: azure-iot-device-mqtt.MqttWs
+    name: MqttWs
+  - uid: azure-iot-device-mqtt.TopicDescription
+    name: TopicDescription

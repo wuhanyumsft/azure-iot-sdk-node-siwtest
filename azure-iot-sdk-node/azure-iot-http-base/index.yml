@@ -1,0 +1,13 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-http-base
+    name: azure-iot-http-base
+    summary: ''
+    children:
+      - azure-iot-http-base.Http
+    type: package
+    langs:
+      - typeScript
+references:
+  - uid: azure-iot-http-base.Http
+    name: Http

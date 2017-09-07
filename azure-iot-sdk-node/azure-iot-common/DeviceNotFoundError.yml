@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-common.DeviceNotFoundError
+    name: DeviceNotFoundError
+    fullName: DeviceNotFoundError
+    children:
+      - azure-iot-common.DeviceNotFoundError.constructor
+      - azure-iot-common.DeviceNotFoundError.Error
+      - azure-iot-common.DeviceNotFoundError.message
+      - azure-iot-common.DeviceNotFoundError.name
+      - azure-iot-common.DeviceNotFoundError.stack
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+      Error thrown when a device cannot be found in the IoT Hub instance
+      registry.
+    package: azure-iot-common
+  - uid: azure-iot-common.DeviceNotFoundError.constructor
+    name: 'DeviceNotFoundError(message?: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - string
+          description: ''
+          optional: true
+      content: 'new DeviceNotFoundError(message?: string)'
+    type: constructor
+  - uid: azure-iot-common.DeviceNotFoundError.Error
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - ErrorConstructor
+  - uid: azure-iot-common.DeviceNotFoundError.message
+    name: message
+    fullName: message
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.DeviceNotFoundError.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.DeviceNotFoundError.stack
+    name: stack
+    fullName: stack
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

@@ -1,0 +1,289 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iothub.Device
+    name: Device
+    fullName: Device
+    children:
+      - azure-iothub.Device.Authentication
+      - azure-iothub.Device.authentication
+      - azure-iothub.Device.cloudToDeviceMessageCount
+      - azure-iothub.Device.connectionState
+      - azure-iothub.Device.connectionStateUpdatedTime
+      - azure-iothub.Device.constructor
+      - azure-iothub.Device.deviceId
+      - azure-iothub.Device.etag
+      - azure-iothub.Device.generationId
+      - azure-iothub.Device.lastActivityTime
+      - azure-iothub.Device.status
+      - azure-iothub.Device.statusReason
+      - azure-iothub.Device.statusUpdatedTime
+      - azure-iothub.Device.X509Thumbprints
+      - azure-iothub.Device._SymmetricKey
+    langs:
+      - typeScript
+    type: class
+    summary: |-
+      Creates a representation of a device for use in the
+                       identity <xref:azure-iothub.Registry> APIs.
+    package: azure-iothub
+  - uid: azure-iothub.Device.Authentication
+    name: Authentication
+    fullName: Authentication
+    children:
+      - uid: azure-iothub.Device.Authentication.SymmetricKey
+        name: SymmetricKey
+        fullName: SymmetricKey
+        children: []
+        langs:
+          - typeScript
+        type: property
+        summary: ''
+        syntax:
+          return:
+            type:
+              - typeName: _SymmetricKey
+                typeId: 548
+      - uid: azure-iothub.Device.Authentication.symmetricKey
+        name: symmetricKey
+        fullName: symmetricKey
+        children: []
+        langs:
+          - typeScript
+        type: property
+        summary: ''
+        syntax:
+          return:
+            type:
+              - typeName: _SymmetricKey
+                typeId: 548
+      - uid: azure-iothub.Device.Authentication.x509Thumbprint
+        name: x509Thumbprint
+        fullName: x509Thumbprint
+        children: []
+        langs:
+          - typeScript
+        type: property
+        summary: ''
+        syntax:
+          return:
+            type:
+              - typeName: X509Thumbprints
+                typeId: 555
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iothub
+  - uid: azure-iothub.Device.authentication
+    name: authentication
+    fullName: authentication
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.Device.Authentication
+  - uid: azure-iothub.Device.cloudToDeviceMessageCount
+    name: cloudToDeviceMessageCount
+    fullName: cloudToDeviceMessageCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.connectionState
+    name: connectionState
+    fullName: connectionState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Device.ConnectionState
+  - uid: azure-iothub.Device.connectionStateUpdatedTime
+    name: connectionStateUpdatedTime
+    fullName: connectionStateUpdatedTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.constructor
+    name: 'Device(jsonData?: any)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: jsonData
+          type:
+            - any
+          description: ''
+          optional: true
+      content: 'new Device(jsonData?: any)'
+    type: constructor
+  - uid: azure-iothub.Device.deviceId
+    name: deviceId
+    fullName: deviceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.generationId
+    name: generationId
+    fullName: generationId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.lastActivityTime
+    name: lastActivityTime
+    fullName: lastActivityTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Device.DeviceStatus
+  - uid: azure-iothub.Device.statusReason
+    name: statusReason
+    fullName: statusReason
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.statusUpdatedTime
+    name: statusUpdatedTime
+    fullName: statusUpdatedTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.X509Thumbprints
+    name: X509Thumbprints
+    fullName: X509Thumbprints
+    children:
+      - uid: azure-iothub.Device.X509Thumbprints.primaryThumbprint
+        name: primaryThumbprint
+        fullName: primaryThumbprint
+        children: []
+        langs:
+          - typeScript
+        type: property
+        summary: ''
+        syntax:
+          return:
+            type:
+              - typeName: string
+      - uid: azure-iothub.Device.X509Thumbprints.secondaryThumbprint
+        name: secondaryThumbprint
+        fullName: secondaryThumbprint
+        children: []
+        langs:
+          - typeScript
+        type: property
+        summary: ''
+        syntax:
+          return:
+            type:
+              - typeName: string
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iothub
+  - uid: azure-iothub.Device._SymmetricKey
+    name: _SymmetricKey
+    fullName: _SymmetricKey
+    children:
+      - uid: azure-iothub.Device._SymmetricKey.primaryKey
+        name: primaryKey
+        fullName: primaryKey
+        children: []
+        langs:
+          - typeScript
+        type: property
+        summary: ''
+        syntax:
+          return:
+            type:
+              - typeName: string
+      - uid: azure-iothub.Device._SymmetricKey.secondaryKey
+        name: secondaryKey
+        fullName: secondaryKey
+        children: []
+        langs:
+          - typeScript
+        type: property
+        summary: ''
+        syntax:
+          return:
+            type:
+              - typeName: string
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iothub

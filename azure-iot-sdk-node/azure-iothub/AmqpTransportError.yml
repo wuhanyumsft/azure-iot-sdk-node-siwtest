@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iothub.AmqpTransportError
+    name: AmqpTransportError
+    fullName: AmqpTransportError
+    children:
+      - azure-iothub.AmqpTransportError.amqpError
+      - azure-iothub.AmqpTransportError.Error
+      - azure-iothub.AmqpTransportError.message
+      - azure-iothub.AmqpTransportError.name
+      - azure-iothub.AmqpTransportError.stack
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iothub
+  - uid: azure-iothub.AmqpTransportError.amqpError
+    name: amqpError
+    fullName: amqpError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Error
+  - uid: azure-iothub.AmqpTransportError.Error
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - ErrorConstructor
+  - uid: azure-iothub.AmqpTransportError.message
+    name: message
+    fullName: message
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.AmqpTransportError.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.AmqpTransportError.stack
+    name: stack
+    fullName: stack
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

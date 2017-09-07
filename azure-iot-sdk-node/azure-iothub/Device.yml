@@ -30,47 +30,50 @@ items:
     name: Authentication
     fullName: Authentication
     children:
-      - uid: azure-iothub.Device.Authentication.SymmetricKey
-        name: SymmetricKey
-        fullName: SymmetricKey
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - azure-iothub.Device._SymmetricKey
-      - uid: azure-iothub.Device.Authentication.symmetricKey
-        name: symmetricKey
-        fullName: symmetricKey
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - azure-iothub.Device._SymmetricKey
-      - uid: azure-iothub.Device.Authentication.x509Thumbprint
-        name: x509Thumbprint
-        fullName: x509Thumbprint
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - azure-iothub.Device.X509Thumbprints
+      - azure-iothub.Device.Authentication.SymmetricKey
+      - azure-iothub.Device.Authentication.symmetricKey
+      - azure-iothub.Device.Authentication.x509Thumbprint
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Device.Authentication.SymmetricKey
+    name: SymmetricKey
+    fullName: SymmetricKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.Device._SymmetricKey
+  - uid: azure-iothub.Device.Authentication.symmetricKey
+    name: symmetricKey
+    fullName: symmetricKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.Device._SymmetricKey
+  - uid: azure-iothub.Device.Authentication.x509Thumbprint
+    name: x509Thumbprint
+    fullName: x509Thumbprint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.Device.X509Thumbprints
   - uid: azure-iothub.Device.authentication
     name: authentication
     fullName: authentication
@@ -222,65 +225,69 @@ items:
     name: X509Thumbprints
     fullName: X509Thumbprints
     children:
-      - uid: azure-iothub.Device.X509Thumbprints.primaryThumbprint
-        name: primaryThumbprint
-        fullName: primaryThumbprint
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iothub.Device.X509Thumbprints.secondaryThumbprint
-        name: secondaryThumbprint
-        fullName: secondaryThumbprint
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iothub.Device.X509Thumbprints.primaryThumbprint
+      - azure-iothub.Device.X509Thumbprints.secondaryThumbprint
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Device.X509Thumbprints.primaryThumbprint
+    name: primaryThumbprint
+    fullName: primaryThumbprint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.X509Thumbprints.secondaryThumbprint
+    name: secondaryThumbprint
+    fullName: secondaryThumbprint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iothub.Device._SymmetricKey
     name: _SymmetricKey
     fullName: _SymmetricKey
     children:
-      - uid: azure-iothub.Device._SymmetricKey.primaryKey
-        name: primaryKey
-        fullName: primaryKey
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iothub.Device._SymmetricKey.secondaryKey
-        name: secondaryKey
-        fullName: secondaryKey
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iothub.Device._SymmetricKey.primaryKey
+      - azure-iothub.Device._SymmetricKey.secondaryKey
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Device._SymmetricKey.primaryKey
+    name: primaryKey
+    fullName: primaryKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device._SymmetricKey.secondaryKey
+    name: secondaryKey
+    fullName: secondaryKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

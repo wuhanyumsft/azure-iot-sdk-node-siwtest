@@ -280,77 +280,82 @@ items:
     name: Transport
     fullName: Transport
     children:
-      - uid: azure-iothub.Client.Transport.defaultMaxListeners
-        name: defaultMaxListeners
-        fullName: defaultMaxListeners
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - number
+      - azure-iothub.Client.Transport.defaultMaxListeners
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Client.Transport.defaultMaxListeners
+    name: defaultMaxListeners
+    fullName: defaultMaxListeners
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
   - uid: azure-iothub.Client.TransportConfigOptions
     name: TransportConfigOptions
     fullName: TransportConfigOptions
     children:
-      - uid: azure-iothub.Client.TransportConfigOptions.host
-        name: host
-        fullName: host
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iothub.Client.TransportConfigOptions.hubName
-        name: hubName
-        fullName: hubName
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iothub.Client.TransportConfigOptions.keyName
-        name: keyName
-        fullName: keyName
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iothub.Client.TransportConfigOptions.sharedAccessSignature
-        name: sharedAccessSignature
-        fullName: sharedAccessSignature
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iothub.Client.TransportConfigOptions.host
+      - azure-iothub.Client.TransportConfigOptions.hubName
+      - azure-iothub.Client.TransportConfigOptions.keyName
+      - azure-iothub.Client.TransportConfigOptions.sharedAccessSignature
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Client.TransportConfigOptions.host
+    name: host
+    fullName: host
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Client.TransportConfigOptions.hubName
+    name: hubName
+    fullName: hubName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Client.TransportConfigOptions.keyName
+    name: keyName
+    fullName: keyName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Client.TransportConfigOptions.sharedAccessSignature
+    name: sharedAccessSignature
+    fullName: sharedAccessSignature
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

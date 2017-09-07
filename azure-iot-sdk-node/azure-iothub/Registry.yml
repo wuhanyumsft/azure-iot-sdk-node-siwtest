@@ -77,35 +77,37 @@ items:
     name: BulkRegistryOperationResult
     fullName: BulkRegistryOperationResult
     children:
-      - uid: azure-iothub.Registry.BulkRegistryOperationResult.errors
-        name: errors
-        fullName: errors
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - azure-iothub.Registry.DeviceRegistryOperationError
-      - uid: azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
-        name: isSuccessful
-        fullName: isSuccessful
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - boolean
+      - azure-iothub.Registry.BulkRegistryOperationResult.errors
+      - azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Registry.BulkRegistryOperationResult.errors
+    name: errors
+    fullName: errors
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.Registry.DeviceRegistryOperationError
+  - uid: azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
+    name: isSuccessful
+    fullName: isSuccessful
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - boolean
   - uid: azure-iothub.Registry.cancelJob
     name: 'cancelJob(jobId: string, done: Registry.JobCallback)'
     children: []
@@ -220,68 +222,72 @@ items:
     name: DeviceDescription
     fullName: DeviceDescription
     children:
-      - uid: azure-iothub.Registry.DeviceDescription.deviceId
-        name: deviceId
-        fullName: deviceId
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iothub.Registry.DeviceDescription.deviceId
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Registry.DeviceDescription.deviceId
+    name: deviceId
+    fullName: deviceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iothub.Registry.DeviceRegistryOperationError
     name: DeviceRegistryOperationError
     fullName: DeviceRegistryOperationError
     children:
-      - uid: azure-iothub.Registry.DeviceRegistryOperationError.deviceId
-        name: deviceId
-        fullName: deviceId
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorCode
-        name: errorCode
-        fullName: errorCode
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - Error
-      - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorStatus
-        name: errorStatus
-        fullName: errorStatus
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iothub.Registry.DeviceRegistryOperationError.deviceId
+      - azure-iothub.Registry.DeviceRegistryOperationError.errorCode
+      - azure-iothub.Registry.DeviceRegistryOperationError.errorStatus
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Registry.DeviceRegistryOperationError.deviceId
+    name: deviceId
+    fullName: deviceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorCode
+    name: errorCode
+    fullName: errorCode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Error
+  - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorStatus
+    name: errorStatus
+    fullName: errorStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iothub.Registry.exportDevicesToBlob
     name: >-
       exportDevicesToBlob(outputBlobContainerUri: string, excludeKeys: boolean,
@@ -534,23 +540,24 @@ items:
     name: QueryDescription
     fullName: QueryDescription
     children:
-      - uid: azure-iothub.Registry.QueryDescription.query
-        name: query
-        fullName: query
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iothub.Registry.QueryDescription.query
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Registry.QueryDescription.query
+    name: query
+    fullName: query
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iothub.Registry.constructor
     name: 'Registry(config: TransportConfig, restApiClient?: RestApiClient)'
     children: []
@@ -574,47 +581,50 @@ items:
     name: RegistryStatistics
     fullName: RegistryStatistics
     children:
-      - uid: azure-iothub.Registry.RegistryStatistics.disabledDeviceCount
-        name: disabledDeviceCount
-        fullName: disabledDeviceCount
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - number
-      - uid: azure-iothub.Registry.RegistryStatistics.enabledDeviceCount
-        name: enabledDeviceCount
-        fullName: enabledDeviceCount
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - number
-      - uid: azure-iothub.Registry.RegistryStatistics.totalDeviceCount
-        name: totalDeviceCount
-        fullName: totalDeviceCount
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - number
+      - azure-iothub.Registry.RegistryStatistics.disabledDeviceCount
+      - azure-iothub.Registry.RegistryStatistics.enabledDeviceCount
+      - azure-iothub.Registry.RegistryStatistics.totalDeviceCount
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Registry.RegistryStatistics.disabledDeviceCount
+    name: disabledDeviceCount
+    fullName: disabledDeviceCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iothub.Registry.RegistryStatistics.enabledDeviceCount
+    name: enabledDeviceCount
+    fullName: enabledDeviceCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iothub.Registry.RegistryStatistics.totalDeviceCount
+    name: totalDeviceCount
+    fullName: totalDeviceCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
   - uid: azure-iothub.Registry.removeDevices
     name: >-
       removeDevices(devices: DeviceDescription[], forceRemove: boolean, done:
@@ -657,35 +667,37 @@ items:
     name: TransportConfig
     fullName: TransportConfig
     children:
-      - uid: azure-iothub.Registry.TransportConfig.host
-        name: host
-        fullName: host
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iothub.Registry.TransportConfig.sharedAccessSignature
-        name: sharedAccessSignature
-        fullName: sharedAccessSignature
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iothub.Registry.TransportConfig.host
+      - azure-iothub.Registry.TransportConfig.sharedAccessSignature
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.Registry.TransportConfig.host
+    name: host
+    fullName: host
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Registry.TransportConfig.sharedAccessSignature
+    name: sharedAccessSignature
+    fullName: sharedAccessSignature
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iothub.Registry.update
     name: 'update(deviceInfo: DeviceDescription, done: Registry.DeviceCallback)'
     children: []

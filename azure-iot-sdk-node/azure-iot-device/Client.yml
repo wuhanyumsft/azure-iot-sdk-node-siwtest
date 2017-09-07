@@ -145,23 +145,24 @@ items:
     name: Config
     fullName: Config
     children:
-      - uid: azure-iot-device.Client.Config.hubName
-        name: hubName
-        fullName: hubName
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iot-device.Client.Config.hubName
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iot-device
+  - uid: azure-iot-device.Client.Config.hubName
+    name: hubName
+    fullName: hubName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iot-device.Client.defaultMaxListeners
     name: defaultMaxListeners
     fullName: defaultMaxListeners
@@ -178,104 +179,111 @@ items:
     name: DeviceMethodRequest
     fullName: DeviceMethodRequest
     children:
-      - uid: azure-iot-device.Client.DeviceMethodRequest.methodName
-        name: methodName
-        fullName: methodName
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iot-device.Client.DeviceMethodRequest.payload
-        name: payload
-        fullName: payload
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - Buffer
-      - uid: azure-iot-device.Client.DeviceMethodRequest.requestId
-        name: requestId
-        fullName: requestId
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iot-device.Client.DeviceMethodRequest.methodName
+      - azure-iot-device.Client.DeviceMethodRequest.payload
+      - azure-iot-device.Client.DeviceMethodRequest.requestId
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iot-device
+  - uid: azure-iot-device.Client.DeviceMethodRequest.methodName
+    name: methodName
+    fullName: methodName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.Client.DeviceMethodRequest.payload
+    name: payload
+    fullName: payload
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Buffer
+  - uid: azure-iot-device.Client.DeviceMethodRequest.requestId
+    name: requestId
+    fullName: requestId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iot-device.Client.DeviceMethodResponse
     name: DeviceMethodResponse
     fullName: DeviceMethodResponse
     children:
-      - uid: azure-iot-device.Client.DeviceMethodResponse.isResponseComplete
-        name: isResponseComplete
-        fullName: isResponseComplete
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - boolean
-      - uid: azure-iot-device.Client.DeviceMethodResponse.payload
-        name: payload
-        fullName: payload
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - any
-      - uid: azure-iot-device.Client.DeviceMethodResponse.requestId
-        name: requestId
-        fullName: requestId
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iot-device.Client.DeviceMethodResponse.status
-        name: status
-        fullName: status
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - number
+      - azure-iot-device.Client.DeviceMethodResponse.isResponseComplete
+      - azure-iot-device.Client.DeviceMethodResponse.payload
+      - azure-iot-device.Client.DeviceMethodResponse.requestId
+      - azure-iot-device.Client.DeviceMethodResponse.status
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iot-device
+  - uid: azure-iot-device.Client.DeviceMethodResponse.isResponseComplete
+    name: isResponseComplete
+    fullName: isResponseComplete
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - boolean
+  - uid: azure-iot-device.Client.DeviceMethodResponse.payload
+    name: payload
+    fullName: payload
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - any
+  - uid: azure-iot-device.Client.DeviceMethodResponse.requestId
+    name: requestId
+    fullName: requestId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.Client.DeviceMethodResponse.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
   - uid: azure-iot-device.Client.fromConnectionString
     name: 'fromConnectionString(connStr: string, transportCtor: any)'
     children: []
@@ -549,23 +557,24 @@ items:
     name: Transport
     fullName: Transport
     children:
-      - uid: azure-iot-device.Client.Transport.defaultMaxListeners
-        name: defaultMaxListeners
-        fullName: defaultMaxListeners
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - number
+      - azure-iot-device.Client.Transport.defaultMaxListeners
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iot-device
+  - uid: azure-iot-device.Client.Transport.defaultMaxListeners
+    name: defaultMaxListeners
+    fullName: defaultMaxListeners
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
   - uid: azure-iot-device.Client.updateSharedAccessSignature
     name: >-
       updateSharedAccessSignature(sharedAccessSignature: string,

@@ -118,35 +118,37 @@ items:
     name: TransportConfig
     fullName: TransportConfig
     children:
-      - uid: azure-iothub.RestApiClient.TransportConfig.host
-        name: host
-        fullName: host
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
-      - uid: azure-iothub.RestApiClient.TransportConfig.sharedAccessSignature
-        name: sharedAccessSignature
-        fullName: sharedAccessSignature
-        children: []
-        langs:
-          - typeScript
-        type: property
-        summary: ''
-        syntax:
-          return:
-            type:
-              - string
+      - azure-iothub.RestApiClient.TransportConfig.host
+      - azure-iothub.RestApiClient.TransportConfig.sharedAccessSignature
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iothub
+  - uid: azure-iothub.RestApiClient.TransportConfig.host
+    name: host
+    fullName: host
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.RestApiClient.TransportConfig.sharedAccessSignature
+    name: sharedAccessSignature
+    fullName: sharedAccessSignature
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iothub.RestApiClient.updateSharedAccessSignature
     name: 'updateSharedAccessSignature(sharedAccessSignature: string)'
     children: []

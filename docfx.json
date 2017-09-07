@@ -14,19 +14,6 @@
       }
     ],
     "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.svg"
-        ],
-        "src": "docs-ref-conceptual",
-        "dest": "azure",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      }
     ],
     "overwrite": [],
     "externalReference": [],

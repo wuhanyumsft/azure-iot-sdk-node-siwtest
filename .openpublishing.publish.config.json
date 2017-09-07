@@ -4,7 +4,7 @@
   "docsets_to_publish": [
     {
       "docset_name": "azure-iot-sdk-node-siwtest",
-      "build_source_folder": "azure-iot-sdk-node",
+      "build_source_folder": ".",
       "build_output_subfolder": "azure-iot-sdk-node-siwtest",
       "locale": "en-us",
       "monikers": [],

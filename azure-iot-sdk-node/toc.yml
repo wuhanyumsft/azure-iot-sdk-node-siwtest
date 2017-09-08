@@ -92,26 +92,6 @@
           name: TopicDescription
 - name: Service
   items:
-    - uid: azure-iot-amqp-base
-      name: azure-iot-amqp-base
-      items:
-        - uid: azure-iot-amqp-base.Amqp
-          name: Amqp
-        - uid: azure-iot-amqp-base.AmqpMessage
-          name: AmqpMessage
-        - uid: azure-iot-amqp-base.AmqpReceiver
-          name: AmqpReceiver
-        - uid: azure-iot-amqp-base.AmqpTransportError
-          name: AmqpTransportError
-        - uid: azure-iot-amqp-base.PutTokenOperation
-          name: PutTokenOperation
-        - uid: azure-iot-amqp-base.PutTokenStatus
-          name: PutTokenStatus
-    - uid: azure-iot-http-base
-      name: azure-iot-http-base
-      items:
-        - uid: azure-iot-http-base.Http
-          name: Http
     - uid: azure-iothub
       name: azure-iothub
       items:
@@ -246,3 +226,23 @@
           name: UnauthorizedError
         - uid: azure-iot-common.ConnectionString.x509
           name: x509
+    - uid: azure-iot-amqp-base
+      name: azure-iot-amqp-base
+      items:
+        - uid: azure-iot-amqp-base.Amqp
+          name: Amqp
+        - uid: azure-iot-amqp-base.AmqpMessage
+          name: AmqpMessage
+        - uid: azure-iot-amqp-base.AmqpReceiver
+          name: AmqpReceiver
+        - uid: azure-iot-amqp-base.AmqpTransportError
+          name: AmqpTransportError
+        - uid: azure-iot-amqp-base.PutTokenOperation
+          name: PutTokenOperation
+        - uid: azure-iot-amqp-base.PutTokenStatus
+          name: PutTokenStatus
+    - uid: azure-iot-http-base
+      name: azure-iot-http-base
+      items:
+        - uid: azure-iot-http-base.Http
+          name: Http

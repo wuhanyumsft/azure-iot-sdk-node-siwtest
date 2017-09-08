@@ -36,7 +36,7 @@ toc.forEach(function(t) {
     }
     if (t.name.indexOf('device') >= 0) {
         transformedToc[0].items.push(t);
-    } else if (t.name.indexOf('common') >= 0) {
+    } else if (t.name.indexOf('common') >= 0 || t.name.indexOf('base') >= 0) {
         transformedToc[2].items.push(t);
     } else {
         transformedToc[1].items.push(t);

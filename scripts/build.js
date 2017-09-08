@@ -27,11 +27,24 @@ var toc = [];
 tsconfigs.forEach(function (tsconfig) {
     var packagePath = tsconfig.replace('tsconfig.json', 'package.json');
     generatePackageDoc(packagePath, dest);
-
 });
 
-toc = JSON.parse(JSON.stringify(toc));
-fs.writeFileSync(dest + '/toc.yml', yaml.safeDump(toc));
+var transformedToc = [{name: 'Device', items:[]}, {name: 'Service', items:[]}, {name: 'Common', items:[]}];
+toc.forEach(function(t) {
+    if (t.name.indexOf('e2e') >= 0) {
+        return;
+    }
+    if (t.name.indexOf('device') >= 0) {
+        transformedToc[0].items.push(t);
+    } else if (t.name.indexOf('common') >= 0) {
+        transformedToc[2].items.push(t);
+    } else {
+        transformedToc[1].items.push(t);
+    }
+});
+
+transformedToc = JSON.parse(JSON.stringify(transformedToc));
+fs.writeFileSync(dest + '/toc.yml', yaml.safeDump(transformedToc));
 
 function generatePackageDoc(packagePath, dest) {
     var dir = path.dirname(packagePath);

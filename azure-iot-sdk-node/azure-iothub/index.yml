@@ -12,12 +12,12 @@ items:
       - azure-iothub.DeviceIdentity
       - azure-iothub.DeviceMethod
       - azure-iothub.DeviceMethodParams
-      - azure-iothub.HttpTransportError
       - azure-iothub.JobClient
       - azure-iothub.JobDescription
       - azure-iothub.Query
       - azure-iothub.Registry
       - azure-iothub.RestApiClient
+      - azure-iothub.HttpTransportError
       - azure-iothub.Twin
       - azure-iothub.TwinData
       - azure-iothub.TwinProperties
@@ -42,8 +42,6 @@ references:
     name: DeviceMethod
   - uid: azure-iothub.DeviceMethodParams
     name: DeviceMethodParams
-  - uid: azure-iothub.HttpTransportError
-    name: HttpTransportError
   - uid: azure-iothub.JobClient
     name: JobClient
   - uid: azure-iothub.JobDescription
@@ -54,6 +52,8 @@ references:
     name: Registry
   - uid: azure-iothub.RestApiClient
     name: RestApiClient
+  - uid: azure-iothub.HttpTransportError
+    name: HttpTransportError
   - uid: azure-iothub.Twin
     name: Twin
   - uid: azure-iothub.TwinData

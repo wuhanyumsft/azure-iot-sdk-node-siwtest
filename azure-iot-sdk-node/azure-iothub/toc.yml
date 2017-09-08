@@ -1,36 +1,39 @@
-- uid: azure-iothub.Amqp
-  name: Amqp
-- uid: azure-iothub.AmqpTransportError
-  name: AmqpTransportError
-- uid: azure-iothub.AmqpWs
-  name: AmqpWs
-- uid: azure-iothub.Client
-  name: Client
-- uid: azure-iothub.Device
-  name: Device
-- uid: azure-iothub.DeviceIdentity
-  name: DeviceIdentity
-- uid: azure-iothub.DeviceMethod
-  name: DeviceMethod
-- uid: azure-iothub.DeviceMethodParams
-  name: DeviceMethodParams
-- uid: azure-iothub.HttpTransportError
-  name: HttpTransportError
-- uid: azure-iothub.JobClient
-  name: JobClient
-- uid: azure-iothub.JobDescription
-  name: JobDescription
-- uid: azure-iothub.Query
-  name: Query
-- uid: azure-iothub.Registry
-  name: Registry
-- uid: azure-iothub.RestApiClient
-  name: RestApiClient
-- uid: azure-iothub.Twin
-  name: Twin
-- uid: azure-iothub.TwinData
-  name: TwinData
-- uid: azure-iothub.TwinProperties
-  name: TwinProperties
-- uid: azure-iothub.TwinPropertyCollection
-  name: TwinPropertyCollection
+- uid: azure-iothub
+  name: azure-iothub
+  items:
+    - uid: azure-iothub.Amqp
+      name: Amqp
+    - uid: azure-iothub.AmqpTransportError
+      name: AmqpTransportError
+    - uid: azure-iothub.AmqpWs
+      name: AmqpWs
+    - uid: azure-iothub.Client
+      name: Client
+    - uid: azure-iothub.Device
+      name: Device
+    - uid: azure-iothub.DeviceIdentity
+      name: DeviceIdentity
+    - uid: azure-iothub.DeviceMethod
+      name: DeviceMethod
+    - uid: azure-iothub.DeviceMethodParams
+      name: DeviceMethodParams
+    - uid: azure-iothub.HttpTransportError
+      name: HttpTransportError
+    - uid: azure-iothub.JobClient
+      name: JobClient
+    - uid: azure-iothub.JobDescription
+      name: JobDescription
+    - uid: azure-iothub.Query
+      name: Query
+    - uid: azure-iothub.Registry
+      name: Registry
+    - uid: azure-iothub.RestApiClient
+      name: RestApiClient
+    - uid: azure-iothub.Twin
+      name: Twin
+    - uid: azure-iothub.TwinData
+      name: TwinData
+    - uid: azure-iothub.TwinProperties
+      name: TwinProperties
+    - uid: azure-iothub.TwinPropertyCollection
+      name: TwinPropertyCollection

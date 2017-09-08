@@ -23,6 +23,7 @@ fse.mkdirpSync(dest)
 
 
 var tsconfigs = glob.sync(path.join(src, '**/tsconfig.json'));
+var toc = [];
 
 tsconfigs.forEach(function (tsconfig) {
     var packagePath = tsconfig.replace('tsconfig.json', 'package.json');
@@ -34,9 +35,12 @@ function generatePackageDoc(packagePath, dest) {
     var packageName = fse.readJsonSync(packagePath).name;
     console.log(packageName); 
     if (fse.existsSync(dir + '/src')) {
-        fse.mkdirpSync(dest + '/' + packageName);
+        var packageDest = dest + '/' + packageName;
+        fse.mkdirpSync(packageDest);
         child_process.execSync('typedoc --json ' + dir + '/api.json ' + dir + '/src --module commonjs --ignoreCompilerErrors');
-        child_process.execFileSync('node', ['node_modules/type2docfx/dist/main', dir + '/api.json', dest + '/' + packageName]);
+        child_process.execFileSync('node', ['node_modules/type2docfx/dist/main', dir + '/api.json', packageDest]);
+        var subToc = yaml.safeLoad(packageDest + '/toc.yml');
+        toc.push(subToc[0]);
     } else {
         console.log('No source file for' + packageName);
     }

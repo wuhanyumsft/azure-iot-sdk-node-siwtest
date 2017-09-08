@@ -1,2 +1,5 @@
-- uid: ts-e2e.TestDevice
-  name: TestDevice
+- uid: ts-e2e
+  name: ts-e2e
+  items:
+    - uid: ts-e2e.TestDevice
+      name: TestDevice

@@ -1,2 +1,5 @@
-- uid: azure-iot-http-base.Http
-  name: Http
+- uid: azure-iot-http-base
+  name: azure-iot-http-base
+  items:
+    - uid: azure-iot-http-base.Http
+      name: Http

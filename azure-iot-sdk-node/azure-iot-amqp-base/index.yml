@@ -5,24 +5,24 @@ items:
     summary: ''
     children:
       - azure-iot-amqp-base.Amqp
-      - azure-iot-amqp-base.AmqpMessage
-      - azure-iot-amqp-base.AmqpReceiver
-      - azure-iot-amqp-base.AmqpTransportError
       - azure-iot-amqp-base.PutTokenOperation
       - azure-iot-amqp-base.PutTokenStatus
+      - azure-iot-amqp-base.AmqpTransportError
+      - azure-iot-amqp-base.AmqpMessage
+      - azure-iot-amqp-base.AmqpReceiver
     type: package
     langs:
       - typeScript
 references:
   - uid: azure-iot-amqp-base.Amqp
     name: Amqp
-  - uid: azure-iot-amqp-base.AmqpMessage
-    name: AmqpMessage
-  - uid: azure-iot-amqp-base.AmqpReceiver
-    name: AmqpReceiver
-  - uid: azure-iot-amqp-base.AmqpTransportError
-    name: AmqpTransportError
   - uid: azure-iot-amqp-base.PutTokenOperation
     name: PutTokenOperation
   - uid: azure-iot-amqp-base.PutTokenStatus
     name: PutTokenStatus
+  - uid: azure-iot-amqp-base.AmqpTransportError
+    name: AmqpTransportError
+  - uid: azure-iot-amqp-base.AmqpMessage
+    name: AmqpMessage
+  - uid: azure-iot-amqp-base.AmqpReceiver
+    name: AmqpReceiver

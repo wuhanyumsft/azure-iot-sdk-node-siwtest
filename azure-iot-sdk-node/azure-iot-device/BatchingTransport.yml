@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.BatchingTransport
+    name: BatchingTransport
+    fullName: BatchingTransport
+    children:
+      - azure-iot-device.BatchingTransport.defaultMaxListeners
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device
+  - uid: azure-iot-device.BatchingTransport.defaultMaxListeners
+    name: defaultMaxListeners
+    fullName: defaultMaxListeners
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number

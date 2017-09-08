@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.TwinBaseError
+    name: TwinBaseError
+    fullName: TwinBaseError
+    children:
+      - azure-iot-device.TwinBaseError.Error
+      - azure-iot-device.TwinBaseError.message
+      - azure-iot-device.TwinBaseError.name
+      - azure-iot-device.TwinBaseError.response
+      - azure-iot-device.TwinBaseError.stack
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-iot-device
+  - uid: azure-iot-device.TwinBaseError.Error
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - ErrorConstructor
+  - uid: azure-iot-device.TwinBaseError.message
+    name: message
+    fullName: message
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.TwinBaseError.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.TwinBaseError.response
+    name: response
+    fullName: response
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - any
+  - uid: azure-iot-device.TwinBaseError.stack
+    name: stack
+    fullName: stack
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

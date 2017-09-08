@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.BlobUploadClient
+    name: BlobUploadClient
+    fullName: BlobUploadClient
+    children:
+      - azure-iot-device.BlobUploadClient.constructor
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-iot-device
+  - uid: azure-iot-device.BlobUploadClient.constructor
+    name: >-
+      BlobUploadClient(config: any, fileUploadApi?: FileUpload, blobUploader?:
+      BlobUploader)
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: config
+          type:
+            - any
+          description: ''
+        - id: fileUploadApi
+          type:
+            - azure-iot-device.FileUpload
+          description: ''
+          optional: true
+        - id: blobUploader
+          type:
+            - azure-iot-device.BlobUploader
+          description: ''
+          optional: true
+      content: >-
+        new BlobUploadClient(config: any, fileUploadApi?: FileUpload,
+        blobUploader?: BlobUploader)
+    type: constructor

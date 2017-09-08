@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device.MethodMessage
+    name: MethodMessage
+    fullName: MethodMessage
+    children:
+      - azure-iot-device.MethodMessage.body
+      - azure-iot-device.MethodMessage.methods
+      - azure-iot-device.MethodMessage.properties
+      - azure-iot-device.MethodMessage.requestId
+      - azure-iot-device.MethodMessage.verb
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device
+  - uid: azure-iot-device.MethodMessage.body
+    name: body
+    fullName: body
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Buffer
+  - uid: azure-iot-device.MethodMessage.methods
+    name: methods
+    fullName: methods
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - function
+  - uid: azure-iot-device.MethodMessage.properties
+    name: properties
+    fullName: properties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - '[key: string]: string'
+  - uid: azure-iot-device.MethodMessage.requestId
+    name: requestId
+    fullName: requestId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device.MethodMessage.verb
+    name: verb
+    fullName: verb
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

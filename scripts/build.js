@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var child_process = require('child_process');
 var fs = require('fs');
@@ -19,8 +19,7 @@ var packagesToFilter = ['azure-arm-datalake-store'];
 
 // 1. prepare
 fse.removeSync(dest);
-fse.mkdirpSync(dest)
-
+fse.mkdirpSync(dest);
 
 var tsconfigs = glob.sync(path.join(src, '**/tsconfig.json'));
 var toc = [];
@@ -28,7 +27,11 @@ var toc = [];
 tsconfigs.forEach(function (tsconfig) {
     var packagePath = tsconfig.replace('tsconfig.json', 'package.json');
     generatePackageDoc(packagePath, dest);
+
 });
+
+toc = JSON.parse(JSON.stringify(toc));
+fs.writeFileSync(dest + '/toc.yml', yaml.safeDump(toc));
 
 function generatePackageDoc(packagePath, dest) {
     var dir = path.dirname(packagePath);
@@ -39,8 +42,9 @@ function generatePackageDoc(packagePath, dest) {
         fse.mkdirpSync(packageDest);
         child_process.execSync('typedoc --json ' + dir + '/api.json ' + dir + '/src --module commonjs --ignoreCompilerErrors');
         child_process.execFileSync('node', ['node_modules/type2docfx/dist/main', dir + '/api.json', packageDest]);
-        var subToc = yaml.safeLoad(packageDest + '/toc.yml');
+        var subToc = yaml.safeLoad(fs.readFileSync(packageDest + '/toc.yml'));
         toc.push(subToc[0]);
+        fse.removeSync(packageDest + '/toc.yml');
     } else {
         console.log('No source file for' + packageName);
     }

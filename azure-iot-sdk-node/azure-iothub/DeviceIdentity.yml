@@ -1,0 +1,154 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iothub.DeviceIdentity
+    name: DeviceIdentity
+    fullName: DeviceIdentity
+    children:
+      - azure-iothub.DeviceIdentity.authentication
+      - azure-iothub.DeviceIdentity.cloudToDeviceMessageCount
+      - azure-iothub.DeviceIdentity.connectionState
+      - azure-iothub.DeviceIdentity.connectionStateUpdatedTime
+      - azure-iothub.DeviceIdentity.deviceId
+      - azure-iothub.DeviceIdentity.etag
+      - azure-iothub.DeviceIdentity.generationId
+      - azure-iothub.DeviceIdentity.lastActivityTime
+      - azure-iothub.DeviceIdentity.status
+      - azure-iothub.DeviceIdentity.statusReason
+      - azure-iothub.DeviceIdentity.statusUpdatedTime
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iothub
+  - uid: azure-iothub.DeviceIdentity.authentication
+    name: authentication
+    fullName: authentication
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.Device.Authentication
+  - uid: azure-iothub.DeviceIdentity.cloudToDeviceMessageCount
+    name: cloudToDeviceMessageCount
+    fullName: cloudToDeviceMessageCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.DeviceIdentity.connectionState
+    name: connectionState
+    fullName: connectionState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Device.ConnectionState
+  - uid: azure-iothub.DeviceIdentity.connectionStateUpdatedTime
+    name: connectionStateUpdatedTime
+    fullName: connectionStateUpdatedTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.DeviceIdentity.deviceId
+    name: deviceId
+    fullName: deviceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.DeviceIdentity.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.DeviceIdentity.generationId
+    name: generationId
+    fullName: generationId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.DeviceIdentity.lastActivityTime
+    name: lastActivityTime
+    fullName: lastActivityTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.DeviceIdentity.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Device.DeviceStatus
+  - uid: azure-iothub.DeviceIdentity.statusReason
+    name: statusReason
+    fullName: statusReason
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.DeviceIdentity.statusUpdatedTime
+    name: statusUpdatedTime
+    fullName: statusUpdatedTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

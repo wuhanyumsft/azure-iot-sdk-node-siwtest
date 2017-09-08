@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iothub.TwinProperties
+    name: TwinProperties
+    fullName: TwinProperties
+    children:
+      - azure-iothub.TwinProperties.desired
+      - azure-iothub.TwinProperties.reported
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iothub
+  - uid: azure-iothub.TwinProperties.desired
+    name: desired
+    fullName: desired
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.TwinPropertyCollection
+  - uid: azure-iothub.TwinProperties.reported
+    name: reported
+    fullName: reported
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.TwinPropertyCollection

@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iothub.JobDescription
+    name: JobDescription
+    fullName: JobDescription
+    children:
+      - azure-iothub.JobDescription.cloudToDeviceMethod
+      - azure-iothub.JobDescription.jobId
+      - azure-iothub.JobDescription.maxExecutionTimeInSeconds
+      - azure-iothub.JobDescription.queryCondition
+      - azure-iothub.JobDescription.startTime
+      - azure-iothub.JobDescription.type
+      - azure-iothub.JobDescription.updateTwin
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iothub
+  - uid: azure-iothub.JobDescription.cloudToDeviceMethod
+    name: cloudToDeviceMethod
+    fullName: cloudToDeviceMethod
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.DeviceMethodParams
+  - uid: azure-iothub.JobDescription.jobId
+    name: jobId
+    fullName: jobId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.JobDescription.maxExecutionTimeInSeconds
+    name: maxExecutionTimeInSeconds
+    fullName: maxExecutionTimeInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iothub.JobDescription.queryCondition
+    name: queryCondition
+    fullName: queryCondition
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.JobDescription.startTime
+    name: startTime
+    fullName: startTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.JobDescription.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - JobType
+  - uid: azure-iothub.JobDescription.updateTwin
+    name: updateTwin
+    fullName: updateTwin
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - any

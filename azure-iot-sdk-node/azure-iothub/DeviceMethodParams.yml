@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iothub.DeviceMethodParams
+    name: DeviceMethodParams
+    fullName: DeviceMethodParams
+    children:
+      - azure-iothub.DeviceMethodParams.connectTimeoutInSeconds
+      - azure-iothub.DeviceMethodParams.methodName
+      - azure-iothub.DeviceMethodParams.payload
+      - azure-iothub.DeviceMethodParams.responseTimeoutInSeconds
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iothub
+  - uid: azure-iothub.DeviceMethodParams.connectTimeoutInSeconds
+    name: connectTimeoutInSeconds
+    fullName: connectTimeoutInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iothub.DeviceMethodParams.methodName
+    name: methodName
+    fullName: methodName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.DeviceMethodParams.payload
+    name: payload
+    fullName: payload
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - any
+  - uid: azure-iothub.DeviceMethodParams.responseTimeoutInSeconds
+    name: responseTimeoutInSeconds
+    fullName: responseTimeoutInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number

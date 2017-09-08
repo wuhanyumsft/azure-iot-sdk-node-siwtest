@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device-mqtt.MethodMessage
+    name: MethodMessage
+    fullName: MethodMessage
+    children:
+      - azure-iot-device-mqtt.MethodMessage.body
+      - azure-iot-device-mqtt.MethodMessage.methods
+      - azure-iot-device-mqtt.MethodMessage.properties
+      - azure-iot-device-mqtt.MethodMessage.requestId
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-iot-device-mqtt
+  - uid: azure-iot-device-mqtt.MethodMessage.body
+    name: body
+    fullName: body
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Buffer
+  - uid: azure-iot-device-mqtt.MethodMessage.methods
+    name: methods
+    fullName: methods
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iot-device-mqtt.MethodDescription
+  - uid: azure-iot-device-mqtt.MethodMessage.properties
+    name: properties
+    fullName: properties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - '[key: string]: string'
+  - uid: azure-iot-device-mqtt.MethodMessage.requestId
+    name: requestId
+    fullName: requestId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

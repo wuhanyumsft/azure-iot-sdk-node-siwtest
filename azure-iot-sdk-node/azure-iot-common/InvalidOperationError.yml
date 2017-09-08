@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-common.InvalidOperationError
+    name: InvalidOperationError
+    fullName: InvalidOperationError
+    children:
+      - azure-iot-common.InvalidOperationError.Error
+      - azure-iot-common.InvalidOperationError.constructor
+      - azure-iot-common.InvalidOperationError.message
+      - azure-iot-common.InvalidOperationError.name
+      - azure-iot-common.InvalidOperationError.stack
+    langs:
+      - typeScript
+    type: class
+    summary: Error thrown when an operation is attempted but is not allowed.
+    package: azure-iot-common
+  - uid: azure-iot-common.InvalidOperationError.Error
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - ErrorConstructor
+  - uid: azure-iot-common.InvalidOperationError.constructor
+    name: 'InvalidOperationError(message?: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - string
+          description: ''
+          optional: true
+      content: 'new InvalidOperationError(message?: string)'
+    type: constructor
+  - uid: azure-iot-common.InvalidOperationError.message
+    name: message
+    fullName: message
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.InvalidOperationError.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-common.InvalidOperationError.stack
+    name: stack
+    fullName: stack
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string

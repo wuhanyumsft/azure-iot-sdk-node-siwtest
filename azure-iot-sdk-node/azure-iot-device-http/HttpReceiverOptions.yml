@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device-http.HttpReceiverOptions
+    name: HttpReceiverOptions
+    fullName: HttpReceiverOptions
+    children:
+      - azure-iot-device-http.HttpReceiverOptions.at
+      - azure-iot-device-http.HttpReceiverOptions.cron
+      - azure-iot-device-http.HttpReceiverOptions.drain
+      - azure-iot-device-http.HttpReceiverOptions.interval
+      - azure-iot-device-http.HttpReceiverOptions.manualPolling
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device-http
+  - uid: azure-iot-device-http.HttpReceiverOptions.at
+    name: at
+    fullName: at
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Date
+  - uid: azure-iot-device-http.HttpReceiverOptions.cron
+    name: cron
+    fullName: cron
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device-http.HttpReceiverOptions.drain
+    name: drain
+    fullName: drain
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - boolean
+  - uid: azure-iot-device-http.HttpReceiverOptions.interval
+    name: interval
+    fullName: interval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iot-device-http.HttpReceiverOptions.manualPolling
+    name: manualPolling
+    fullName: manualPolling
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - boolean

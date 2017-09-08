@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device-amqp.AmqpDeviceMethodClient
+    name: AmqpDeviceMethodClient
+    fullName: AmqpDeviceMethodClient
+    children:
+      - azure-iot-device-amqp.AmqpDeviceMethodClient.constructor
+      - azure-iot-device-amqp.AmqpDeviceMethodClient.defaultMaxListeners
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: azure-iot-device-amqp
+  - uid: azure-iot-device-amqp.AmqpDeviceMethodClient.constructor
+    name: 'AmqpDeviceMethodClient(config: ClientConfig, amqpClient: BaseAmqpClient)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: config
+          type:
+            - ClientConfig
+          description: ''
+        - id: amqpClient
+          type:
+            - BaseAmqpClient
+          description: ''
+      content: >-
+        new AmqpDeviceMethodClient(config: ClientConfig, amqpClient:
+        BaseAmqpClient)
+    type: constructor
+  - uid: azure-iot-device-amqp.AmqpDeviceMethodClient.defaultMaxListeners
+    name: defaultMaxListeners
+    fullName: defaultMaxListeners
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number

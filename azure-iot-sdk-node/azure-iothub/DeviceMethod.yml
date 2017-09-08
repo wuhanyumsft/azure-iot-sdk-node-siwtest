@@ -1,0 +1,112 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iothub.DeviceMethod
+    name: DeviceMethod
+    fullName: DeviceMethod
+    children:
+      - azure-iothub.DeviceMethod.defaultConnectTimeout
+      - azure-iothub.DeviceMethod.defaultPayload
+      - azure-iothub.DeviceMethod.defaultResponseTimeout
+      - azure-iothub.DeviceMethod.constructor
+      - azure-iothub.DeviceMethod.invokeOn
+      - azure-iothub.DeviceMethod.params
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+      Constructs a DeviceMethod object that provides APIs to trigger the
+      execution of a device method.
+    package: azure-iothub
+  - uid: azure-iothub.DeviceMethod.defaultConnectTimeout
+    name: defaultConnectTimeout
+    fullName: defaultConnectTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iothub.DeviceMethod.defaultPayload
+    name: defaultPayload
+    fullName: defaultPayload
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - any
+  - uid: azure-iothub.DeviceMethod.defaultResponseTimeout
+    name: defaultResponseTimeout
+    fullName: defaultResponseTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iothub.DeviceMethod.constructor
+    name: 'DeviceMethod(params: DeviceMethodParams, restApiClient: RestApiClient)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: params
+          type:
+            - azure-iothub.DeviceMethodParams
+          description: ''
+        - id: restApiClient
+          type:
+            - azure-iothub.RestApiClient
+          description: ''
+      content: >-
+        new DeviceMethod(params: DeviceMethodParams, restApiClient:
+        RestApiClient)
+    type: constructor
+  - uid: azure-iothub.DeviceMethod.invokeOn
+    name: 'invokeOn(deviceId: string, done: DeviceMethod.ResponseCallback)'
+    children: []
+    langs:
+      - typeScript
+    summary: Invokes the method on the specified device with the specified payload.
+    syntax:
+      parameters:
+        - id: deviceId
+          type:
+            - string
+          description: Identifier of the device on which the method will run.
+        - id: done
+          type:
+            - DeviceMethod.ResponseCallback
+          description: |
+            The function to call when the operation is
+                                           complete. `done` will be called with three
+                                           arguments: an Error object (can be null), a
+                                           [Twin](xref:azure-iothub.Twin)
+                                           object representing the created device
+                                           identity, and a transport-specific response
+                                           object useful for logging or debugging.
+      content: 'function invokeOn(deviceId: string, done: DeviceMethod.ResponseCallback)'
+    type: method
+  - uid: azure-iothub.DeviceMethod.params
+    name: params
+    fullName: params
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.DeviceMethodParams

@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device-mqtt.MqttTransportError
+    name: MqttTransportError
+    fullName: MqttTransportError
+    children:
+      - azure-iot-device-mqtt.MqttTransportError.Error
+      - azure-iot-device-mqtt.MqttTransportError.message
+      - azure-iot-device-mqtt.MqttTransportError.name
+      - azure-iot-device-mqtt.MqttTransportError.stack
+      - azure-iot-device-mqtt.MqttTransportError.transportError
+    langs:
+      - typeScript
+    type: class
+    summary: Convert an error returned by MQTT.js into a transport-agnistic error.
+    package: azure-iot-device-mqtt
+  - uid: azure-iot-device-mqtt.MqttTransportError.Error
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - ErrorConstructor
+  - uid: azure-iot-device-mqtt.MqttTransportError.message
+    name: message
+    fullName: message
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device-mqtt.MqttTransportError.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device-mqtt.MqttTransportError.stack
+    name: stack
+    fullName: stack
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device-mqtt.MqttTransportError.transportError
+    name: transportError
+    fullName: transportError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Error

@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-device-mqtt.TopicDescription
+    name: TopicDescription
+    fullName: TopicDescription
+    children:
+      - azure-iot-device-mqtt.TopicDescription.handler
+      - azure-iot-device-mqtt.TopicDescription.listenersCount
+      - azure-iot-device-mqtt.TopicDescription.name
+      - azure-iot-device-mqtt.TopicDescription.subscribed
+      - azure-iot-device-mqtt.TopicDescription.subscribeInProgress
+      - azure-iot-device-mqtt.TopicDescription.topicMatchRegex
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-iot-device-mqtt
+  - uid: azure-iot-device-mqtt.TopicDescription.handler
+    name: handler
+    fullName: handler
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Function
+  - uid: azure-iot-device-mqtt.TopicDescription.listenersCount
+    name: listenersCount
+    fullName: listenersCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iot-device-mqtt.TopicDescription.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iot-device-mqtt.TopicDescription.subscribed
+    name: subscribed
+    fullName: subscribed
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - boolean
+  - uid: azure-iot-device-mqtt.TopicDescription.subscribeInProgress
+    name: subscribeInProgress
+    fullName: subscribeInProgress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - boolean
+  - uid: azure-iot-device-mqtt.TopicDescription.topicMatchRegex
+    name: topicMatchRegex
+    fullName: topicMatchRegex
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - RegExp

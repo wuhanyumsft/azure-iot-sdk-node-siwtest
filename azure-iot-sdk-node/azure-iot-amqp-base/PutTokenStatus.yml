@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-iot-amqp-base.PutTokenStatus
+    name: PutTokenStatus
+    fullName: PutTokenStatus
+    children:
+      - azure-iot-amqp-base.PutTokenStatus.numberOfSecondsToTimeout
+      - azure-iot-amqp-base.PutTokenStatus.outstandingPutTokens
+      - azure-iot-amqp-base.PutTokenStatus.putTokenTimeOutExaminationInterval
+      - azure-iot-amqp-base.PutTokenStatus.timeoutTimer
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+      Describes the state of the "put token" feature of the client that enables
+      Claim-Based-Security authentication.
+    package: azure-iot-amqp-base
+  - uid: azure-iot-amqp-base.PutTokenStatus.numberOfSecondsToTimeout
+    name: numberOfSecondsToTimeout
+    fullName: numberOfSecondsToTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iot-amqp-base.PutTokenStatus.outstandingPutTokens
+    name: outstandingPutTokens
+    fullName: outstandingPutTokens
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iot-amqp-base.PutTokenOperation
+  - uid: azure-iot-amqp-base.PutTokenStatus.putTokenTimeOutExaminationInterval
+    name: putTokenTimeOutExaminationInterval
+    fullName: putTokenTimeOutExaminationInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iot-amqp-base.PutTokenStatus.timeoutTimer
+    name: timeoutTimer
+    fullName: timeoutTimer
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number

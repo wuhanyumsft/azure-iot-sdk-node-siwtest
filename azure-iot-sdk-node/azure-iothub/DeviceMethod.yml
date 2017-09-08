@@ -74,7 +74,7 @@ items:
         RestApiClient)
     type: constructor
   - uid: azure-iothub.DeviceMethod.invokeOn
-    name: 'invokeOn(deviceId: string, done: DeviceMethod.ResponseCallback)'
+    name: 'invokeOn(deviceId: string, done: ResponseCallback)'
     children: []
     langs:
       - typeScript
@@ -96,7 +96,7 @@ items:
                                            object representing the created device
                                            identity, and a transport-specific response
                                            object useful for logging or debugging.
-      content: 'function invokeOn(deviceId: string, done: DeviceMethod.ResponseCallback)'
+      content: 'function invokeOn(deviceId: string, done: ResponseCallback)'
     type: method
   - uid: azure-iothub.DeviceMethod.params
     name: params

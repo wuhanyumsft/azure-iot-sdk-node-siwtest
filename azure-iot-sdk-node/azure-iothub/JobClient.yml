@@ -20,7 +20,7 @@ items:
                                  create, monitor and cancel jobs on an IoT Hub instance.
     package: azure-iothub
   - uid: azure-iothub.JobClient.cancelJob
-    name: 'cancelJob(jobId: string, done: JobClient.JobCallback)'
+    name: 'cancelJob(jobId: string, done: JobCallback)'
     children: []
     langs:
       - typeScript
@@ -40,7 +40,7 @@ items:
                                            arguments: an Error object (can be null), a
                                            job object, and a transport-specific response
                                            object useful for logging or debugging.
-      content: 'function cancelJob(jobId: string, done: JobClient.JobCallback)'
+      content: 'function cancelJob(jobId: string, done: JobCallback)'
     type: method
   - uid: azure-iothub.JobClient.createQuery
     name: 'createQuery(jobType?: JobType, jobStatus?: JobStatus, pageSize?: number)'
@@ -122,7 +122,7 @@ items:
         description: If the sharedAccessSignature argument is falsy.
     type: method
   - uid: azure-iothub.JobClient.getJob
-    name: 'getJob(jobId: string, done: JobClient.JobCallback)'
+    name: 'getJob(jobId: string, done: JobCallback)'
     children: []
     langs:
       - typeScript
@@ -142,7 +142,7 @@ items:
                                            arguments: an Error object (can be null), a
                                            job object, and a transport-specific response
                                            object useful for logging or debugging.
-      content: 'function getJob(jobId: string, done: JobClient.JobCallback)'
+      content: 'function getJob(jobId: string, done: JobCallback)'
     type: method
   - uid: azure-iothub.JobClient.constructor
     name: 'JobClient(restApiClient: RestApiClient)'
@@ -162,7 +162,7 @@ items:
     name: >-
       scheduleDeviceMethod(jobId: string, queryCondition: string, methodParams:
       DeviceMethodParams, jobStartTime?: Date, maxExecutionTimeInSeconds?:
-      number, done?: JobClient.JobCallback)
+      number, done?: JobCallback)
     children: []
     langs:
       - typeScript
@@ -211,7 +211,7 @@ items:
       content: >-
         function scheduleDeviceMethod(jobId: string, queryCondition: string,
         methodParams: DeviceMethodParams, jobStartTime?: Date,
-        maxExecutionTimeInSeconds?: number, done?: JobClient.JobCallback)
+        maxExecutionTimeInSeconds?: number, done?: JobCallback)
     exceptions:
       - type: ReferenceError
         description: >-
@@ -226,7 +226,7 @@ items:
     name: >-
       scheduleTwinUpdate(jobId: string, queryCondition: string, patch: any,
       jobStartTime?: Date, maxExecutionTimeInSeconds?: number, done?:
-      JobClient.JobCallback)
+      JobCallback)
     children: []
     langs:
       - typeScript
@@ -272,7 +272,7 @@ items:
       content: >-
         function scheduleTwinUpdate(jobId: string, queryCondition: string,
         patch: any, jobStartTime?: Date, maxExecutionTimeInSeconds?: number,
-        done?: JobClient.JobCallback)
+        done?: JobCallback)
     exceptions:
       - type: ReferenceError
         description: >-

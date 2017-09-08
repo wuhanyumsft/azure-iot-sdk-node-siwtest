@@ -43,9 +43,7 @@ items:
                        to create a Registry object.
     package: azure-iothub
   - uid: azure-iothub.Registry.addDevices
-    name: >-
-      addDevices(devices: DeviceDescription[], done:
-      Registry.BulkDeviceIdentityCallback)
+    name: 'addDevices(devices: DeviceDescription[], done: BulkDeviceIdentityCallback)'
     children: []
     langs:
       - typeScript
@@ -71,7 +69,7 @@ items:
                                            for logging or debugging.
       content: >-
         function addDevices(devices: DeviceDescription[], done:
-        Registry.BulkDeviceIdentityCallback)
+        BulkDeviceIdentityCallback)
     type: method
   - uid: azure-iothub.Registry.BulkRegistryOperationResult
     name: BulkRegistryOperationResult
@@ -109,7 +107,7 @@ items:
         type:
           - boolean
   - uid: azure-iothub.Registry.cancelJob
-    name: 'cancelJob(jobId: string, done: Registry.JobCallback)'
+    name: 'cancelJob(jobId: string, done: JobCallback)'
     children: []
     langs:
       - typeScript
@@ -129,10 +127,10 @@ items:
             The function to call with two arguments: an error object if an error
             happened,
                                          (null otherwise) and the (cancelled) status of the job whose identifier was passed as an argument.
-      content: 'function cancelJob(jobId: string, done: Registry.JobCallback)'
+      content: 'function cancelJob(jobId: string, done: JobCallback)'
     type: method
   - uid: azure-iothub.Registry.create
-    name: 'create(deviceInfo: DeviceDescription, done: Registry.DeviceCallback)'
+    name: 'create(deviceInfo: DeviceDescription, done: DeviceCallback)'
     children: []
     langs:
       - typeScript
@@ -156,9 +154,7 @@ items:
                                            object representing the created device
                                            identity, and a transport-specific response
                                            object useful for logging or debugging.
-      content: >-
-        function create(deviceInfo: DeviceDescription, done:
-        Registry.DeviceCallback)
+      content: 'function create(deviceInfo: DeviceDescription, done: DeviceCallback)'
     type: method
   - uid: azure-iothub.Registry.createQuery
     name: 'createQuery(sqlQuery: string, pageSize?: number)'
@@ -194,7 +190,7 @@ items:
           a number, null or undefined.
     type: method
   - uid: azure-iothub.Registry.delete
-    name: 'delete(deviceId: string, done: Registry.ResponseCallback)'
+    name: 'delete(deviceId: string, done: ResponseCallback)'
     children: []
     langs:
       - typeScript
@@ -216,7 +212,7 @@ items:
                                            the other methods), and a transport-specific
                                            response object useful for logging or
                                            debugging.
-      content: 'function delete(deviceId: string, done: Registry.ResponseCallback)'
+      content: 'function delete(deviceId: string, done: ResponseCallback)'
     type: method
   - uid: azure-iothub.Registry.DeviceDescription
     name: DeviceDescription
@@ -291,7 +287,7 @@ items:
   - uid: azure-iothub.Registry.exportDevicesToBlob
     name: >-
       exportDevicesToBlob(outputBlobContainerUri: string, excludeKeys: boolean,
-      done: Registry.JobCallback)
+      done: JobCallback)
     children: []
     langs:
       - typeScript
@@ -319,7 +315,7 @@ items:
                                                          an error happened, (null otherwise) and the job status that can be used to track progress of the devices export.
       content: >-
         function exportDevicesToBlob(outputBlobContainerUri: string,
-        excludeKeys: boolean, done: Registry.JobCallback)
+        excludeKeys: boolean, done: JobCallback)
     type: method
   - uid: azure-iothub.Registry.fromConnectionString
     name: 'fromConnectionString(value: string)'
@@ -368,7 +364,7 @@ items:
           - azure-iothub.Registry
     type: method
   - uid: azure-iothub.Registry.get
-    name: 'get(deviceId: string, done: Registry.DeviceCallback)'
+    name: 'get(deviceId: string, done: DeviceCallback)'
     children: []
     langs:
       - typeScript
@@ -392,10 +388,10 @@ items:
                                            object representing the created device
                                            identity, and a transport-specific response
                                            object useful for logging or debugging.
-      content: 'function get(deviceId: string, done: Registry.DeviceCallback)'
+      content: 'function get(deviceId: string, done: DeviceCallback)'
     type: method
   - uid: azure-iothub.Registry.getJob
-    name: 'getJob(jobId: string, done: Registry.JobCallback)'
+    name: 'getJob(jobId: string, done: JobCallback)'
     children: []
     langs:
       - typeScript
@@ -415,7 +411,7 @@ items:
             The function to call with two arguments: an error object if an error
             happened,
                                          (null otherwise) and the status of the job whose identifier was passed as an argument.
-      content: 'function getJob(jobId: string, done: Registry.JobCallback)'
+      content: 'function getJob(jobId: string, done: JobCallback)'
     type: method
   - uid: azure-iothub.Registry.getRegistryStatistics
     name: 'getRegistryStatistics(done: Callback<RegistryStatistics>)'
@@ -434,7 +430,7 @@ items:
       content: 'function getRegistryStatistics(done: Callback<RegistryStatistics>)'
     type: method
   - uid: azure-iothub.Registry.getTwin
-    name: 'getTwin(deviceId: string, done: Registry.ResponseCallback)'
+    name: 'getTwin(deviceId: string, done: ResponseCallback)'
     children: []
     langs:
       - typeScript
@@ -451,12 +447,12 @@ items:
           description: |
             The callback that will be called with either an Error object or
                                             the device twin instance.
-      content: 'function getTwin(deviceId: string, done: Registry.ResponseCallback)'
+      content: 'function getTwin(deviceId: string, done: ResponseCallback)'
     type: method
   - uid: azure-iothub.Registry.importDevicesFromBlob
     name: >-
       importDevicesFromBlob(inputBlobContainerUri: string,
-      outputBlobContainerUri: string, done: Registry.JobCallback)
+      outputBlobContainerUri: string, done: JobCallback)
     children: []
     langs:
       - typeScript
@@ -484,7 +480,7 @@ items:
                                                          an error happened, (null otherwise) and the job status that can be used to track progress of the devices import.
       content: >-
         function importDevicesFromBlob(inputBlobContainerUri: string,
-        outputBlobContainerUri: string, done: Registry.JobCallback)
+        outputBlobContainerUri: string, done: JobCallback)
     type: method
   - uid: azure-iothub.Registry.JobStatus
     name: JobStatus
@@ -628,7 +624,7 @@ items:
   - uid: azure-iothub.Registry.removeDevices
     name: >-
       removeDevices(devices: DeviceDescription[], forceRemove: boolean, done:
-      Registry.BulkDeviceIdentityCallback)
+      BulkDeviceIdentityCallback)
     children: []
     langs:
       - typeScript
@@ -661,7 +657,7 @@ items:
                                            for logging or debugging.
       content: >-
         function removeDevices(devices: DeviceDescription[], forceRemove:
-        boolean, done: Registry.BulkDeviceIdentityCallback)
+        boolean, done: BulkDeviceIdentityCallback)
     type: method
   - uid: azure-iothub.Registry.TransportConfig
     name: TransportConfig
@@ -699,7 +695,7 @@ items:
         type:
           - string
   - uid: azure-iothub.Registry.update
-    name: 'update(deviceInfo: DeviceDescription, done: Registry.DeviceCallback)'
+    name: 'update(deviceInfo: DeviceDescription, done: DeviceCallback)'
     children: []
     langs:
       - typeScript
@@ -726,14 +722,12 @@ items:
                                            object representing the updated device
                                            identity, and a transport-specific response
                                            object useful for logging or debugging.
-      content: >-
-        function update(deviceInfo: DeviceDescription, done:
-        Registry.DeviceCallback)
+      content: 'function update(deviceInfo: DeviceDescription, done: DeviceCallback)'
     type: method
   - uid: azure-iothub.Registry.updateDevices
     name: >-
       updateDevices(devices: DeviceDescription[], forceUpdate: boolean, done?:
-      Registry.BulkDeviceIdentityCallback)
+      BulkDeviceIdentityCallback)
     children: []
     langs:
       - typeScript
@@ -767,12 +761,12 @@ items:
           optional: true
       content: >-
         function updateDevices(devices: DeviceDescription[], forceUpdate:
-        boolean, done?: Registry.BulkDeviceIdentityCallback)
+        boolean, done?: BulkDeviceIdentityCallback)
     type: method
   - uid: azure-iothub.Registry.updateTwin
     name: >-
       updateTwin(deviceId: string, patch: any, etag: string, done:
-      Registry.ResponseCallback)
+      ResponseCallback)
     children: []
     langs:
       - typeScript
@@ -802,5 +796,5 @@ items:
                                             the device twin instance.
       content: >-
         function updateTwin(deviceId: string, patch: any, etag: string, done:
-        Registry.ResponseCallback)
+        ResponseCallback)
     type: method

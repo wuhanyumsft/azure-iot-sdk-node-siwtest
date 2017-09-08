@@ -19,8 +19,7 @@ items:
   - uid: azure-iothub.RestApiClient.executeApiCall
     name: >-
       executeApiCall(method: HttpMethodVerb, path: string, headers: [key:
-      string]: any, requestBody: any, timeout?: number, done?:
-      RestApiClient.ResponseCallback)
+      string]: any, requestBody: any, timeout?: number, done?: ResponseCallback)
     children: []
     langs:
       - typeScript
@@ -61,7 +60,7 @@ items:
       content: >-
         function executeApiCall(method: HttpMethodVerb, path: string, headers:
         [key: string]: any, requestBody: any, timeout?: number, done?:
-        RestApiClient.ResponseCallback)
+        ResponseCallback)
     exceptions:
       - type: ReferenceError
         description: If the method or path arguments are falsy.

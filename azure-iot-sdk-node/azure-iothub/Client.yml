@@ -47,7 +47,7 @@ items:
       content: 'new Client(transport: Transport, restApiClient?: RestApiClient)'
     type: constructor
   - uid: azure-iothub.Client.close
-    name: 'close(done?: Callback<results.Disconnected>)'
+    name: 'close(done?: Callback<Disconnected>)'
     children: []
     langs:
       - typeScript
@@ -56,14 +56,14 @@ items:
       parameters:
         - id: done
           type:
-            - Callback<results.Disconnected>
+            - Callback<Disconnected>
           description: |
             The function to call when the operation is
                                        complete. `done` will be passed an Error object
                                        argument, which will be null if the operation
                                        completed successfully.
           optional: true
-      content: 'function close(done?: Callback<results.Disconnected>)'
+      content: 'function close(done?: Callback<Disconnected>)'
     type: method
   - uid: azure-iothub.Client.defaultMaxListeners
     name: defaultMaxListeners
@@ -78,9 +78,7 @@ items:
         type:
           - number
   - uid: azure-iothub.Client.fromConnectionString
-    name: >-
-      fromConnectionString(connStr: string, transportCtor?:
-      Client.TransportCtor)
+    name: 'fromConnectionString(connStr: string, transportCtor?: TransportCtor)'
     children: []
     langs:
       - typeScript
@@ -103,7 +101,7 @@ items:
           optional: true
       content: >-
         function fromConnectionString(connStr: string, transportCtor?:
-        Client.TransportCtor)
+        TransportCtor)
       return:
         type:
           - azure-iothub.Client
@@ -111,7 +109,7 @@ items:
   - uid: azure-iothub.Client.fromSharedAccessSignature
     name: >-
       fromSharedAccessSignature(sharedAccessSignature: string, transportCtor?:
-      Client.TransportCtor)
+      TransportCtor)
     children: []
     langs:
       - typeScript
@@ -134,7 +132,7 @@ items:
           optional: true
       content: >-
         function fromSharedAccessSignature(sharedAccessSignature: string,
-        transportCtor?: Client.TransportCtor)
+        transportCtor?: TransportCtor)
       return:
         type:
           - azure-iothub.Client
@@ -213,7 +211,7 @@ items:
         description: If one of the parameters is of the wrong type.
     type: method
   - uid: azure-iothub.Client.open
-    name: 'open(done?: Callback<results.Connected>)'
+    name: 'open(done?: Callback<Connected>)'
     children: []
     langs:
       - typeScript
@@ -222,19 +220,17 @@ items:
       parameters:
         - id: done
           type:
-            - Callback<results.Connected>
+            - Callback<Connected>
           description: |
             The function to call when the operation is
                                        complete. `done` will be passed an Error object
                                        argument, which will be null if the operation
                                        completed successfully.
           optional: true
-      content: 'function open(done?: Callback<results.Connected>)'
+      content: 'function open(done?: Callback<Connected>)'
     type: method
   - uid: azure-iothub.Client.send
-    name: >-
-      send(deviceId: string, message: Message, done?:
-      Callback<results.MessageEnqueued>)
+    name: 'send(deviceId: string, message: Message, done?: Callback<MessageEnqueued>)'
     children: []
     langs:
       - typeScript
@@ -255,7 +251,7 @@ items:
                                          it will be converted.
         - id: done
           type:
-            - Callback<results.MessageEnqueued>
+            - Callback<MessageEnqueued>
           description: |
             The function to call when the operation is
                                          complete. `done` will be called with two
@@ -265,7 +261,7 @@ items:
           optional: true
       content: >-
         function send(deviceId: string, message: Message, done?:
-        Callback<results.MessageEnqueued>)
+        Callback<MessageEnqueued>)
     type: method
   - uid: azure-iothub.Client.ServiceReceiver
     name: ServiceReceiver

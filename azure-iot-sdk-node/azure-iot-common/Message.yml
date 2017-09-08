@@ -116,7 +116,7 @@ items:
         type:
           - string
   - uid: azure-iot-common.Message.constructor
-    name: 'Message(data: Message.BufferConvertible)'
+    name: 'Message(data: BufferConvertible)'
     children: []
     langs:
       - typeScript
@@ -127,7 +127,7 @@ items:
           type:
             - Message.BufferConvertible
           description: ''
-      content: 'new Message(data: Message.BufferConvertible)'
+      content: 'new Message(data: BufferConvertible)'
     type: constructor
   - uid: azure-iot-common.Message.messageId
     name: messageId

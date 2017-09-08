@@ -18,7 +18,7 @@ items:
   - uid: azure-iot-http-base.Http.buildRequest
     name: >-
       buildRequest(method: HttpMethod, path: string, httpHeaders: [key: string]:
-      undefined, host: string, x509Options: X509, done?: HttpCallback)
+      function, host: string, x509Options: X509, done?: HttpCallback)
     children: []
     langs:
       - typeScript
@@ -35,7 +35,7 @@ items:
           description: The section of the URI that should be appended after the hostname.
         - id: httpHeaders
           type:
-            - '[key: string]: undefined'
+            - '[key: string]: function'
           description: >-
             An object containing the headers that should be used for the
             request.
@@ -57,7 +57,7 @@ items:
           optional: true
       content: >-
         function buildRequest(method: HttpMethod, path: string, httpHeaders:
-        [key: string]: undefined, host: string, x509Options: X509, done?:
+        [key: string]: function, host: string, x509Options: X509, done?:
         HttpCallback)
       return:
         type:
@@ -78,7 +78,7 @@ items:
       content: 'function parseErrorBody(body: string)'
     type: method
   - uid: azure-iot-http-base.Http.toMessage
-    name: 'toMessage(response: IncomingMessage, body: Message.BufferConvertible)'
+    name: 'toMessage(response: IncomingMessage, body: BufferConvertible)'
     children: []
     langs:
       - typeScript
@@ -96,9 +96,7 @@ items:
             - Message.BufferConvertible
           description: |
             The section of the URI that should be appended after the hostname.
-      content: >-
-        function toMessage(response: IncomingMessage, body:
-        Message.BufferConvertible)
+      content: 'function toMessage(response: IncomingMessage, body: BufferConvertible)'
       return:
         type:
           - Message

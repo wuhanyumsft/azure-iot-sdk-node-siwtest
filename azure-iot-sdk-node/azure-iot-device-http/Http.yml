@@ -5,7 +5,6 @@ items:
     fullName: Http
     children:
       - azure-iot-device-http.Http.defaultMaxListeners
-      - azure-iot-device-http.Http.constructor
     langs:
       - typeScript
     type: class
@@ -30,17 +29,3 @@ items:
       return:
         type:
           - number
-  - uid: azure-iot-device-http.Http.constructor
-    name: 'Http(config: ClientConfig)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: config
-          type:
-            - ClientConfig
-          description: ''
-      content: 'new Http(config: ClientConfig)'
-    type: constructor

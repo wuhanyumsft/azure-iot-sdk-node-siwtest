@@ -3,25 +3,9 @@ items:
   - uid: azure-iot-common.Connected
     name: Connected
     fullName: Connected
-    children:
-      - azure-iot-common.Connected.constructor
+    children: []
     langs:
       - typeScript
     type: class
     summary: Result returned when a transport is successfully connected.
     package: azure-iot-common
-  - uid: azure-iot-common.Connected.constructor
-    name: 'Connected(transportObj?: any)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: transportObj
-          type:
-            - any
-          description: ''
-          optional: true
-      content: 'new Connected(transportObj?: any)'
-    type: constructor

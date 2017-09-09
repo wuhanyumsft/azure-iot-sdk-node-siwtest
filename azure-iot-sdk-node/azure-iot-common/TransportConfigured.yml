@@ -3,25 +3,9 @@ items:
   - uid: azure-iot-common.TransportConfigured
     name: TransportConfigured
     fullName: TransportConfigured
-    children:
-      - azure-iot-common.TransportConfigured.constructor
+    children: []
     langs:
       - typeScript
     type: class
     summary: Result returned when a transport is successfully configured.
     package: azure-iot-common
-  - uid: azure-iot-common.TransportConfigured.constructor
-    name: 'TransportConfigured(transportObj?: any)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: transportObj
-          type:
-            - any
-          description: ''
-          optional: true
-      content: 'new TransportConfigured(transportObj?: any)'
-    type: constructor

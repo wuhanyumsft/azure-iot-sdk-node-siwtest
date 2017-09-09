@@ -7,10 +7,6 @@ items:
       - azure-iot-common.SharedAccessSignature.create
       - azure-iot-common.SharedAccessSignature.extend
       - azure-iot-common.SharedAccessSignature.parse
-      - azure-iot-common.SharedAccessSignature.se
-      - azure-iot-common.SharedAccessSignature.sig
-      - azure-iot-common.SharedAccessSignature.skn
-      - azure-iot-common.SharedAccessSignature.sr
       - azure-iot-common.SharedAccessSignature.toString
     langs:
       - typeScript
@@ -106,54 +102,6 @@ items:
       - type: FormatError
         description: Will be thrown if the source string is malformed.
     type: method
-  - uid: azure-iot-common.SharedAccessSignature.se
-    name: se
-    fullName: se
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: private
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.SharedAccessSignature.sig
-    name: sig
-    fullName: sig
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: private
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.SharedAccessSignature.skn
-    name: skn
-    fullName: skn
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: private
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.SharedAccessSignature.sr
-    name: sr
-    fullName: sr
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: private
-    syntax:
-      return:
-        type:
-          - string
   - uid: azure-iot-common.SharedAccessSignature.toString
     name: toString()
     children: []

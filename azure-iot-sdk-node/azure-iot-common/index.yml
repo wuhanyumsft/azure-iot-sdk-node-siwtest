@@ -10,7 +10,6 @@ items:
       - azure-iot-common.ConnectionString.SharedAccessKey
       - azure-iot-common.ConnectionString.SharedAccessKeyName
       - azure-iot-common.ConnectionString.x509
-      - azure-iot-common.createDictionary.Dictionary
       - azure-iot-common.ArgumentError
       - azure-iot-common.ArgumentOutOfRangeError
       - azure-iot-common.BadDeviceResponseError
@@ -64,8 +63,6 @@ references:
     name: SharedAccessKeyName
   - uid: azure-iot-common.ConnectionString.x509
     name: x509
-  - uid: azure-iot-common.createDictionary.Dictionary
-    name: Dictionary
   - uid: azure-iot-common.ArgumentError
     name: ArgumentError
   - uid: azure-iot-common.ArgumentOutOfRangeError

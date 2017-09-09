@@ -12,7 +12,11 @@ items:
     langs:
       - typeScript
     type: class
-    summary: Error thrown when IoT Hub is throttled due to excessive activity.
+    summary: >-
+      Error thrown when IoT Hub is throttled due to excessive activity.
+
+      To learn more about quotas, see [Azure IoT Hub quotas and
+      throttling](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-quotas-throttling)
     package: azure-iot-common
   - uid: azure-iot-common.ThrottlingError.Error
     name: Error

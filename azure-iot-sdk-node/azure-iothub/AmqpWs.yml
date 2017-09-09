@@ -5,17 +5,18 @@ items:
     fullName: AmqpWs
     children:
       - azure-iothub.AmqpWs.defaultMaxListeners
-      - azure-iothub.AmqpWs._config
     langs:
       - typeScript
     type: class
     summary: >-
-      Transport class used by the [service client](xref:Client) to connect to
-      the Azure IoT hub using the AMQP protocol over secure websockets.
+      Transport class used by the [service client](xref:azure-iothub.Client) to
+      connect to the Azure IoT hub using the AMQP protocol over secure
+      websockets.
 
       This class should not be used directly and instead be passed to one of the
-      <xref:Client> factory methods: <xref:Client%23fromConnectionString> or
-      <xref:Client%23fromSharedAccessSignature>.
+      <xref:azure-iothub.Client> factory methods:
+      [fromConnectionString](xref:azure-iothub.Client%23fromConnectionString) or
+      [fromSharedAccessSignature](xref:azure-iothub.Client%23fromSharedAccessSignature).
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.defaultMaxListeners
     name: defaultMaxListeners
@@ -29,15 +30,3 @@ items:
       return:
         type:
           - number
-  - uid: azure-iothub.AmqpWs._config
-    name: _config
-    fullName: _config
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - azure-iothub.Client.TransportConfigOptions

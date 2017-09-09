@@ -11,11 +11,12 @@ items:
     langs:
       - typeScript
     type: class
-    summary: |-
-      Represents the data passed in from the service to the device
-                       when a device method is called from the cloud.
-                       An instance of this class is passed to the callback registered via
-                       <xref:azure-iot-device.Client%23onDeviceMethod>.
+    summary: >-
+      Represents the data passed in from the service to the device when a device
+      method is called from the cloud.
+
+      An instance of this class is passed to the callback registered via
+      <xref:azure-iot-device.Client.onDeviceMethod>.
     package: azure-iot-device
   - uid: azure-iot-device.DeviceMethodRequest.constructor
     name: 'DeviceMethodRequest(requestId: string, methodName: string, body?: any)'
@@ -49,7 +50,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The name of the method to be called.
     syntax:
       return:
         type:
@@ -61,7 +62,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: A Node `Buffer` representing the payload of the method call request.
     syntax:
       return:
         type:
@@ -73,7 +74,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The request identifier supplied by the service for this device method
+      call.
     syntax:
       return:
         type:

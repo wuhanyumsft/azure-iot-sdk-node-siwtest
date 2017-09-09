@@ -5,7 +5,6 @@ items:
     fullName: SharedAccessSignatureUpdated
     children:
       - azure-iot-common.SharedAccessSignatureUpdated.needToReconnect
-      - azure-iot-common.SharedAccessSignatureUpdated.constructor
     langs:
       - typeScript
     type: class
@@ -23,17 +22,3 @@ items:
       return:
         type:
           - boolean
-  - uid: azure-iot-common.SharedAccessSignatureUpdated.constructor
-    name: 'SharedAccessSignatureUpdated(needToReconnect: boolean)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: needToReconnect
-          type:
-            - boolean
-          description: ''
-      content: 'new SharedAccessSignatureUpdated(needToReconnect: boolean)'
-    type: constructor

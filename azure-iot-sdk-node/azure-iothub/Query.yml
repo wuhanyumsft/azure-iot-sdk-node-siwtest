@@ -15,8 +15,9 @@ items:
       Constructs a Query object that provides APIs to trigger the execution of a
       device query.
 
-      SDK users should create queries using the <xref:JobClient%23createQuery>
-      and <xref:Registry%23createQuery> APIs
+      SDK users should create queries using the
+      <xref:azure-iothub.JobClient.createQuery> and
+      <xref:azure-iothub.Registry.createQuery> APIs
 
       and should not try to instantiate this class directly.
     package: azure-iothub

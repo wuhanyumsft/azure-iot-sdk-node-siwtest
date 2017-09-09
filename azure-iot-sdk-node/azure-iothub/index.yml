@@ -10,13 +10,9 @@ items:
       - azure-iothub.Device
       - azure-iothub.DeviceMethodParams
       - azure-iothub.JobClient
-      - azure-iothub.JobDescription
       - azure-iothub.Query
       - azure-iothub.Registry
       - azure-iothub.Twin
-      - azure-iothub.TwinData
-      - azure-iothub.TwinProperties
-      - azure-iothub.TwinPropertyCollection
     type: package
     langs:
       - typeScript
@@ -33,17 +29,9 @@ references:
     name: DeviceMethodParams
   - uid: azure-iothub.JobClient
     name: JobClient
-  - uid: azure-iothub.JobDescription
-    name: JobDescription
   - uid: azure-iothub.Query
     name: Query
   - uid: azure-iothub.Registry
     name: Registry
   - uid: azure-iothub.Twin
     name: Twin
-  - uid: azure-iothub.TwinData
-    name: TwinData
-  - uid: azure-iothub.TwinProperties
-    name: TwinProperties
-  - uid: azure-iothub.TwinPropertyCollection
-    name: TwinPropertyCollection

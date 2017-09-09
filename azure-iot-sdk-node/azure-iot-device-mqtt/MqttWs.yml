@@ -5,15 +5,12 @@ items:
     fullName: MqttWs
     children:
       - azure-iot-device-mqtt.MqttWs.defaultMaxListeners
-      - azure-iot-device-mqtt.MqttWs.constructor
-      - azure-iot-device-mqtt.MqttWs._config
     langs:
       - typeScript
     type: class
     summary: >-
       Provides MQTT over WebSockets transport for the device
       [client](xref:azure-iot-device.Client) class.
-
 
       This class is not meant to be used directly, instead it should just be
       passed to the [client](xref:azure-iot-device.Client) object.
@@ -30,29 +27,3 @@ items:
       return:
         type:
           - number
-  - uid: azure-iot-device-mqtt.MqttWs.constructor
-    name: 'MqttWs(config: ClientConfig)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: config
-          type:
-            - ClientConfig
-          description: ''
-      content: 'new MqttWs(config: ClientConfig)'
-    type: constructor
-  - uid: azure-iot-device-mqtt.MqttWs._config
-    name: _config
-    fullName: _config
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - ClientConfig

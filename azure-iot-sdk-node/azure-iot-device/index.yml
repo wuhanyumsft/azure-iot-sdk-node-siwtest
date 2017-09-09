@@ -7,11 +7,6 @@ items:
       - azure-iot-device.Client
       - azure-iot-device.DeviceMethodRequest
       - azure-iot-device.DeviceMethodResponse
-      - azure-iot-device.BatchingTransport
-      - azure-iot-device.ClientConfig
-      - azure-iot-device.DeviceMethodTransport
-      - azure-iot-device.StableConnectionTransport
-      - azure-iot-device.TwinTransport
       - azure-iot-device.Twin
     type: package
     langs:
@@ -23,15 +18,5 @@ references:
     name: DeviceMethodRequest
   - uid: azure-iot-device.DeviceMethodResponse
     name: DeviceMethodResponse
-  - uid: azure-iot-device.BatchingTransport
-    name: BatchingTransport
-  - uid: azure-iot-device.ClientConfig
-    name: ClientConfig
-  - uid: azure-iot-device.DeviceMethodTransport
-    name: DeviceMethodTransport
-  - uid: azure-iot-device.StableConnectionTransport
-    name: StableConnectionTransport
-  - uid: azure-iot-device.TwinTransport
-    name: TwinTransport
   - uid: azure-iot-device.Twin
     name: Twin

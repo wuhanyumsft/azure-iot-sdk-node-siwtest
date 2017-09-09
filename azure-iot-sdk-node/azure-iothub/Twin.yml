@@ -33,8 +33,8 @@ items:
       Twins](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins).
 
 
-      The recommended way to obtain a <xref:Twin> for a specific device is to
-      use the <xref:Registry%23getTwin> method.
+      The recommended way to obtain a <xref:azure-iothub.Twin> for a specific
+      device is to use the <xref:azure-iothub.Registry.getTwin> method.
     package: azure-iothub
   - uid: azure-iothub.Twin.deviceId
     name: deviceId
@@ -98,7 +98,7 @@ items:
     syntax:
       return:
         type:
-          - azure-iothub.TwinProperties
+          - function
   - uid: azure-iothub.Twin.tags
     name: tags
     fullName: tags

@@ -3,25 +3,9 @@ items:
   - uid: azure-iot-common.MessageRejected
     name: MessageRejected
     fullName: MessageRejected
-    children:
-      - azure-iot-common.MessageRejected.constructor
+    children: []
     langs:
       - typeScript
     type: class
     summary: Result returned when a message was successfully rejected.
     package: azure-iot-common
-  - uid: azure-iot-common.MessageRejected.constructor
-    name: 'MessageRejected(transportObj?: any)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: transportObj
-          type:
-            - any
-          description: ''
-          optional: true
-      content: 'new MessageRejected(transportObj?: any)'
-    type: constructor

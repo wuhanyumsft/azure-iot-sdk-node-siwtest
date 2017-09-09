@@ -32,11 +32,16 @@ items:
     langs:
       - typeScript
     type: class
-    summary: |
+    summary: >
       IoT Hub device client used to connect a device with an Azure IoT hub.
+
       Users of the SDK should call one of the factory methods,
-      <xref:azure-iot-device.Client.fromConnectionString>
-      or <xref:azure-iot-device.Client.fromSharedAccessSignature>
+
+      [fromConnectionString](xref:azure-iot-device.Client.fromConnectionString)
+
+      or
+      [fromSharedAccessSignature](xref:azure-iot-device.Client.fromSharedAccessSignature)
+
       to create an IoT Hub device client.
     package: azure-iot-device
   - uid: azure-iot-device.Client.abandon
@@ -454,7 +459,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: private
     syntax:
       return:
         type:
@@ -656,7 +661,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: private
     syntax:
       return:
         type:
@@ -668,7 +673,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: private
     syntax:
       return:
         type:

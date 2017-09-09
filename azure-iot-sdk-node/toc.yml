@@ -3,24 +3,14 @@
     - uid: azure-iot-device
       name: azure-iot-device
       items:
-        - uid: azure-iot-device.BatchingTransport
-          name: BatchingTransport
         - uid: azure-iot-device.Client
           name: Client
-        - uid: azure-iot-device.ClientConfig
-          name: ClientConfig
         - uid: azure-iot-device.DeviceMethodRequest
           name: DeviceMethodRequest
         - uid: azure-iot-device.DeviceMethodResponse
           name: DeviceMethodResponse
-        - uid: azure-iot-device.DeviceMethodTransport
-          name: DeviceMethodTransport
-        - uid: azure-iot-device.StableConnectionTransport
-          name: StableConnectionTransport
         - uid: azure-iot-device.Twin
           name: Twin
-        - uid: azure-iot-device.TwinTransport
-          name: TwinTransport
     - uid: azure-iot-device-amqp
       name: azure-iot-device-amqp
       items:
@@ -38,16 +28,10 @@
     - uid: azure-iot-device-mqtt
       name: azure-iot-device-mqtt
       items:
-        - uid: azure-iot-device-mqtt.MethodDescription
-          name: MethodDescription
-        - uid: azure-iot-device-mqtt.MethodMessage
-          name: MethodMessage
         - uid: azure-iot-device-mqtt.Mqtt
           name: Mqtt
         - uid: azure-iot-device-mqtt.MqttWs
           name: MqttWs
-        - uid: azure-iot-device-mqtt.TopicDescription
-          name: TopicDescription
 - name: Service
   items:
     - uid: azure-iothub
@@ -65,20 +49,12 @@
           name: DeviceMethodParams
         - uid: azure-iothub.JobClient
           name: JobClient
-        - uid: azure-iothub.JobDescription
-          name: JobDescription
         - uid: azure-iothub.Query
           name: Query
         - uid: azure-iothub.Registry
           name: Registry
         - uid: azure-iothub.Twin
           name: Twin
-        - uid: azure-iothub.TwinData
-          name: TwinData
-        - uid: azure-iothub.TwinProperties
-          name: TwinProperties
-        - uid: azure-iothub.TwinPropertyCollection
-          name: TwinPropertyCollection
 - name: Common
   items:
     - uid: azure-iot-common
@@ -104,8 +80,6 @@
           name: DeviceNotFoundError
         - uid: azure-iot-common.DeviceTimeoutError
           name: DeviceTimeoutError
-        - uid: azure-iot-common.createDictionary.Dictionary
-          name: Dictionary
         - uid: azure-iot-common.Disconnected
           name: Disconnected
         - uid: azure-iot-common.FormatError

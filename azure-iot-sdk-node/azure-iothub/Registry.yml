@@ -39,8 +39,8 @@ items:
       Users of the SDK should instantiate this class with one of the factory
       methods:
 
-      <xref:Registry%23fromConnectionString> or
-      <xref:Registry%23fromSharedAccessSignature>.
+      [fromConnectionString](xref:azure-iothub.Registry.fromConnectionString) or
+      [fromSharedAccessSignature](xref:azure-iothub.Registry.fromSharedAccessSignature).
 
       The protocol used for device identity registry operations is HTTPS.
     package: azure-iothub

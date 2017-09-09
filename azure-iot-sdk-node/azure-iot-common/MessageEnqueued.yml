@@ -3,25 +3,9 @@ items:
   - uid: azure-iot-common.MessageEnqueued
     name: MessageEnqueued
     fullName: MessageEnqueued
-    children:
-      - azure-iot-common.MessageEnqueued.constructor
+    children: []
     langs:
       - typeScript
     type: class
     summary: Result returned when a message was successfully enqueued.
     package: azure-iot-common
-  - uid: azure-iot-common.MessageEnqueued.constructor
-    name: 'MessageEnqueued(transportObj?: any)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: transportObj
-          type:
-            - any
-          description: ''
-          optional: true
-      content: 'new MessageEnqueued(transportObj?: any)'
-    type: constructor

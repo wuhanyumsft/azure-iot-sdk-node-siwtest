@@ -5,7 +5,6 @@ items:
     fullName: Mqtt
     children:
       - azure-iot-device-mqtt.Mqtt.defaultMaxListeners
-      - azure-iot-device-mqtt.Mqtt._config
     langs:
       - typeScript
     type: class
@@ -29,15 +28,3 @@ items:
       return:
         type:
           - number
-  - uid: azure-iot-device-mqtt.Mqtt._config
-    name: _config
-    fullName: _config
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - ClientConfig

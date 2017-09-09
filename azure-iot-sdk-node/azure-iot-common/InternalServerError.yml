@@ -12,7 +12,9 @@ items:
     langs:
       - typeScript
     type: class
-    summary: ''
+    summary: >-
+      Error thrown when an internal server error occured. You may have found a
+      bug?
     package: azure-iot-common
   - uid: azure-iot-common.InternalServerError.Error
     name: Error

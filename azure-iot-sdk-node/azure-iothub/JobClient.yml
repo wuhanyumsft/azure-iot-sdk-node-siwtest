@@ -21,9 +21,10 @@ items:
       The Jobs API in Azure IoT Hub allows to schedule direct method calls and
       twin updates on multiple devices.
 
-      SDK users are expected to create <xref:JobClient> instances using the
-      factory methods <xref:JobClient.fromConnectionString> and
-      <xref:JobClient.fromSharedAccessSignature>.
+      SDK users are expected to create <xref:azure-iothub.JobClient> instances
+      using the factory methods
+      <xref:azure-iothub.JobClient.fromConnectionString> and
+      <xref:azure-iothub.JobClient.fromSharedAccessSignature>.
     package: azure-iothub
   - uid: azure-iothub.JobClient.cancelJob
     name: 'cancelJob(jobId: string, done: JobCallback)'

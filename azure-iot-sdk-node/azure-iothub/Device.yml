@@ -151,7 +151,7 @@ items:
     children: []
     langs:
       - typeScript
-    summary: 'Instantiate a new <xref:Device> object.'
+    summary: 'Instantiate a new <xref:azure-iothub.Device> object.'
     syntax:
       parameters:
         - id: jsonData

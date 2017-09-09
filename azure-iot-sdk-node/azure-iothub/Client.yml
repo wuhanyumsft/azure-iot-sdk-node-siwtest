@@ -76,7 +76,7 @@ items:
     summary: |-
       Creates an IoT Hub service client from the given
                          connection string using the default transport
-                         ([Transport](xref:azure-iothub~Transport)).
+                         ([Transport](xref:azure-iothub.Transport)).
     syntax:
       parameters:
         - id: connStr

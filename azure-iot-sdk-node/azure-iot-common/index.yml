@@ -4,12 +4,7 @@ items:
     name: azure-iot-common
     summary: ''
     children:
-      - azure-iot-common.ConnectionString.DeviceId
-      - azure-iot-common.ConnectionString.GatewayHostName
-      - azure-iot-common.ConnectionString.HostName
-      - azure-iot-common.ConnectionString.SharedAccessKey
-      - azure-iot-common.ConnectionString.SharedAccessKeyName
-      - azure-iot-common.ConnectionString.x509
+      - azure-iot-common.ConnectionString
       - azure-iot-common.ArgumentError
       - azure-iot-common.ArgumentOutOfRangeError
       - azure-iot-common.BadDeviceResponseError
@@ -51,18 +46,8 @@ items:
     langs:
       - typeScript
 references:
-  - uid: azure-iot-common.ConnectionString.DeviceId
-    name: DeviceId
-  - uid: azure-iot-common.ConnectionString.GatewayHostName
-    name: GatewayHostName
-  - uid: azure-iot-common.ConnectionString.HostName
-    name: HostName
-  - uid: azure-iot-common.ConnectionString.SharedAccessKey
-    name: SharedAccessKey
-  - uid: azure-iot-common.ConnectionString.SharedAccessKeyName
-    name: SharedAccessKeyName
-  - uid: azure-iot-common.ConnectionString.x509
-    name: x509
+  - uid: azure-iot-common.ConnectionString
+    name: ConnectionString
   - uid: azure-iot-common.ArgumentError
     name: ArgumentError
   - uid: azure-iot-common.ArgumentOutOfRangeError

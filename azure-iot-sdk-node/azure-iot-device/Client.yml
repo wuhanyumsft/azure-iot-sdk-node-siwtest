@@ -19,7 +19,6 @@ items:
       - azure-iot-device.Client.onDeviceMethod
       - azure-iot-device.Client.open
       - azure-iot-device.Client.reject
-      - azure-iot-device.Client.sasRenewalInterval
       - azure-iot-device.Client.sendEvent
       - azure-iot-device.Client.sendEventBatch
       - azure-iot-device.Client.setOptions
@@ -27,8 +26,6 @@ items:
       - azure-iot-device.Client.Transport
       - azure-iot-device.Client.updateSharedAccessSignature
       - azure-iot-device.Client.uploadToBlob
-      - azure-iot-device.Client._transport
-      - azure-iot-device.Client._twin
     langs:
       - typeScript
     type: class
@@ -93,7 +90,7 @@ items:
           description: |-
             An object that implements the interface
                                                expected of a transport object, e.g.,
-                                               [Http](xref:azure-iot-device~Http).
+                                               [Http](xref:azure-iot-device.Http).
         - id: connStr
           type:
             - string
@@ -452,25 +449,13 @@ items:
       - type: ReferenceException
         description: If the message is falsy.
     type: method
-  - uid: azure-iot-device.Client.sasRenewalInterval
-    name: sasRenewalInterval
-    fullName: sasRenewalInterval
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: private
-    syntax:
-      return:
-        type:
-          - number
   - uid: azure-iot-device.Client.sendEvent
     name: 'sendEvent(message: Message, sendEventCallback?: function)'
     children: []
     langs:
       - typeScript
     summary: >-
-      The [<code>sendEvent</code>](xref:Client%23sendEvent) method sends an
+      The [sendEvent](xref:azure-iot-device.Client.sendEvent) method sends an
       event message
                          to the IoT Hub as the device indicated by the connection string passed
                          via the constructor.
@@ -479,15 +464,12 @@ items:
         - id: message
           type:
             - Message
-          description: |-
-            The [<code>message</code>](xref:common%2Fmessage.Message)
-                                                 to be sent.
+          description: 'The [message](xref:azure-iot-common.Message) to be sent.'
         - id: sendEventCallback
           type:
             - function
-          description: |-
-            The callback to be invoked when `sendEvent`
-                                                 completes execution.
+          description: |
+            The callback to be invoked when `sendEvent` completes execution.
           optional: true
       content: 'function sendEvent(message: Message, sendEventCallback?: function)'
     type: method
@@ -497,7 +479,7 @@ items:
     langs:
       - typeScript
     summary: >-
-      The [<code>sendEventBatch</code>](xref:Client%23sendEventBatch) method
+      The [sendEventBatch](xref:azure-iot-device.Client.sendEventBatch) method
       sends a list
                          of event messages to the IoT Hub as the device indicated by the connection
                          string passed via the constructor.
@@ -507,7 +489,7 @@ items:
           type:
             - Message
           description: |-
-            Array of [<code>Message</code>](xref:common%2Fmessage.Message)
+            Array of [Message](xref:azure-iot-common.Message)
                                                            objects to be sent as a batch.
         - id: sendEventBatchCallback
           type:
@@ -654,27 +636,3 @@ items:
       - type: ReferenceException
         description: If blobName or stream or streamLength is falsy.
     type: method
-  - uid: azure-iot-device.Client._transport
-    name: _transport
-    fullName: _transport
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: private
-    syntax:
-      return:
-        type:
-          - azure-iot-device.Client.Transport
-  - uid: azure-iot-device.Client._twin
-    name: _twin
-    fullName: _twin
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: private
-    syntax:
-      return:
-        type:
-          - azure-iot-device.Twin

@@ -68,10 +68,10 @@
           name: BadDeviceResponseError
         - uid: azure-iot-common.Connected
           name: Connected
+        - uid: azure-iot-common.ConnectionString
+          name: ConnectionString
         - uid: azure-iot-common.DeviceAlreadyExistsError
           name: DeviceAlreadyExistsError
-        - uid: azure-iot-common.ConnectionString.DeviceId
-          name: DeviceId
         - uid: azure-iot-common.DeviceMaximumQueueDepthExceededError
           name: DeviceMaximumQueueDepthExceededError
         - uid: azure-iot-common.DeviceMessageLockLostError
@@ -84,12 +84,8 @@
           name: Disconnected
         - uid: azure-iot-common.FormatError
           name: FormatError
-        - uid: azure-iot-common.ConnectionString.GatewayHostName
-          name: GatewayHostName
         - uid: azure-iot-common.GatewayTimeoutError
           name: GatewayTimeoutError
-        - uid: azure-iot-common.ConnectionString.HostName
-          name: HostName
         - uid: azure-iot-common.InternalServerError
           name: InternalServerError
         - uid: azure-iot-common.InvalidEtagError
@@ -126,10 +122,6 @@
           name: Properties
         - uid: azure-iot-common.ServiceUnavailableError
           name: ServiceUnavailableError
-        - uid: azure-iot-common.ConnectionString.SharedAccessKey
-          name: SharedAccessKey
-        - uid: azure-iot-common.ConnectionString.SharedAccessKeyName
-          name: SharedAccessKeyName
         - uid: azure-iot-common.SharedAccessSignature
           name: SharedAccessSignature
         - uid: azure-iot-common.SharedAccessSignatureUpdated
@@ -144,5 +136,3 @@
           name: TransportConfigured
         - uid: azure-iot-common.UnauthorizedError
           name: UnauthorizedError
-        - uid: azure-iot-common.ConnectionString.x509
-          name: x509

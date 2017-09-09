@@ -84,7 +84,7 @@ items:
       - typeScript
     summary: >-
       Gets the data passed to the constructor as a
-      [<code>Buffer</code>](https://nodejs.org/api/globals.html#globals_class_buffer)
+      [Buffer](https://nodejs.org/api/globals.html#globals_class_buffer)
     syntax:
       parameters: []
       content: function getBytes()
@@ -97,7 +97,7 @@ items:
     children: []
     langs:
       - typeScript
-    summary: 'Gets the content (body) of the <xref:Message>.'
+    summary: 'Gets the content (body) of the <xref:azure-iot-common.Message>.'
     syntax:
       parameters: []
       content: function getData()
@@ -122,7 +122,7 @@ items:
     children: []
     langs:
       - typeScript
-    summary: 'Creates a new <xref:Message> object'
+    summary: 'Creates a new <xref:azure-iot-common.Message> object'
     syntax:
       parameters:
         - id: data
@@ -130,9 +130,9 @@ items:
             - Message.BufferConvertible
           description: >
             a Node
-            [<code>Buffer</code>](https://nodejs.org/api/globals.html#globals_class_buffer)
-                        object or anything that can be passed to the [<code>Buffer</code>](https://nodejs.org/api/globals.html#globals_class_buffer) constructor
-                        to construct a [<code>Buffer</code>](https://nodejs.org/api/globals.html#globals_class_buffer) from.
+            [Buffer](https://nodejs.org/api/globals.html#globals_class_buffer)
+                        object or anything that can be passed to the [Buffer](https://nodejs.org/api/globals.html#globals_class_buffer) constructor
+                        to construct a [Buffer](https://nodejs.org/api/globals.html#globals_class_buffer) from.
       content: 'new Message(data: BufferConvertible)'
     type: constructor
   - uid: azure-iot-common.Message.messageId

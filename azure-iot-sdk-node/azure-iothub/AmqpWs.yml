@@ -15,8 +15,8 @@ items:
 
       This class should not be used directly and instead be passed to one of the
       <xref:azure-iothub.Client> factory methods:
-      [fromConnectionString](xref:azure-iothub.Client%23fromConnectionString) or
-      [fromSharedAccessSignature](xref:azure-iothub.Client%23fromSharedAccessSignature).
+      [fromConnectionString](xref:azure-iothub.Client.fromConnectionString) or
+      [fromSharedAccessSignature](xref:azure-iothub.Client.fromSharedAccessSignature).
     package: azure-iothub
   - uid: azure-iothub.AmqpWs.defaultMaxListeners
     name: defaultMaxListeners

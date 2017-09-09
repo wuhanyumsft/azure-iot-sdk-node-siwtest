@@ -120,7 +120,8 @@ items:
       - typeScript
     summary: >-
       Instantiates a new <xref:Twin>. The recommended way to get a new
-      <xref:Twin> object is to use the <xref:Registry%23getTwin> method.
+      <xref:azure-iothub.Twin> object is to use the <xref:Registry.getTwin>
+      method.
     syntax:
       parameters:
         - id: device

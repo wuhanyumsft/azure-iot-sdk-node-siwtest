@@ -4,58 +4,19 @@ items:
     name: azure-iot-device
     summary: ''
     children:
-      - azure-iot-device.BlobUploadClient
-      - azure-iot-device.BlobUpload
-      - azure-iot-device.BlobUploader
-      - azure-iot-device.FileUpload
-      - azure-iot-device.UploadParams
-      - azure-iot-device.BlobSasError
-      - azure-iot-device.BlobUploadNotificationError
-      - azure-iot-device.BlobUploadResult
-      - azure-iot-device.BlobUploader
-      - azure-iot-device.BlobService
-      - azure-iot-device.StorageApi
-      - azure-iot-device.FileUploadApi
       - azure-iot-device.Client
       - azure-iot-device.DeviceMethodRequest
       - azure-iot-device.DeviceMethodResponse
       - azure-iot-device.BatchingTransport
       - azure-iot-device.ClientConfig
-      - azure-iot-device.DeviceMethodReceiver
       - azure-iot-device.DeviceMethodTransport
-      - azure-iot-device.MethodMessage
       - azure-iot-device.StableConnectionTransport
       - azure-iot-device.TwinTransport
       - azure-iot-device.Twin
-      - azure-iot-device.TwinBaseError
     type: package
     langs:
       - typeScript
 references:
-  - uid: azure-iot-device.BlobUploadClient
-    name: BlobUploadClient
-  - uid: azure-iot-device.BlobUpload
-    name: BlobUpload
-  - uid: azure-iot-device.BlobUploader
-    name: BlobUploader
-  - uid: azure-iot-device.FileUpload
-    name: FileUpload
-  - uid: azure-iot-device.UploadParams
-    name: UploadParams
-  - uid: azure-iot-device.BlobSasError
-    name: BlobSasError
-  - uid: azure-iot-device.BlobUploadNotificationError
-    name: BlobUploadNotificationError
-  - uid: azure-iot-device.BlobUploadResult
-    name: BlobUploadResult
-  - uid: azure-iot-device.BlobUploader
-    name: BlobUploader
-  - uid: azure-iot-device.BlobService
-    name: BlobService
-  - uid: azure-iot-device.StorageApi
-    name: StorageApi
-  - uid: azure-iot-device.FileUploadApi
-    name: FileUploadApi
   - uid: azure-iot-device.Client
     name: Client
   - uid: azure-iot-device.DeviceMethodRequest
@@ -66,17 +27,11 @@ references:
     name: BatchingTransport
   - uid: azure-iot-device.ClientConfig
     name: ClientConfig
-  - uid: azure-iot-device.DeviceMethodReceiver
-    name: DeviceMethodReceiver
   - uid: azure-iot-device.DeviceMethodTransport
     name: DeviceMethodTransport
-  - uid: azure-iot-device.MethodMessage
-    name: MethodMessage
   - uid: azure-iot-device.StableConnectionTransport
     name: StableConnectionTransport
   - uid: azure-iot-device.TwinTransport
     name: TwinTransport
   - uid: azure-iot-device.Twin
     name: Twin
-  - uid: azure-iot-device.TwinBaseError
-    name: TwinBaseError

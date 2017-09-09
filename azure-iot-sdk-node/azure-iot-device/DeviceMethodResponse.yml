@@ -14,13 +14,11 @@ items:
       - typeScript
     type: class
     summary: |-
-      `DeviceMethodResponse` provides functionality that allows
-                       a device method implementation to construct and send a
-                       response back to the service for a device method call. An
-                       instance of this class is passed as the second parameter
-                       to the callback registered via the
-                       <xref:azure-iot-device.Client%23onDeviceMethod> method.
-                       method.
+      a <xref:DeviceMethodResponse> object is provided to the user
+                       with each <xref:DeviceMethodRequest> allowing the user to construct and send a
+                       well-formatted response back to the service for each device method call.
+                       An instance of this class is passed as the second parameter
+                       to the callback registered via <xref:azure-iot-device.Client%23onDeviceMethod>.
     package: azure-iot-device
   - uid: azure-iot-device.DeviceMethodResponse.constructor
     name: 'DeviceMethodResponse(requestId: string, transport: Transport)'

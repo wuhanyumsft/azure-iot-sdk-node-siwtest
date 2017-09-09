@@ -7,7 +7,10 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Name of the access policy used to connect to the Azure IoT hub. used only
+      in the case of the service SDK, unused with the Device SDK (which uses
+      <xref:DeviceId> instead).
     syntax:
       return:
         type:

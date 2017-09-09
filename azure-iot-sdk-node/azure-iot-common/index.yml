@@ -47,7 +47,6 @@ items:
       - azure-iot-common.MessageRejected
       - azure-iot-common.SharedAccessSignatureUpdated
       - azure-iot-common.TransportConfigured
-      - azure-iot-common.Result
       - azure-iot-common.SharedAccessSignature
     type: package
     langs:
@@ -139,7 +138,5 @@ references:
     name: SharedAccessSignatureUpdated
   - uid: azure-iot-common.TransportConfigured
     name: TransportConfigured
-  - uid: azure-iot-common.Result
-    name: Result
   - uid: azure-iot-common.SharedAccessSignature
     name: SharedAccessSignature

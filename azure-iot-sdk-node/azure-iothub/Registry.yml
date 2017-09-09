@@ -24,7 +24,6 @@ items:
       - azure-iothub.Registry.list
       - azure-iothub.Registry.listJobs
       - azure-iothub.Registry.QueryDescription
-      - azure-iothub.Registry.constructor
       - azure-iothub.Registry.RegistryStatistics
       - azure-iothub.Registry.removeDevices
       - azure-iothub.Registry.TransportConfig
@@ -34,13 +33,16 @@ items:
     langs:
       - typeScript
     type: class
-    summary: |-
-      Constructs a Registry object with the given configuration
-                       object. The Registry class provides access to the IoT Hub
-                       identity service. Normally, consumers will call one of the
-                       factory methods, e.g.,
-                       [fromSharedAccessSignature](xref:azure-iothub.Registry.fromConnectionString),
-                       to create a Registry object.
+    summary: >
+      The Registry class provides access to the IoT Hub device identity service.
+
+      Users of the SDK should instantiate this class with one of the factory
+      methods:
+
+      <xref:Registry%23fromConnectionString> or
+      <xref:Registry%23fromSharedAccessSignature>.
+
+      The protocol used for device identity registry operations is HTTPS.
     package: azure-iothub
   - uid: azure-iothub.Registry.addDevices
     name: 'addDevices(devices: DeviceDescription[], done: BulkDeviceIdentityCallback)'
@@ -322,10 +324,7 @@ items:
     children: []
     langs:
       - typeScript
-    summary: |-
-      Constructs a Registry object from the given connection
-                       string using the default transport
-                       ([Http](xref:azure-iothub.Http)).
+    summary: Constructs a Registry object from the given connection string.
     syntax:
       parameters:
         - id: value
@@ -345,10 +344,7 @@ items:
     children: []
     langs:
       - typeScript
-    summary: |-
-      Constructs a Registry object from the given shared access
-                         signature using the default transport
-                         ([Http](xref:azure-iothub.Http)).
+    summary: Constructs a Registry object from the given shared access signature.
     syntax:
       parameters:
         - id: value
@@ -554,25 +550,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iothub.Registry.constructor
-    name: 'Registry(config: TransportConfig, restApiClient?: RestApiClient)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: config
-          type:
-            - azure-iothub.Registry.TransportConfig
-          description: ''
-        - id: restApiClient
-          type:
-            - azure-iothub.RestApiClient
-          description: ''
-          optional: true
-      content: 'new Registry(config: TransportConfig, restApiClient?: RestApiClient)'
-    type: constructor
   - uid: azure-iothub.Registry.RegistryStatistics
     name: RegistryStatistics
     fullName: RegistryStatistics

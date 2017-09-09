@@ -7,7 +7,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Hostname of the Azure IoT hub.
     syntax:
       return:
         type:

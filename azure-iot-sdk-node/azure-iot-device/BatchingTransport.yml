@@ -8,7 +8,9 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      Describes the specific methods that a transport should implement to
+      support device-to-cloud message batching.
     package: azure-iot-device
   - uid: azure-iot-device.BatchingTransport.defaultMaxListeners
     name: defaultMaxListeners

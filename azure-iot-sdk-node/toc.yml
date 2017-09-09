@@ -5,61 +5,27 @@
       items:
         - uid: azure-iot-device.BatchingTransport
           name: BatchingTransport
-        - uid: azure-iot-device.BlobSasError
-          name: BlobSasError
-        - uid: azure-iot-device.BlobService
-          name: BlobService
-        - uid: azure-iot-device.BlobUpload
-          name: BlobUpload
-        - uid: azure-iot-device.BlobUploadClient
-          name: BlobUploadClient
-        - uid: azure-iot-device.BlobUploader
-          name: BlobUploader
-        - uid: azure-iot-device.BlobUploadNotificationError
-          name: BlobUploadNotificationError
-        - uid: azure-iot-device.BlobUploadResult
-          name: BlobUploadResult
         - uid: azure-iot-device.Client
           name: Client
         - uid: azure-iot-device.ClientConfig
           name: ClientConfig
-        - uid: azure-iot-device.DeviceMethodReceiver
-          name: DeviceMethodReceiver
         - uid: azure-iot-device.DeviceMethodRequest
           name: DeviceMethodRequest
         - uid: azure-iot-device.DeviceMethodResponse
           name: DeviceMethodResponse
         - uid: azure-iot-device.DeviceMethodTransport
           name: DeviceMethodTransport
-        - uid: azure-iot-device.FileUpload
-          name: FileUpload
-        - uid: azure-iot-device.FileUploadApi
-          name: FileUploadApi
-        - uid: azure-iot-device.MethodMessage
-          name: MethodMessage
         - uid: azure-iot-device.StableConnectionTransport
           name: StableConnectionTransport
-        - uid: azure-iot-device.StorageApi
-          name: StorageApi
         - uid: azure-iot-device.Twin
           name: Twin
-        - uid: azure-iot-device.TwinBaseError
-          name: TwinBaseError
         - uid: azure-iot-device.TwinTransport
           name: TwinTransport
-        - uid: azure-iot-device.UploadParams
-          name: UploadParams
     - uid: azure-iot-device-amqp
       name: azure-iot-device-amqp
       items:
         - uid: azure-iot-device-amqp.Amqp
           name: Amqp
-        - uid: azure-iot-device-amqp.AmqpDeviceMethodClient
-          name: AmqpDeviceMethodClient
-        - uid: azure-iot-device-amqp.AmqpReceiver
-          name: AmqpReceiver
-        - uid: azure-iot-device-amqp.AmqpTwinReceiver
-          name: AmqpTwinReceiver
         - uid: azure-iot-device-amqp.AmqpWs
           name: AmqpWs
     - uid: azure-iot-device-http
@@ -69,8 +35,6 @@
           name: Http
         - uid: azure-iot-device-http.HttpReceiverOptions
           name: HttpReceiverOptions
-        - uid: azure-iot-device-http.HttpTransportError
-          name: HttpTransportError
     - uid: azure-iot-device-mqtt
       name: azure-iot-device-mqtt
       items:
@@ -80,12 +44,6 @@
           name: MethodMessage
         - uid: azure-iot-device-mqtt.Mqtt
           name: Mqtt
-        - uid: azure-iot-device-mqtt.MqttBase
-          name: MqttBase
-        - uid: azure-iot-device-mqtt.MqttTransportError
-          name: MqttTransportError
-        - uid: azure-iot-device-mqtt.MqttTwinReceiver
-          name: MqttTwinReceiver
         - uid: azure-iot-device-mqtt.MqttWs
           name: MqttWs
         - uid: azure-iot-device-mqtt.TopicDescription
@@ -97,22 +55,14 @@
       items:
         - uid: azure-iothub.Amqp
           name: Amqp
-        - uid: azure-iothub.AmqpTransportError
-          name: AmqpTransportError
         - uid: azure-iothub.AmqpWs
           name: AmqpWs
         - uid: azure-iothub.Client
           name: Client
         - uid: azure-iothub.Device
           name: Device
-        - uid: azure-iothub.DeviceIdentity
-          name: DeviceIdentity
-        - uid: azure-iothub.DeviceMethod
-          name: DeviceMethod
         - uid: azure-iothub.DeviceMethodParams
           name: DeviceMethodParams
-        - uid: azure-iothub.HttpTransportError
-          name: HttpTransportError
         - uid: azure-iothub.JobClient
           name: JobClient
         - uid: azure-iothub.JobDescription
@@ -121,8 +71,6 @@
           name: Query
         - uid: azure-iothub.Registry
           name: Registry
-        - uid: azure-iothub.RestApiClient
-          name: RestApiClient
         - uid: azure-iothub.Twin
           name: Twin
         - uid: azure-iothub.TwinData
@@ -202,8 +150,6 @@
           name: PreconditionFailedError
         - uid: azure-iot-common.Properties
           name: Properties
-        - uid: azure-iot-common.Result
-          name: Result
         - uid: azure-iot-common.ServiceUnavailableError
           name: ServiceUnavailableError
         - uid: azure-iot-common.ConnectionString.SharedAccessKey
@@ -226,23 +172,3 @@
           name: UnauthorizedError
         - uid: azure-iot-common.ConnectionString.x509
           name: x509
-    - uid: azure-iot-amqp-base
-      name: azure-iot-amqp-base
-      items:
-        - uid: azure-iot-amqp-base.Amqp
-          name: Amqp
-        - uid: azure-iot-amqp-base.AmqpMessage
-          name: AmqpMessage
-        - uid: azure-iot-amqp-base.AmqpReceiver
-          name: AmqpReceiver
-        - uid: azure-iot-amqp-base.AmqpTransportError
-          name: AmqpTransportError
-        - uid: azure-iot-amqp-base.PutTokenOperation
-          name: PutTokenOperation
-        - uid: azure-iot-amqp-base.PutTokenStatus
-          name: PutTokenStatus
-    - uid: azure-iot-http-base
-      name: azure-iot-http-base
-      items:
-        - uid: azure-iot-http-base.Http
-          name: Http

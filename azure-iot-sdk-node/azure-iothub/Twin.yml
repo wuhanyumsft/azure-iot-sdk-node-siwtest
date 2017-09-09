@@ -14,9 +14,27 @@ items:
     langs:
       - typeScript
     type: class
-    summary: |-
-      Constructs a Twin object that provides APIs to update
-                              parts of the twin of a device in the IoT Hub service.
+    summary: >
+      A Device Twin is document describing the state of a device that is stored
+      by an Azure IoT hub and is available even if the device is offline.
+
+      It is built around 3 sections:
+        - Tags: key/value pairs only accessible from the service side
+        - Desired Properties: updated by a service and received by the device
+        - Reported Properties: updated by the device and received by the service.
+      Note that although it is a possibility, desired and reported properties do
+      not have to match
+
+      and that the logic to sync these two collections, if necessary, is left to
+      the user of the SDK.
+
+
+      For more information see [Understanding Device
+      Twins](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins).
+
+
+      The recommended way to obtain a <xref:Twin> for a specific device is to
+      use the <xref:Registry%23getTwin> method.
     package: azure-iothub
   - uid: azure-iothub.Twin.deviceId
     name: deviceId
@@ -25,7 +43,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Unique identifier of the device identity associated with the twin, as it
+      exists in the device identity registry.
     syntax:
       return:
         type:
@@ -37,7 +57,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Tag used in optimistic concurrency to avoid multiple parallel editions of
+      the device twin.
     syntax:
       return:
         type:
@@ -70,7 +92,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The desired and reported properties dictionnaries (respectively in
+      `properties.desired` and `properties.reported`).
     syntax:
       return:
         type:
@@ -82,7 +106,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Collection of key/value pairs that is available only on the service side
+      and can be used in queries to find specific devices.
     syntax:
       return:
         type:
@@ -92,17 +118,23 @@ items:
     children: []
     langs:
       - typeScript
-    summary: ''
+    summary: >-
+      Instantiates a new <xref:Twin>. The recommended way to get a new
+      <xref:Twin> object is to use the <xref:Registry%23getTwin> method.
     syntax:
       parameters:
         - id: device
           type:
             - DeviceIdentity
-          description: ''
+          description: >-
+            A device identifier string or an object describing the device. If an
+            Object,
+                                                it must contain a deviceId property.
         - id: registryClient
           type:
             - azure-iothub.Registry
-          description: ''
+          description: |
+            The HTTP registry client used to execute REST API calls.
       content: 'new Twin(device: DeviceIdentity, registryClient: Registry)'
     type: constructor
   - uid: azure-iothub.Twin.update

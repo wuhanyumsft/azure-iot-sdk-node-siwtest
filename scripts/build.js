@@ -14,7 +14,7 @@ var dest = 'azure-iot-sdk-node';
 var configPath = 'node2docfx.json';
 var tempConfigPath = '_node2docfx_temp.json';
 var filenameMaxLength = 100;
-var packagesToFilter = ['azure-arm-datalake-store'];
+var packagesToFilter = ['azure-iot-amqp-base', 'azure-iot-http-base', 'azure-iot-device-ts-samples', 'registry_sample', 'ts-e2e'];
 
 
 // 1. prepare
@@ -45,20 +45,23 @@ toc.forEach(function(t) {
 
 transformedToc = JSON.parse(JSON.stringify(transformedToc));
 fs.writeFileSync(dest + '/toc.yml', yaml.safeDump(transformedToc));
+process.exit(0);
 
 function generatePackageDoc(packagePath, dest) {
     var dir = path.dirname(packagePath);
     var packageName = fse.readJsonSync(packagePath).name;
-    console.log(packageName); 
-    if (fse.existsSync(dir + '/src')) {
-        var packageDest = dest + '/' + packageName;
-        fse.mkdirpSync(packageDest);
-        child_process.execSync('typedoc --json ' + dir + '/api.json ' + dir + '/src --module commonjs --ignoreCompilerErrors');
-        child_process.execFileSync('node', ['node_modules/type2docfx/dist/main', dir + '/api.json', packageDest]);
-        var subToc = yaml.safeLoad(fs.readFileSync(packageDest + '/toc.yml'));
-        toc.push(subToc[0]);
-        fse.removeSync(packageDest + '/toc.yml');
-    } else {
-        console.log('No source file for' + packageName);
+    if (packagesToFilter.indexOf(packageName) < 0) {
+        console.log(packageName);
+        if (fse.existsSync(dir + '/src')) {
+            var packageDest = dest + '/' + packageName;
+            fse.mkdirpSync(packageDest);
+            child_process.execSync('typedoc --json ' + dir + '/api.json ' + dir + '/src --module commonjs --ignoreCompilerErrors');
+            child_process.execFileSync('node', ['node_modules/type2docfx/dist/main', dir + '/api.json', packageDest]);
+            var subToc = yaml.safeLoad(fs.readFileSync(packageDest + '/toc.yml'));
+            toc.push(subToc[0]);
+            fse.removeSync(packageDest + '/toc.yml');
+        } else {
+            console.log('No source file for ' + packageName);
+        }
     }
 }

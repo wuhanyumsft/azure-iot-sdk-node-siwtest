@@ -6,7 +6,6 @@ items:
     children:
       - azure-iot-common.Disconnected.constructor
       - azure-iot-common.Disconnected.reason
-      - azure-iot-common.Disconnected.transportObj
     langs:
       - typeScript
     type: class
@@ -39,20 +38,8 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The reason why the disconnected event is emitted.
     syntax:
       return:
         type:
           - string
-  - uid: azure-iot-common.Disconnected.transportObj
-    name: transportObj
-    fullName: transportObj
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - any

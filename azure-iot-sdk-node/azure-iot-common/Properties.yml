@@ -12,9 +12,14 @@ items:
     langs:
       - typeScript
     type: class
-    summary: |-
-      Collection of user defined properties. Values can only be
-                 strings.
+    summary: >-
+      Collection of user defined properties of a <xref:Message> object that are
+      going to be sent alongside the body of the message
+
+      and can be used for
+      [routing](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-process-d2c).
+
+      Values can only be strings.
     package: azure-iot-common
   - uid: azure-iot-common.Properties.add
     name: 'add(itemKey: string, itemValue: string)'
@@ -91,7 +96,14 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: |-
+      Array containing the properties stored as key/value pairs
+      ```json
+      [
+        { key: 'prop1', value: 'value1' },
+        { key: 'prop2', value: 'value2' }
+      ]
+      ```
     syntax:
       return:
         type:

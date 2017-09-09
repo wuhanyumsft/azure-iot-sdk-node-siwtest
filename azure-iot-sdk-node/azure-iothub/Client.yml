@@ -4,7 +4,6 @@ items:
     name: Client
     fullName: Client
     children:
-      - azure-iothub.Client.constructor
       - azure-iothub.Client.close
       - azure-iothub.Client.defaultMaxListeners
       - azure-iothub.Client.fromConnectionString
@@ -20,32 +19,24 @@ items:
     langs:
       - typeScript
     type: class
-    summary: |-
-      Creates an IoT Hub service client. Normally, consumers will
-                       call one of the factory methods,
-                       [fromConnectionString](xref:azure-iothub.Client.fromConnectionString) or
-                       [fromSharedAccessSignature](xref:azure-iothub.Client.fromSharedAccessSignature),
-                       to create an IoT Hub service Client.
+    summary: >
+      The IoT Hub service client is used to communicate with devices through an
+      Azure IoT hub.
+
+      It lets the SDK user:
+        - send device-to-cloud (also known as commands) to devices: commands are queued on IoT Hub and delivered asynchronously only when the device is connected. Only 50 commands can be queued per device.
+        - invoke direct methods on devices (which will work only if the device is currently connected: it's a synchronous way of communicating with the device)
+        - listen for feedback messages sent by devices for previous commands.
+        - listen for file upload notifications from devices.
+      Users should create new <xref:Client> instances by calling one of the
+      factory methods,
+
+      [fromConnectionString](xref:azure-iothub.Client.fromConnectionString) or
+
+      [fromSharedAccessSignature](xref:azure-iothub.Client.fromSharedAccessSignature),
+
+      to create an IoT Hub service Client.
     package: azure-iothub
-  - uid: azure-iothub.Client.constructor
-    name: 'Client(transport: Transport, restApiClient?: RestApiClient)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: transport
-          type:
-            - azure-iothub.Client.Transport
-          description: ''
-        - id: restApiClient
-          type:
-            - azure-iothub.RestApiClient
-          description: ''
-          optional: true
-      content: 'new Client(transport: Transport, restApiClient?: RestApiClient)'
-    type: constructor
   - uid: azure-iothub.Client.close
     name: 'close(done?: Callback<Disconnected>)'
     children: []
@@ -262,6 +253,9 @@ items:
       content: >-
         function send(deviceId: string, message: Message, done?:
         Callback<MessageEnqueued>)
+    exceptions:
+      - type: ReferenceError
+        description: 'If `deviceId` or `message` is null, undefined or empty.'
     type: method
   - uid: azure-iothub.Client.ServiceReceiver
     name: ServiceReceiver

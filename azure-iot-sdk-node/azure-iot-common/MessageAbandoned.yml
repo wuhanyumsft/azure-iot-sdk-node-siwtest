@@ -5,7 +5,6 @@ items:
     fullName: MessageAbandoned
     children:
       - azure-iot-common.MessageAbandoned.constructor
-      - azure-iot-common.MessageAbandoned.transportObj
     langs:
       - typeScript
     type: class
@@ -26,15 +25,3 @@ items:
           optional: true
       content: 'new MessageAbandoned(transportObj?: any)'
     type: constructor
-  - uid: azure-iot-common.MessageAbandoned.transportObj
-    name: transportObj
-    fullName: transportObj
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - any

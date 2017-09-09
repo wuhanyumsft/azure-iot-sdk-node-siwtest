@@ -22,9 +22,7 @@ items:
     langs:
       - typeScript
     type: class
-    summary: |-
-      Creates a representation of a device for use in the
-                       identity <xref:azure-iothub.Registry> APIs.
+    summary: ''
     package: azure-iothub
   - uid: azure-iothub.Device.Authentication
     name: Authentication
@@ -81,7 +79,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Contains the symmetric keys used to authenticate this device.
     syntax:
       return:
         type:
@@ -93,7 +91,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Number of c2d messages waiting to by delivered to the device.
     syntax:
       return:
         type:
@@ -105,7 +103,18 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Whether the device is 'connected' or 'disconnected'. It is not recommended
+      to use this property to determine if the device is actually connected
+      right now though,
+
+      since the device connection may have timed out and the IoT hub may not
+      have detected it, or if the device is using HTTPS to connect.
+
+      If you have a need to monitor device connections, the recommneded way is
+      to use the [operations
+      monitoring](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-operations-monitoring)
+      feature of your hub.
     syntax:
       return:
         type:
@@ -117,7 +126,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Timestamp representing the last time `connectionState` changed.
     syntax:
       return:
         type:
@@ -127,13 +136,16 @@ items:
     children: []
     langs:
       - typeScript
-    summary: ''
+    summary: 'Instantiate a new <xref:Device> object.'
     syntax:
       parameters:
         - id: jsonData
           type:
             - any
-          description: ''
+          description: >
+            An optional JSON representation of the device, which will be mapped
+            to properties in the object. If no argument is provided, Device
+            roperties will be assigned default values.
           optional: true
       content: 'new Device(jsonData?: any)'
     type: constructor
@@ -144,7 +156,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Unique device identifier as it exists in the Azure IoT hub device
+      registry.
     syntax:
       return:
         type:
@@ -156,7 +170,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Weak entity tag assigned to this device identity description
     syntax:
       return:
         type:
@@ -168,7 +182,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Used to disambiguate devices that have been deleted/recreated with the
+      same `deviceId`
     syntax:
       return:
         type:
@@ -180,7 +196,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Timestamp representing the last time the device authenticated, sent a
+      message, or received a message.
     syntax:
       return:
         type:
@@ -192,7 +210,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      'enabled' (device authorized to connect, can send/receive messages) or
+      'disabled'.
     syntax:
       return:
         type:
@@ -204,7 +224,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 128-character string set when the device is disabled.
     syntax:
       return:
         type:
@@ -216,7 +236,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Timestamp representing the last time `status` changed.
     syntax:
       return:
         type:

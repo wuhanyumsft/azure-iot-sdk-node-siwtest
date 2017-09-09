@@ -4,57 +4,19 @@ items:
     name: Amqp
     fullName: Amqp
     children:
-      - azure-iothub.Amqp.constructor
-      - azure-iothub.Amqp.connect
       - azure-iothub.Amqp.defaultMaxListeners
-      - azure-iothub.Amqp.disconnect
-      - azure-iothub.Amqp.getFeedbackReceiver
-      - azure-iothub.Amqp.getFileNotificationReceiver
-      - azure-iothub.Amqp.getReceiver
-      - azure-iothub.Amqp.send
       - azure-iothub.Amqp._config
     langs:
       - typeScript
     type: class
     summary: >-
-      Constructs an <code><xref:Amqp></code> object that can be used in an
-      application
-                   to connect to IoT Hub instance, using the AMQP protocol.
+      Transport class used by the [service client](xref:Client) to connect to
+      the Azure IoT hub using the AMQP protocol over a secure (TLS) socket.
+
+      This class should not be used directly and instead be passed to one of the
+      <xref:Client> factory methods: <xref:Client%23fromConnectionString> or
+      <xref:Client%23fromSharedAccessSignature>.
     package: azure-iothub
-  - uid: azure-iothub.Amqp.constructor
-    name: 'Amqp(config: TransportConfigOptions, amqpBase?: Base)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: config
-          type:
-            - azure-iothub.Client.TransportConfigOptions
-          description: ''
-        - id: amqpBase
-          type:
-            - Base
-          description: ''
-          optional: true
-      content: 'new Amqp(config: TransportConfigOptions, amqpBase?: Base)'
-    type: constructor
-  - uid: azure-iothub.Amqp.connect
-    name: 'connect(done: Callback<any>)'
-    children: []
-    langs:
-      - typeScript
-    summary: Establishes a connection with the IoT Hub instance.
-    syntax:
-      parameters:
-        - id: done
-          type:
-            - Callback<any>
-          description: |
-            Called when the connection is established of if an error happened.
-      content: 'function connect(done: Callback<any>)'
-    type: method
   - uid: azure-iothub.Amqp.defaultMaxListeners
     name: defaultMaxListeners
     fullName: defaultMaxListeners
@@ -67,98 +29,6 @@ items:
       return:
         type:
           - number
-  - uid: azure-iothub.Amqp.disconnect
-    name: 'disconnect(done: Callback<any>)'
-    children: []
-    langs:
-      - typeScript
-    summary: Disconnects the link to the IoT Hub instance.
-    syntax:
-      parameters:
-        - id: done
-          type:
-            - Callback<any>
-          description: |
-            Called when disconnected of if an error happened.
-      content: 'function disconnect(done: Callback<any>)'
-    type: method
-  - uid: azure-iothub.Amqp.getFeedbackReceiver
-    name: 'getFeedbackReceiver(done: Callback<any>)'
-    children: []
-    langs:
-      - typeScript
-    summary: >-
-      Gets the <code><xref:AmqpReceiver></code> object that can be used to
-      receive messages from the IoT Hub instance and accept/reject/release them.
-    syntax:
-      parameters:
-        - id: done
-          type:
-            - Callback<any>
-          description: |
-            Callback used to return the <code><xref:AmqpReceiver></code> object.
-      content: 'function getFeedbackReceiver(done: Callback<any>)'
-    type: method
-  - uid: azure-iothub.Amqp.getFileNotificationReceiver
-    name: 'getFileNotificationReceiver(done: Callback<any>)'
-    children: []
-    langs:
-      - typeScript
-    summary: >-
-      Gets the <code><xref:AmqpReceiver></code> object that can be used to
-      receive messages from the IoT Hub instance and accept/reject/release them.
-    syntax:
-      parameters:
-        - id: done
-          type:
-            - Callback<any>
-          description: |
-            Callback used to return the <code><xref:AmqpReceiver></code> object.
-      content: 'function getFileNotificationReceiver(done: Callback<any>)'
-    type: method
-  - uid: azure-iothub.Amqp.getReceiver
-    name: 'getReceiver(done: Callback<any>)'
-    children: []
-    langs:
-      - typeScript
-    summary: >-
-      Gets the <code><xref:AmqpReceiver></code> object that can be used to
-      receive messages from the IoT Hub instance and accept/reject/release them.
-    syntax:
-      parameters:
-        - id: done
-          type:
-            - Callback<any>
-          description: |
-            Callback used to return the <code><xref:AmqpReceiver></code> object.
-      content: 'function getReceiver(done: Callback<any>)'
-    type: method
-  - uid: azure-iothub.Amqp.send
-    name: 'send(deviceId: string, message: Message, done: Callback<any>)'
-    children: []
-    langs:
-      - typeScript
-    summary: Sends a message to the IoT Hub.
-    syntax:
-      parameters:
-        - id: deviceId
-          type:
-            - string
-          description: ''
-        - id: message
-          type:
-            - Message
-          description: |-
-            The [<code>message</code>](xref:common%2Fmessage.Message)
-                                         to be sent.
-        - id: done
-          type:
-            - Callback<any>
-          description: |
-            The callback to be invoked when `send`
-                                         completes execution.
-      content: 'function send(deviceId: string, message: Message, done: Callback<any>)'
-    type: method
   - uid: azure-iothub.Amqp._config
     name: _config
     fullName: _config

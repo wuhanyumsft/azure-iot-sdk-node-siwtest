@@ -13,7 +13,9 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      Configuration parameters used to authenticate and connect a Device Client
+      with an Azure IoT hub.
     package: azure-iot-device
   - uid: azure-iot-device.ClientConfig.deviceId
     name: deviceId

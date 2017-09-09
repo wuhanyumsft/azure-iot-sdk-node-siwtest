@@ -7,7 +7,10 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Symmetric key used to create shared access signature tokens that are in
+      turn used to authenticate the connection. Associated either with a
+      specific device or a specific service policy.
     syntax:
       return:
         type:

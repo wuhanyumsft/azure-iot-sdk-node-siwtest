@@ -8,7 +8,10 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      Describes the specific methods that a transport should implement to the
+      Device Twin feature (see [Understanding Azure IoT Hub Device
+      Twins](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins).
     package: azure-iot-device
   - uid: azure-iot-device.TwinTransport.defaultMaxListeners
     name: defaultMaxListeners

@@ -15,7 +15,10 @@ items:
     langs:
       - typeScript
     type: class
-    summary: An object representing a shared access signature
+    summary: >-
+      Shared access signature tokens are used to authenticate the connection
+      when using symmetric keys (as opposed to x509 certificates) to secure the
+      connection with the Azure IoT hub.
     package: azure-iot-common
   - uid: azure-iot-common.SharedAccessSignature.create
     name: 'create(resourceUri: string, keyName: string, key: string, expiry: number)'
@@ -110,7 +113,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: private
     syntax:
       return:
         type:
@@ -122,7 +125,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: private
     syntax:
       return:
         type:
@@ -134,7 +137,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: private
     syntax:
       return:
         type:
@@ -146,7 +149,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: private
     syntax:
       return:
         type:

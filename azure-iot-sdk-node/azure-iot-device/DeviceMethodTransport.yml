@@ -8,7 +8,10 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      Describes the specific methods that a transport should implement to thed
+      Direct Methods feature (see [Understanding Azure IoT Hub Direct
+      Methods](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-direct-methods).
     package: azure-iot-device
   - uid: azure-iot-device.DeviceMethodTransport.defaultMaxListeners
     name: defaultMaxListeners

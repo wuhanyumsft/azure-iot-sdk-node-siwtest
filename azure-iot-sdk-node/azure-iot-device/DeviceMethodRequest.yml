@@ -12,11 +12,10 @@ items:
       - typeScript
     type: class
     summary: |-
-      `DeviceMethodRequest` is a class that captures the data
-                       passed in from the service when a device method call is
-                       made. An instance of this class is passed as the second
-                       parameter to the callback registered via the
-                       <xref:azure-iot-device.Client%23onDeviceMethod> method.
+      Represents the data passed in from the service to the device
+                       when a device method is called from the cloud.
+                       An instance of this class is passed to the callback registered via
+                       <xref:azure-iot-device.Client%23onDeviceMethod>.
     package: azure-iot-device
   - uid: azure-iot-device.DeviceMethodRequest.constructor
     name: 'DeviceMethodRequest(requestId: string, methodName: string, body?: any)'

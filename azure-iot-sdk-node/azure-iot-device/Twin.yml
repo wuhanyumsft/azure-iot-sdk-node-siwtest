@@ -7,17 +7,32 @@ items:
       - azure-iot-device.Twin.defaultMaxListeners
       - azure-iot-device.Twin.desiredPath
       - azure-iot-device.Twin.errorEvent
-      - azure-iot-device.Twin.fromDeviceClient
       - azure-iot-device.Twin.postEvent
       - azure-iot-device.Twin.properties
       - azure-iot-device.Twin.responseEvent
       - azure-iot-device.Twin.subscribedEvent
       - azure-iot-device.Twin.timeout
-      - azure-iot-device.Twin.constructor
     langs:
       - typeScript
     type: class
-    summary: ''
+    summary: >+
+      A Device Twin is document describing the state of a device that is stored
+      by an Azure IoT hub and is available even if the device is offline.
+
+      It is built around 3 sections:
+        - Tags: key/value pairs only accessible from the service side
+        - Desired Properties: updated by a service and received by the device
+        - Reported Properties: updated by the device and received by the service.
+      Note that although it is a possibility, desired and reported properties do
+      not have to match
+
+      and that the logic to sync these two collections, if necessary, is left to
+      the user of the SDK.
+
+
+      For more information see [Understanding Device
+      Twins](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins).
+
     package: azure-iot-device
   - uid: azure-iot-device.Twin.defaultMaxListeners
     name: defaultMaxListeners
@@ -55,30 +70,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-device.Twin.fromDeviceClient
-    name: 'fromDeviceClient(client: Client, done: function)'
-    children: []
-    langs:
-      - typeScript
-    summary: Get a Twin object for the given client connection
-    syntax:
-      parameters:
-        - id: client
-          type:
-            - azure-iot-device.Client
-          description: >
-            The [client](xref:azure-iot-device.Client) object that this Twin
-            object is associated with.
-        - id: done
-          type:
-            - function
-          description: |
-            the callback to be invoked when this function completes.
-      content: 'function fromDeviceClient(client: Client, done: function)'
-    exceptions:
-      - type: ReferenceError
-        description: One of the required parameters is falsy
-    type: method
   - uid: azure-iot-device.Twin.postEvent
     name: postEvent
     fullName: postEvent
@@ -98,7 +89,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The desired and reported properties dictionnaries (respectively in
+      `properties.desired` and `properties.reported`).
     syntax:
       return:
         type:
@@ -139,17 +132,3 @@ items:
       return:
         type:
           - number
-  - uid: azure-iot-device.Twin.constructor
-    name: 'Twin(client: Client)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: client
-          type:
-            - azure-iot-device.Client
-          description: ''
-      content: 'new Twin(client: Client)'
-    type: constructor

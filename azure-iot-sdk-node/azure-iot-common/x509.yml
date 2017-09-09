@@ -7,7 +7,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      This property exists only if a device uses x509 certificates for
+      authentication and if it exists, will be set to True.
     syntax:
       return:
         type:

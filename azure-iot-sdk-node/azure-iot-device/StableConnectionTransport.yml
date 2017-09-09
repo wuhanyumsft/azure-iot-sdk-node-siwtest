@@ -8,7 +8,10 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      Describes the specific methods that a transport should implement to
+      support connecting and disconnecting long-running connections (such as
+      AMQP or MQTT and unlike HTTP).
     package: azure-iot-device
   - uid: azure-iot-device.StableConnectionTransport.defaultMaxListeners
     name: defaultMaxListeners

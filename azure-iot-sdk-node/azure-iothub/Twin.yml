@@ -119,9 +119,9 @@ items:
     langs:
       - typeScript
     summary: >-
-      Instantiates a new <xref:Twin>. The recommended way to get a new
-      <xref:azure-iothub.Twin> object is to use the <xref:Registry.getTwin>
-      method.
+      Instantiates a new <xref:azure-iothub.Twin>. The recommended way to get a
+      new <xref:azure-iothub.Twin> object is to use the
+      <xref:azure-iothub.Registry.getTwin> method.
     syntax:
       parameters:
         - id: device

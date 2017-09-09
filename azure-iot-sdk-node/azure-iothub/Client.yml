@@ -76,7 +76,7 @@ items:
     summary: |-
       Creates an IoT Hub service client from the given
                          connection string using the default transport
-                         ([Transport](xref:azure-iothub.Transport)).
+                         (Amqp) or the one specified in the second argument.
     syntax:
       parameters:
         - id: connStr
@@ -107,7 +107,7 @@ items:
     summary: |-
       Creates an IoT Hub service client from the given
                          shared access signature using the default transport
-                         ([Transport](xref:azure-iothub~Transport)).
+                         (Amqp) or the one specified in the second argument.
     syntax:
       parameters:
         - id: sharedAccessSignature

@@ -90,7 +90,7 @@ items:
           description: |-
             An object that implements the interface
                                                expected of a transport object, e.g.,
-                                               [Http](xref:azure-iot-device.Http).
+                                               [Http](xref:azure-iot-device-http.Http).
         - id: connStr
           type:
             - string

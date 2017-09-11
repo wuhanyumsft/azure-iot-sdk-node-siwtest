@@ -38,6 +38,8 @@ items:
       but this will be removed in a future major version update and customers
       should instead use plain JSON objects.
     package: azure-iothub
+    deprecated:
+      content: ''
   - uid: azure-iothub.Device.Authentication
     name: Authentication
     fullName: Authentication

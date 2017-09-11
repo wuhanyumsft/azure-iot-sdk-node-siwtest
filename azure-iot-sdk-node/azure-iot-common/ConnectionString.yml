@@ -49,6 +49,8 @@ items:
       return:
         type:
           - string
+    deprecated:
+      content: ''
   - uid: azure-iot-common.ConnectionString.HostName
     name: HostName
     fullName: HostName

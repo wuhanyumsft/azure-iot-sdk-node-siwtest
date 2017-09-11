@@ -9,6 +9,7 @@ items:
       - azure-iothub.Twin.get
       - azure-iothub.Twin.properties
       - azure-iothub.Twin.tags
+      - azure-iothub.Twin.toJSON
       - azure-iothub.Twin.constructor
       - azure-iothub.Twin.update
     langs:
@@ -113,6 +114,19 @@ items:
       return:
         type:
           - '[key: string]: string'
+  - uid: azure-iothub.Twin.toJSON
+    name: toJSON()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function toJSON()
+      return:
+        type:
+          - object
+    type: method
   - uid: azure-iothub.Twin.constructor
     name: 'Twin(device: DeviceIdentity, registryClient: Registry)'
     children: []

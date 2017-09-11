@@ -16,7 +16,7 @@ items:
       Error thrown when the connection parameters are wrong and the server
       refused the connection.
     extends:
-      - typeName: Error
+      - Error
     package: azure-iot-common
   - uid: azure-iot-common.UnauthorizedError.Error
     name: Error

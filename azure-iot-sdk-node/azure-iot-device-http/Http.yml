@@ -4,7 +4,21 @@ items:
     name: Http
     fullName: Http
     children:
+      - azure-iot-device-http.Http.addListener
       - azure-iot-device-http.Http.defaultMaxListeners
+      - azure-iot-device-http.Http.emit
+      - azure-iot-device-http.Http.eventNames
+      - azure-iot-device-http.Http.getMaxListeners
+      - azure-iot-device-http.Http.listenerCount
+      - azure-iot-device-http.Http.listenerCount
+      - azure-iot-device-http.Http.listeners
+      - azure-iot-device-http.Http.on
+      - azure-iot-device-http.Http.once
+      - azure-iot-device-http.Http.prependListener
+      - azure-iot-device-http.Http.prependOnceListener
+      - azure-iot-device-http.Http.removeAllListeners
+      - azure-iot-device-http.Http.removeListener
+      - azure-iot-device-http.Http.setMaxListeners
     langs:
       - typeScript
     type: class
@@ -17,8 +31,29 @@ items:
 
       a transport.
     extends:
-      - typeName: EventEmitter
+      - EventEmitter
     package: azure-iot-device-http
+  - uid: azure-iot-device-http.Http.addListener
+    name: 'addListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function addListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
   - uid: azure-iot-device-http.Http.defaultMaxListeners
     name: defaultMaxListeners
     fullName: defaultMaxListeners
@@ -31,3 +66,242 @@ items:
       return:
         type:
           - number
+  - uid: azure-iot-device-http.Http.emit
+    name: 'emit(event: string, args: any[])'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: args
+          type:
+            - any
+          description: ''
+      content: 'function emit(event: string, args: any[])'
+      return:
+        type:
+          - boolean
+    type: method
+  - uid: azure-iot-device-http.Http.eventNames
+    name: eventNames()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function eventNames()
+      return:
+        type:
+          - Array<string>
+    type: method
+  - uid: azure-iot-device-http.Http.getMaxListeners
+    name: getMaxListeners()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function getMaxListeners()
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device-http.Http.listenerCount
+    name: 'listenerCount(emitter: EventEmitter, event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: emitter
+          type:
+            - EventEmitter
+          description: ''
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(emitter: EventEmitter, event: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device-http.Http.listenerCount
+    name: 'listenerCount(type: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: type
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(type: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device-http.Http.listeners
+    name: 'listeners(event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listeners(event: string)'
+    type: method
+  - uid: azure-iot-device-http.Http.on
+    name: 'on(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function on(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-http.Http.once
+    name: 'once(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function once(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-http.Http.prependListener
+    name: 'prependListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-http.Http.prependOnceListener
+    name: 'prependOnceListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependOnceListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-http.Http.removeAllListeners
+    name: 'removeAllListeners(event?: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+          optional: true
+      content: 'function removeAllListeners(event?: string)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-http.Http.removeListener
+    name: 'removeListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function removeListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-http.Http.setMaxListeners
+    name: 'setMaxListeners(n: number)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: 'n'
+          type:
+            - number
+          description: ''
+      content: 'function setMaxListeners(n: number)'
+      return:
+        type:
+          - this
+    type: method

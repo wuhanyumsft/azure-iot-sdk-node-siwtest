@@ -4,7 +4,21 @@ items:
     name: MqttWs
     fullName: MqttWs
     children:
+      - azure-iot-device-mqtt.MqttWs.addListener
       - azure-iot-device-mqtt.MqttWs.defaultMaxListeners
+      - azure-iot-device-mqtt.MqttWs.emit
+      - azure-iot-device-mqtt.MqttWs.eventNames
+      - azure-iot-device-mqtt.MqttWs.getMaxListeners
+      - azure-iot-device-mqtt.MqttWs.listenerCount
+      - azure-iot-device-mqtt.MqttWs.listenerCount
+      - azure-iot-device-mqtt.MqttWs.listeners
+      - azure-iot-device-mqtt.MqttWs.on
+      - azure-iot-device-mqtt.MqttWs.once
+      - azure-iot-device-mqtt.MqttWs.prependListener
+      - azure-iot-device-mqtt.MqttWs.prependOnceListener
+      - azure-iot-device-mqtt.MqttWs.removeAllListeners
+      - azure-iot-device-mqtt.MqttWs.removeListener
+      - azure-iot-device-mqtt.MqttWs.setMaxListeners
     langs:
       - typeScript
     type: class
@@ -15,9 +29,29 @@ items:
       This class is not meant to be used directly, instead it should just be
       passed to the [client](xref:azure-iot-device.Client) object.
     extends:
-      - typeName: Mqtt
-        typeId: 288
+      - azure-iot-device-mqtt.Mqtt
     package: azure-iot-device-mqtt
+  - uid: azure-iot-device-mqtt.MqttWs.addListener
+    name: 'addListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function addListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
   - uid: azure-iot-device-mqtt.MqttWs.defaultMaxListeners
     name: defaultMaxListeners
     fullName: defaultMaxListeners
@@ -30,3 +64,242 @@ items:
       return:
         type:
           - number
+  - uid: azure-iot-device-mqtt.MqttWs.emit
+    name: 'emit(event: string, args: any[])'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: args
+          type:
+            - any
+          description: ''
+      content: 'function emit(event: string, args: any[])'
+      return:
+        type:
+          - boolean
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.eventNames
+    name: eventNames()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function eventNames()
+      return:
+        type:
+          - Array<string>
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.getMaxListeners
+    name: getMaxListeners()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function getMaxListeners()
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.listenerCount
+    name: 'listenerCount(emitter: EventEmitter, event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: emitter
+          type:
+            - EventEmitter
+          description: ''
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(emitter: EventEmitter, event: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.listenerCount
+    name: 'listenerCount(type: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: type
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(type: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.listeners
+    name: 'listeners(event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listeners(event: string)'
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.on
+    name: 'on(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function on(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.once
+    name: 'once(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function once(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.prependListener
+    name: 'prependListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.prependOnceListener
+    name: 'prependOnceListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependOnceListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.removeAllListeners
+    name: 'removeAllListeners(event?: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+          optional: true
+      content: 'function removeAllListeners(event?: string)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.removeListener
+    name: 'removeListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function removeListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device-mqtt.MqttWs.setMaxListeners
+    name: 'setMaxListeners(n: number)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: 'n'
+          type:
+            - number
+          description: ''
+      content: 'function setMaxListeners(n: number)'
+      return:
+        type:
+          - this
+    type: method

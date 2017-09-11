@@ -5,6 +5,7 @@ items:
     fullName: Client
     children:
       - azure-iot-device.Client.abandon
+      - azure-iot-device.Client.addListener
       - azure-iot-device.Client.BlobUpload
       - azure-iot-device.Client.constructor
       - azure-iot-device.Client.close
@@ -13,14 +14,27 @@ items:
       - azure-iot-device.Client.defaultMaxListeners
       - azure-iot-device.Client.DeviceMethodRequest
       - azure-iot-device.Client.DeviceMethodResponse
+      - azure-iot-device.Client.emit
+      - azure-iot-device.Client.eventNames
       - azure-iot-device.Client.fromConnectionString
       - azure-iot-device.Client.fromSharedAccessSignature
+      - azure-iot-device.Client.getMaxListeners
       - azure-iot-device.Client.getTwin
+      - azure-iot-device.Client.listenerCount
+      - azure-iot-device.Client.listenerCount
+      - azure-iot-device.Client.listeners
+      - azure-iot-device.Client.on
+      - azure-iot-device.Client.once
       - azure-iot-device.Client.onDeviceMethod
       - azure-iot-device.Client.open
+      - azure-iot-device.Client.prependListener
+      - azure-iot-device.Client.prependOnceListener
       - azure-iot-device.Client.reject
+      - azure-iot-device.Client.removeAllListeners
+      - azure-iot-device.Client.removeListener
       - azure-iot-device.Client.sendEvent
       - azure-iot-device.Client.sendEventBatch
+      - azure-iot-device.Client.setMaxListeners
       - azure-iot-device.Client.setOptions
       - azure-iot-device.Client.setTransportOptions
       - azure-iot-device.Client.Transport
@@ -41,7 +55,7 @@ items:
 
       to create an IoT Hub device client.
     extends:
-      - typeName: EventEmitter
+      - EventEmitter
     package: azure-iot-device
   - uid: azure-iot-device.Client.abandon
     name: 'abandon(message: Message, abandonCallback: function)'
@@ -67,15 +81,82 @@ items:
       - type: ReferenceException
         description: If the message is falsy.
     type: method
+  - uid: azure-iot-device.Client.addListener
+    name: 'addListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function addListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
   - uid: azure-iot-device.Client.BlobUpload
     name: BlobUpload
     fullName: BlobUpload
-    children: []
+    children:
+      - azure-iot-device.Client.BlobUpload.updateSharedAccessSignature
+      - azure-iot-device.Client.BlobUpload.uploadToBlob
     langs:
       - typeScript
     type: interface
     summary: ''
     package: azure-iot-device
+  - uid: azure-iot-device.Client.BlobUpload.updateSharedAccessSignature
+    name: 'updateSharedAccessSignature(sharedAccessSignature: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: sharedAccessSignature
+          type:
+            - string
+          description: ''
+      content: 'function updateSharedAccessSignature(sharedAccessSignature: string)'
+    type: method
+  - uid: azure-iot-device.Client.BlobUpload.uploadToBlob
+    name: >-
+      uploadToBlob(blobName: string, stream: Stream, steamLength: number, done:
+      function)
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: blobName
+          type:
+            - string
+          description: ''
+        - id: stream
+          type:
+            - Stream
+          description: ''
+        - id: steamLength
+          type:
+            - number
+          description: ''
+        - id: done
+          type:
+            - function
+          description: ''
+      content: >-
+        function uploadToBlob(blobName: string, stream: Stream, steamLength:
+        number, done: function)
+    type: method
   - uid: azure-iot-device.Client.constructor
     name: >-
       Client(transport: Transport, connStr?: string, blobUploadClient?:
@@ -163,7 +244,7 @@ items:
     type: interface
     summary: ''
     extends:
-      - typeName: any
+      - any
     package: azure-iot-device
   - uid: azure-iot-device.Client.Config.hubName
     name: hubName
@@ -244,6 +325,7 @@ items:
       - azure-iot-device.Client.DeviceMethodResponse.isResponseComplete
       - azure-iot-device.Client.DeviceMethodResponse.payload
       - azure-iot-device.Client.DeviceMethodResponse.requestId
+      - azure-iot-device.Client.DeviceMethodResponse.send
       - azure-iot-device.Client.DeviceMethodResponse.status
     langs:
       - typeScript
@@ -286,6 +368,30 @@ items:
       return:
         type:
           - string
+  - uid: azure-iot-device.Client.DeviceMethodResponse.send
+    name: 'send(status: number, payload?: any, done?: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: status
+          type:
+            - number
+          description: ''
+        - id: payload
+          type:
+            - any
+          description: ''
+          optional: true
+        - id: done
+          type:
+            - function
+          description: ''
+          optional: true
+      content: 'function send(status: number, payload?: any, done?: function)'
+    type: method
   - uid: azure-iot-device.Client.DeviceMethodResponse.status
     name: status
     fullName: status
@@ -298,6 +404,40 @@ items:
       return:
         type:
           - number
+  - uid: azure-iot-device.Client.emit
+    name: 'emit(event: string, args: any[])'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: args
+          type:
+            - any
+          description: ''
+      content: 'function emit(event: string, args: any[])'
+      return:
+        type:
+          - boolean
+    type: method
+  - uid: azure-iot-device.Client.eventNames
+    name: eventNames()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function eventNames()
+      return:
+        type:
+          - Array<string>
+    type: method
   - uid: azure-iot-device.Client.fromConnectionString
     name: 'fromConnectionString(connStr: string, transportCtor: any)'
     children: []
@@ -358,6 +498,19 @@ items:
       - type: ReferenceError
         description: If the connStr parameter is falsy.
     type: method
+  - uid: azure-iot-device.Client.getMaxListeners
+    name: getMaxListeners()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function getMaxListeners()
+      return:
+        type:
+          - number
+    type: method
   - uid: azure-iot-device.Client.getTwin
     name: 'getTwin(done: function, twin?: Twin)'
     children: []
@@ -380,6 +533,100 @@ items:
           description: ''
           optional: true
       content: 'function getTwin(done: function, twin?: Twin)'
+    type: method
+  - uid: azure-iot-device.Client.listenerCount
+    name: 'listenerCount(emitter: EventEmitter, event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: emitter
+          type:
+            - EventEmitter
+          description: ''
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(emitter: EventEmitter, event: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device.Client.listenerCount
+    name: 'listenerCount(type: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: type
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(type: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device.Client.listeners
+    name: 'listeners(event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listeners(event: string)'
+    type: method
+  - uid: azure-iot-device.Client.on
+    name: 'on(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function on(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.once
+    name: 'once(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function once(event: string, listener: function)'
+      return:
+        type:
+          - this
     type: method
   - uid: azure-iot-device.Client.onDeviceMethod
     name: 'onDeviceMethod(methodName: string, callback: function)'
@@ -429,6 +676,48 @@ items:
                                             completes execution.
       content: 'function open(openCallback: function)'
     type: method
+  - uid: azure-iot-device.Client.prependListener
+    name: 'prependListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.prependOnceListener
+    name: 'prependOnceListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependOnceListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
   - uid: azure-iot-device.Client.reject
     name: 'reject(message: Message, rejectCallback: function)'
     children: []
@@ -452,6 +741,45 @@ items:
     exceptions:
       - type: ReferenceException
         description: If the message is falsy.
+    type: method
+  - uid: azure-iot-device.Client.removeAllListeners
+    name: 'removeAllListeners(event?: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+          optional: true
+      content: 'function removeAllListeners(event?: string)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.removeListener
+    name: 'removeListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function removeListener(event: string, listener: function)'
+      return:
+        type:
+          - this
     type: method
   - uid: azure-iot-device.Client.sendEvent
     name: 'sendEvent(message: Message, sendEventCallback?: function)'
@@ -506,6 +834,23 @@ items:
         function sendEventBatch(messages: Message[], sendEventBatchCallback?:
         function)
     type: method
+  - uid: azure-iot-device.Client.setMaxListeners
+    name: 'setMaxListeners(n: number)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: 'n'
+          type:
+            - number
+          description: ''
+      content: 'function setMaxListeners(n: number)'
+      return:
+        type:
+          - this
+    type: method
   - uid: azure-iot-device.Client.setOptions
     name: 'setOptions(options: any, done?: function)'
     children: []
@@ -556,14 +901,93 @@ items:
     name: Transport
     fullName: Transport
     children:
+      - azure-iot-device.Client.Transport.abandon
+      - azure-iot-device.Client.Transport.addListener
+      - azure-iot-device.Client.Transport.complete
       - azure-iot-device.Client.Transport.defaultMaxListeners
+      - azure-iot-device.Client.Transport.emit
+      - azure-iot-device.Client.Transport.eventNames
+      - azure-iot-device.Client.Transport.getMaxListeners
+      - azure-iot-device.Client.Transport.getReceiver
+      - azure-iot-device.Client.Transport.listenerCount
+      - azure-iot-device.Client.Transport.listenerCount
+      - azure-iot-device.Client.Transport.listeners
+      - azure-iot-device.Client.Transport.on
+      - azure-iot-device.Client.Transport.once
+      - azure-iot-device.Client.Transport.prependListener
+      - azure-iot-device.Client.Transport.prependOnceListener
+      - azure-iot-device.Client.Transport.reject
+      - azure-iot-device.Client.Transport.removeAllListeners
+      - azure-iot-device.Client.Transport.removeListener
+      - azure-iot-device.Client.Transport.sendEvent
+      - azure-iot-device.Client.Transport.sendEventBatch
+      - azure-iot-device.Client.Transport.setMaxListeners
+      - azure-iot-device.Client.Transport.setOptions
+      - azure-iot-device.Client.Transport.updateSharedAccessSignature
     langs:
       - typeScript
     type: interface
     summary: ''
     extends:
-      - typeName: EventEmitter
+      - EventEmitter
     package: azure-iot-device
+  - uid: azure-iot-device.Client.Transport.abandon
+    name: 'abandon(message: Message, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - Message
+          description: ''
+        - id: done
+          type:
+            - function
+          description: ''
+      content: 'function abandon(message: Message, done: function)'
+    type: method
+  - uid: azure-iot-device.Client.Transport.addListener
+    name: 'addListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function addListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.Transport.complete
+    name: 'complete(message: Message, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - Message
+          description: ''
+        - id: done
+          type:
+            - function
+          description: ''
+      content: 'function complete(message: Message, done: function)'
+    type: method
   - uid: azure-iot-device.Client.Transport.defaultMaxListeners
     name: defaultMaxListeners
     fullName: defaultMaxListeners
@@ -576,6 +1000,351 @@ items:
       return:
         type:
           - number
+  - uid: azure-iot-device.Client.Transport.emit
+    name: 'emit(event: string, args: any[])'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: args
+          type:
+            - any
+          description: ''
+      content: 'function emit(event: string, args: any[])'
+      return:
+        type:
+          - boolean
+    type: method
+  - uid: azure-iot-device.Client.Transport.eventNames
+    name: eventNames()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function eventNames()
+      return:
+        type:
+          - Array<string>
+    type: method
+  - uid: azure-iot-device.Client.Transport.getMaxListeners
+    name: getMaxListeners()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function getMaxListeners()
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device.Client.Transport.getReceiver
+    name: 'getReceiver(func: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: func
+          type:
+            - function
+          description: ''
+      content: 'function getReceiver(func: function)'
+    type: method
+  - uid: azure-iot-device.Client.Transport.listenerCount
+    name: 'listenerCount(emitter: EventEmitter, event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: emitter
+          type:
+            - EventEmitter
+          description: ''
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(emitter: EventEmitter, event: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device.Client.Transport.listenerCount
+    name: 'listenerCount(type: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: type
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(type: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iot-device.Client.Transport.listeners
+    name: 'listeners(event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listeners(event: string)'
+    type: method
+  - uid: azure-iot-device.Client.Transport.on
+    name: 'on(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function on(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.Transport.once
+    name: 'once(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function once(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.Transport.prependListener
+    name: 'prependListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.Transport.prependOnceListener
+    name: 'prependOnceListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependOnceListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.Transport.reject
+    name: 'reject(message: Message, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - Message
+          description: ''
+        - id: done
+          type:
+            - function
+          description: ''
+      content: 'function reject(message: Message, done: function)'
+    type: method
+  - uid: azure-iot-device.Client.Transport.removeAllListeners
+    name: 'removeAllListeners(event?: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+          optional: true
+      content: 'function removeAllListeners(event?: string)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.Transport.removeListener
+    name: 'removeListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function removeListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.Transport.sendEvent
+    name: 'sendEvent(message: Message, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: message
+          type:
+            - Message
+          description: ''
+        - id: done
+          type:
+            - function
+          description: ''
+      content: 'function sendEvent(message: Message, done: function)'
+    type: method
+  - uid: azure-iot-device.Client.Transport.sendEventBatch
+    name: 'sendEventBatch(messages: Message[], done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: messages
+          type:
+            - Message
+          description: ''
+        - id: done
+          type:
+            - function
+          description: ''
+      content: 'function sendEventBatch(messages: Message[], done: function)'
+    type: method
+  - uid: azure-iot-device.Client.Transport.setMaxListeners
+    name: 'setMaxListeners(n: number)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: 'n'
+          type:
+            - number
+          description: ''
+      content: 'function setMaxListeners(n: number)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iot-device.Client.Transport.setOptions
+    name: 'setOptions(options: any, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: options
+          type:
+            - any
+          description: ''
+        - id: done
+          type:
+            - function
+          description: ''
+      content: 'function setOptions(options: any, done: function)'
+    type: method
+  - uid: azure-iot-device.Client.Transport.updateSharedAccessSignature
+    name: 'updateSharedAccessSignature(sharedAccessSignature: string, done: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: sharedAccessSignature
+          type:
+            - string
+          description: ''
+        - id: done
+          type:
+            - function
+          description: ''
+      content: >-
+        function updateSharedAccessSignature(sharedAccessSignature: string,
+        done: function)
+    type: method
   - uid: azure-iot-device.Client.updateSharedAccessSignature
     name: >-
       updateSharedAccessSignature(sharedAccessSignature: string,

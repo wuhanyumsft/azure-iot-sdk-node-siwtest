@@ -16,7 +16,7 @@ items:
       Error thrown when a device cannot be found in the IoT Hub instance
       registry.
     extends:
-      - typeName: Error
+      - Error
     package: azure-iot-common
   - uid: azure-iot-common.DeviceNotFoundError.constructor
     name: 'DeviceNotFoundError(message?: string)'

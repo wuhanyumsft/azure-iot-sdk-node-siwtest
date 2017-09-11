@@ -16,7 +16,7 @@ items:
       Error thrown when the IoT Hub instance doesn't process the device method
       call in time.
     extends:
-      - typeName: Error
+      - Error
     package: azure-iot-common
   - uid: azure-iot-common.GatewayTimeoutError.Error
     name: Error

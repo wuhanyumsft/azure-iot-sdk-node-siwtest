@@ -4,7 +4,21 @@ items:
     name: Amqp
     fullName: Amqp
     children:
+      - azure-iothub.Amqp.addListener
       - azure-iothub.Amqp.defaultMaxListeners
+      - azure-iothub.Amqp.emit
+      - azure-iothub.Amqp.eventNames
+      - azure-iothub.Amqp.getMaxListeners
+      - azure-iothub.Amqp.listenerCount
+      - azure-iothub.Amqp.listenerCount
+      - azure-iothub.Amqp.listeners
+      - azure-iothub.Amqp.on
+      - azure-iothub.Amqp.once
+      - azure-iothub.Amqp.prependListener
+      - azure-iothub.Amqp.prependOnceListener
+      - azure-iothub.Amqp.removeAllListeners
+      - azure-iothub.Amqp.removeListener
+      - azure-iothub.Amqp.setMaxListeners
     langs:
       - typeScript
     type: class
@@ -18,8 +32,29 @@ items:
       [fromConnectionString](xref:azure-iothub.Client.fromConnectionString) or
       [fromSharedAccessSignature](xref:azure-iothub.Client.fromSharedAccessSignature).
     extends:
-      - typeName: EventEmitter
+      - EventEmitter
     package: azure-iothub
+  - uid: azure-iothub.Amqp.addListener
+    name: 'addListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function addListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
   - uid: azure-iothub.Amqp.defaultMaxListeners
     name: defaultMaxListeners
     fullName: defaultMaxListeners
@@ -32,3 +67,242 @@ items:
       return:
         type:
           - number
+  - uid: azure-iothub.Amqp.emit
+    name: 'emit(event: string, args: any[])'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: args
+          type:
+            - any
+          description: ''
+      content: 'function emit(event: string, args: any[])'
+      return:
+        type:
+          - boolean
+    type: method
+  - uid: azure-iothub.Amqp.eventNames
+    name: eventNames()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function eventNames()
+      return:
+        type:
+          - Array<string>
+    type: method
+  - uid: azure-iothub.Amqp.getMaxListeners
+    name: getMaxListeners()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function getMaxListeners()
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iothub.Amqp.listenerCount
+    name: 'listenerCount(emitter: EventEmitter, event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: emitter
+          type:
+            - EventEmitter
+          description: ''
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(emitter: EventEmitter, event: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iothub.Amqp.listenerCount
+    name: 'listenerCount(type: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: type
+          type:
+            - string
+          description: ''
+      content: 'function listenerCount(type: string)'
+      return:
+        type:
+          - number
+    type: method
+  - uid: azure-iothub.Amqp.listeners
+    name: 'listeners(event: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+      content: 'function listeners(event: string)'
+    type: method
+  - uid: azure-iothub.Amqp.on
+    name: 'on(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function on(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iothub.Amqp.once
+    name: 'once(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function once(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iothub.Amqp.prependListener
+    name: 'prependListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iothub.Amqp.prependOnceListener
+    name: 'prependOnceListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function prependOnceListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iothub.Amqp.removeAllListeners
+    name: 'removeAllListeners(event?: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+          optional: true
+      content: 'function removeAllListeners(event?: string)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iothub.Amqp.removeListener
+    name: 'removeListener(event: string, listener: function)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: event
+          type:
+            - string
+          description: ''
+        - id: listener
+          type:
+            - function
+          description: ''
+      content: 'function removeListener(event: string, listener: function)'
+      return:
+        type:
+          - this
+    type: method
+  - uid: azure-iothub.Amqp.setMaxListeners
+    name: 'setMaxListeners(n: number)'
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters:
+        - id: 'n'
+          type:
+            - number
+          description: ''
+      content: 'function setMaxListeners(n: number)'
+      return:
+        type:
+          - this
+    type: method

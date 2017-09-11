@@ -40,6 +40,8 @@ items:
       [fromSharedAccessSignature](xref:azure-iot-device.Client.fromSharedAccessSignature)
 
       to create an IoT Hub device client.
+    extends:
+      - typeName: EventEmitter
     package: azure-iot-device
   - uid: azure-iot-device.Client.abandon
     name: 'abandon(message: Message, abandonCallback: function)'
@@ -160,6 +162,8 @@ items:
       - typeScript
     type: interface
     summary: ''
+    extends:
+      - typeName: any
     package: azure-iot-device
   - uid: azure-iot-device.Client.Config.hubName
     name: hubName
@@ -557,6 +561,8 @@ items:
       - typeScript
     type: interface
     summary: ''
+    extends:
+      - typeName: EventEmitter
     package: azure-iot-device
   - uid: azure-iot-device.Client.Transport.defaultMaxListeners
     name: defaultMaxListeners

@@ -15,6 +15,8 @@ items:
 
       This class is not meant to be used directly, instead it should just be
       passed to the [client](xref:azure-iot-device.Client) object.
+    extends:
+      - typeName: EventEmitter
     package: azure-iot-device-mqtt
   - uid: azure-iot-device-mqtt.Mqtt.defaultMaxListeners
     name: defaultMaxListeners

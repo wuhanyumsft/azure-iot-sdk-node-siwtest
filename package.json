@@ -6,9 +6,9 @@
   "dependencies": {
     "fs-extra": "^4.0.1",
     "glob": "^7.1.2",
-    "js-yaml": "^3.9.1",
+    "js-yaml": "^3.10.0",
     "path": "^0.12.7",
-    "type2docfx": "^0.9.15"
+    "type2docfx": "^0.9.16"
   },
   "devDependencies": {},
   "scripts": {

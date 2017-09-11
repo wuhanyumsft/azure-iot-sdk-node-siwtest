@@ -13,6 +13,8 @@ items:
       - typeScript
     type: class
     summary: Error thrown when IoT Hub has been suspended.
+    extends:
+      - typeName: Error
     package: azure-iot-common
   - uid: azure-iot-common.IoTHubSuspendedError.Error
     name: Error

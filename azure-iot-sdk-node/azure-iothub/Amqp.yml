@@ -17,6 +17,8 @@ items:
       <xref:azure-iothub.Client> factory methods:
       [fromConnectionString](xref:azure-iothub.Client.fromConnectionString) or
       [fromSharedAccessSignature](xref:azure-iothub.Client.fromSharedAccessSignature).
+    extends:
+      - typeName: EventEmitter
     package: azure-iothub
   - uid: azure-iothub.Amqp.defaultMaxListeners
     name: defaultMaxListeners

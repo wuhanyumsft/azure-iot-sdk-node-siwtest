@@ -14,6 +14,9 @@ items:
 
       This class is not meant to be used directly, instead it should just be
       passed to the [client](xref:azure-iot-device.Client) object.
+    extends:
+      - typeName: Mqtt
+        typeId: 288
     package: azure-iot-device-mqtt
   - uid: azure-iot-device-mqtt.MqttWs.defaultMaxListeners
     name: defaultMaxListeners

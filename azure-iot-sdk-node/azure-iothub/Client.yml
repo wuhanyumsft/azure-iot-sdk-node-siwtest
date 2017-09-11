@@ -36,6 +36,8 @@ items:
       [fromSharedAccessSignature](xref:azure-iothub.Client.fromSharedAccessSignature),
 
       to create an IoT Hub service Client.
+    extends:
+      - typeName: EventEmitter
     package: azure-iothub
   - uid: azure-iothub.Client.close
     name: 'close(done?: Callback<Disconnected>)'
@@ -265,6 +267,8 @@ items:
       - typeScript
     type: interface
     summary: ''
+    extends:
+      - typeName: any
     package: azure-iothub
   - uid: azure-iothub.Client.Transport
     name: Transport
@@ -275,6 +279,8 @@ items:
       - typeScript
     type: interface
     summary: ''
+    extends:
+      - typeName: EventEmitter
     package: azure-iothub
   - uid: azure-iothub.Client.Transport.defaultMaxListeners
     name: defaultMaxListeners

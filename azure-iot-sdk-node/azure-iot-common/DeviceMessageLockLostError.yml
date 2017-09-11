@@ -15,6 +15,8 @@ items:
     summary: >-
       Error thrown when settling a message fails because the lock token
       associated with the message is lost.
+    extends:
+      - typeName: Error
     package: azure-iot-common
   - uid: azure-iot-common.DeviceMessageLockLostError.constructor
     name: 'DeviceMessageLockLostError(message?: string)'

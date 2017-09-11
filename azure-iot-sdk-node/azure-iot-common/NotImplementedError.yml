@@ -15,6 +15,8 @@ items:
     summary: >-
       Error thrown when a feature is not implemented yet but the placeholder is
       present.
+    extends:
+      - typeName: Error
     package: azure-iot-common
   - uid: azure-iot-common.NotImplementedError.Error
     name: Error

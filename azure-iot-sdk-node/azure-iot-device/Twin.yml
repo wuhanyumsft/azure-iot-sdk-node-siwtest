@@ -33,6 +33,8 @@ items:
       For more information see [Understanding Device
       Twins](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins).
 
+    extends:
+      - typeName: EventEmitter
     package: azure-iot-device
   - uid: azure-iot-device.Twin.defaultMaxListeners
     name: defaultMaxListeners

@@ -16,6 +16,8 @@ items:
       <xref:azure-iot-device.Client> class to be used as
 
       a transport.
+    extends:
+      - typeName: EventEmitter
     package: azure-iot-device-amqp
   - uid: azure-iot-device-amqp.Amqp.defaultMaxListeners
     name: defaultMaxListeners

@@ -18,7 +18,6 @@ items:
       - azure-iothub.Device.statusReason
       - azure-iothub.Device.statusUpdatedTime
       - azure-iothub.Device.X509Thumbprints
-      - azure-iothub.Device._SymmetricKey
     langs:
       - typeScript
     type: class
@@ -62,7 +61,7 @@ items:
     syntax:
       return:
         type:
-          - azure-iothub.Device._SymmetricKey
+          - _SymmetricKey
   - uid: azure-iothub.Device.Authentication.symmetricKey
     name: symmetricKey
     fullName: symmetricKey
@@ -74,7 +73,7 @@ items:
     syntax:
       return:
         type:
-          - azure-iothub.Device._SymmetricKey
+          - _SymmetricKey
   - uid: azure-iothub.Device.Authentication.x509Thumbprint
     name: x509Thumbprint
     fullName: x509Thumbprint
@@ -282,41 +281,6 @@ items:
   - uid: azure-iothub.Device.X509Thumbprints.secondaryThumbprint
     name: secondaryThumbprint
     fullName: secondaryThumbprint
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Device._SymmetricKey
-    name: _SymmetricKey
-    fullName: _SymmetricKey
-    children:
-      - azure-iothub.Device._SymmetricKey.primaryKey
-      - azure-iothub.Device._SymmetricKey.secondaryKey
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Device._SymmetricKey.primaryKey
-    name: primaryKey
-    fullName: primaryKey
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Device._SymmetricKey.secondaryKey
-    name: secondaryKey
-    fullName: secondaryKey
     children: []
     langs:
       - typeScript

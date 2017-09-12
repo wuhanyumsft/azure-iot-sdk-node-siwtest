@@ -6,9 +6,6 @@ items:
     children:
       - azure-iot-common.InternalServerError.Error
       - azure-iot-common.InternalServerError.constructor
-      - azure-iot-common.InternalServerError.message
-      - azure-iot-common.InternalServerError.name
-      - azure-iot-common.InternalServerError.stack
     langs:
       - typeScript
     type: class
@@ -45,39 +42,3 @@ items:
           optional: true
       content: 'new InternalServerError(message?: string)'
     type: constructor
-  - uid: azure-iot-common.InternalServerError.message
-    name: message
-    fullName: message
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.InternalServerError.name
-    name: name
-    fullName: name
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.InternalServerError.stack
-    name: stack
-    fullName: stack
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string

@@ -5,9 +5,6 @@ items:
     fullName: UnauthorizedError
     children:
       - azure-iot-common.UnauthorizedError.Error
-      - azure-iot-common.UnauthorizedError.message
-      - azure-iot-common.UnauthorizedError.name
-      - azure-iot-common.UnauthorizedError.stack
       - azure-iot-common.UnauthorizedError.constructor
     langs:
       - typeScript
@@ -30,42 +27,6 @@ items:
       return:
         type:
           - ErrorConstructor
-  - uid: azure-iot-common.UnauthorizedError.message
-    name: message
-    fullName: message
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.UnauthorizedError.name
-    name: name
-    fullName: name
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.UnauthorizedError.stack
-    name: stack
-    fullName: stack
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
   - uid: azure-iot-common.UnauthorizedError.constructor
     name: 'UnauthorizedError(message?: string)'
     children: []

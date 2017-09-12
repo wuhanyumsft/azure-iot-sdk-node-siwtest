@@ -6,9 +6,6 @@ items:
     children:
       - azure-iot-common.IotHubNotFoundError.Error
       - azure-iot-common.IotHubNotFoundError.constructor
-      - azure-iot-common.IotHubNotFoundError.message
-      - azure-iot-common.IotHubNotFoundError.name
-      - azure-iot-common.IotHubNotFoundError.stack
     langs:
       - typeScript
     type: class
@@ -43,39 +40,3 @@ items:
           optional: true
       content: 'new IotHubNotFoundError(message?: string)'
     type: constructor
-  - uid: azure-iot-common.IotHubNotFoundError.message
-    name: message
-    fullName: message
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.IotHubNotFoundError.name
-    name: name
-    fullName: name
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.IotHubNotFoundError.stack
-    name: stack
-    fullName: stack
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string

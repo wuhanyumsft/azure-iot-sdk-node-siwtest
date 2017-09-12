@@ -4,26 +4,11 @@ items:
     name: Twin
     fullName: Twin
     children:
-      - azure-iot-device.Twin.addListener
-      - azure-iot-device.Twin.defaultMaxListeners
       - azure-iot-device.Twin.desiredPath
-      - azure-iot-device.Twin.emit
       - azure-iot-device.Twin.errorEvent
-      - azure-iot-device.Twin.eventNames
-      - azure-iot-device.Twin.getMaxListeners
-      - azure-iot-device.Twin.listenerCount
-      - azure-iot-device.Twin.listenerCount
-      - azure-iot-device.Twin.listeners
-      - azure-iot-device.Twin.on
-      - azure-iot-device.Twin.once
       - azure-iot-device.Twin.postEvent
-      - azure-iot-device.Twin.prependListener
-      - azure-iot-device.Twin.prependOnceListener
       - azure-iot-device.Twin.properties
-      - azure-iot-device.Twin.removeAllListeners
-      - azure-iot-device.Twin.removeListener
       - azure-iot-device.Twin.responseEvent
-      - azure-iot-device.Twin.setMaxListeners
       - azure-iot-device.Twin.subscribedEvent
       - azure-iot-device.Twin.timeout
     langs:
@@ -50,39 +35,6 @@ items:
     extends:
       - EventEmitter
     package: azure-iot-device
-  - uid: azure-iot-device.Twin.addListener
-    name: 'addListener(event: string, listener: function)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: event
-          type:
-            - string
-          description: ''
-        - id: listener
-          type:
-            - function
-          description: ''
-      content: 'function addListener(event: string, listener: function)'
-      return:
-        type:
-          - this
-    type: method
-  - uid: azure-iot-device.Twin.defaultMaxListeners
-    name: defaultMaxListeners
-    fullName: defaultMaxListeners
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - number
   - uid: azure-iot-device.Twin.desiredPath
     name: desiredPath
     fullName: desiredPath
@@ -95,27 +47,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-device.Twin.emit
-    name: 'emit(event: string, args: any[])'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: event
-          type:
-            - string
-          description: ''
-        - id: args
-          type:
-            - any
-          description: ''
-      content: 'function emit(event: string, args: any[])'
-      return:
-        type:
-          - boolean
-    type: method
   - uid: azure-iot-device.Twin.errorEvent
     name: errorEvent
     fullName: errorEvent
@@ -128,126 +59,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-device.Twin.eventNames
-    name: eventNames()
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters: []
-      content: function eventNames()
-      return:
-        type:
-          - Array<string>
-    type: method
-  - uid: azure-iot-device.Twin.getMaxListeners
-    name: getMaxListeners()
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters: []
-      content: function getMaxListeners()
-      return:
-        type:
-          - number
-    type: method
-  - uid: azure-iot-device.Twin.listenerCount
-    name: 'listenerCount(emitter: EventEmitter, event: string)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: emitter
-          type:
-            - EventEmitter
-          description: ''
-        - id: event
-          type:
-            - string
-          description: ''
-      content: 'function listenerCount(emitter: EventEmitter, event: string)'
-      return:
-        type:
-          - number
-    type: method
-  - uid: azure-iot-device.Twin.listenerCount
-    name: 'listenerCount(type: string)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: type
-          type:
-            - string
-          description: ''
-      content: 'function listenerCount(type: string)'
-      return:
-        type:
-          - number
-    type: method
-  - uid: azure-iot-device.Twin.listeners
-    name: 'listeners(event: string)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: event
-          type:
-            - string
-          description: ''
-      content: 'function listeners(event: string)'
-    type: method
-  - uid: azure-iot-device.Twin.on
-    name: 'on(event: string, listener: function)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: event
-          type:
-            - string
-          description: ''
-        - id: listener
-          type:
-            - function
-          description: ''
-      content: 'function on(event: string, listener: function)'
-      return:
-        type:
-          - this
-    type: method
-  - uid: azure-iot-device.Twin.once
-    name: 'once(event: string, listener: function)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: event
-          type:
-            - string
-          description: ''
-        - id: listener
-          type:
-            - function
-          description: ''
-      content: 'function once(event: string, listener: function)'
-      return:
-        type:
-          - this
-    type: method
   - uid: azure-iot-device.Twin.postEvent
     name: postEvent
     fullName: postEvent
@@ -260,48 +71,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-device.Twin.prependListener
-    name: 'prependListener(event: string, listener: function)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: event
-          type:
-            - string
-          description: ''
-        - id: listener
-          type:
-            - function
-          description: ''
-      content: 'function prependListener(event: string, listener: function)'
-      return:
-        type:
-          - this
-    type: method
-  - uid: azure-iot-device.Twin.prependOnceListener
-    name: 'prependOnceListener(event: string, listener: function)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: event
-          type:
-            - string
-          description: ''
-        - id: listener
-          type:
-            - function
-          description: ''
-      content: 'function prependOnceListener(event: string, listener: function)'
-      return:
-        type:
-          - this
-    type: method
   - uid: azure-iot-device.Twin.properties
     name: properties
     fullName: properties
@@ -316,45 +85,6 @@ items:
       return:
         type:
           - any
-  - uid: azure-iot-device.Twin.removeAllListeners
-    name: 'removeAllListeners(event?: string)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: event
-          type:
-            - string
-          description: ''
-          optional: true
-      content: 'function removeAllListeners(event?: string)'
-      return:
-        type:
-          - this
-    type: method
-  - uid: azure-iot-device.Twin.removeListener
-    name: 'removeListener(event: string, listener: function)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: event
-          type:
-            - string
-          description: ''
-        - id: listener
-          type:
-            - function
-          description: ''
-      content: 'function removeListener(event: string, listener: function)'
-      return:
-        type:
-          - this
-    type: method
   - uid: azure-iot-device.Twin.responseEvent
     name: responseEvent
     fullName: responseEvent
@@ -367,23 +97,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-device.Twin.setMaxListeners
-    name: 'setMaxListeners(n: number)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: 'n'
-          type:
-            - number
-          description: ''
-      content: 'function setMaxListeners(n: number)'
-      return:
-        type:
-          - this
-    type: method
   - uid: azure-iot-device.Twin.subscribedEvent
     name: subscribedEvent
     fullName: subscribedEvent

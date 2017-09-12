@@ -6,9 +6,6 @@ items:
     children:
       - azure-iot-common.ArgumentOutOfRangeError.constructor
       - azure-iot-common.ArgumentOutOfRangeError.Error
-      - azure-iot-common.ArgumentOutOfRangeError.message
-      - azure-iot-common.ArgumentOutOfRangeError.name
-      - azure-iot-common.ArgumentOutOfRangeError.stack
     langs:
       - typeScript
     type: class
@@ -45,39 +42,3 @@ items:
       return:
         type:
           - ErrorConstructor
-  - uid: azure-iot-common.ArgumentOutOfRangeError.message
-    name: message
-    fullName: message
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.ArgumentOutOfRangeError.name
-    name: name
-    fullName: name
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.ArgumentOutOfRangeError.stack
-    name: stack
-    fullName: stack
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string

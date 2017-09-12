@@ -535,7 +535,7 @@ items:
 
         - id: twin
           type:
-            - azure-iot-device.Twin
+            - '@azure-iot-device.Twin<@azure-iot-device.Twin>'
           description: ''
           optional: true
       content: 'function getTwin(done: function, twin?: Twin)'

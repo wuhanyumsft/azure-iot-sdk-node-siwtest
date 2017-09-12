@@ -4,8 +4,8 @@ items:
     name: ThrottlingError
     fullName: ThrottlingError
     children:
-      - azure-iot-common.ThrottlingError.Error
       - azure-iot-common.ThrottlingError.constructor
+      - azure-iot-common.ThrottlingError.Error
     langs:
       - typeScript
     type: class
@@ -17,18 +17,6 @@ items:
     extends:
       - Error
     package: azure-iot-common
-  - uid: azure-iot-common.ThrottlingError.Error
-    name: Error
-    fullName: Error
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - ErrorConstructor
   - uid: azure-iot-common.ThrottlingError.constructor
     name: 'ThrottlingError(message?: string)'
     children: []
@@ -44,3 +32,15 @@ items:
           optional: true
       content: 'new ThrottlingError(message?: string)'
     type: constructor
+  - uid: azure-iot-common.ThrottlingError.Error
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - ErrorConstructor

@@ -8,8 +8,8 @@ items:
       - azure-iot-device.DeviceMethodResponse.isResponseComplete
       - azure-iot-device.DeviceMethodResponse.payload
       - azure-iot-device.DeviceMethodResponse.requestId
-      - azure-iot-device.DeviceMethodResponse.send
       - azure-iot-device.DeviceMethodResponse.status
+      - azure-iot-device.DeviceMethodResponse.send
     langs:
       - typeScript
     type: class
@@ -79,6 +79,20 @@ items:
       return:
         type:
           - string
+  - uid: azure-iot-device.DeviceMethodResponse.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Status code indicating whether the method succeeded (200) or not (any
+      other number that is not 200).
+    syntax:
+      return:
+        type:
+          - number
   - uid: azure-iot-device.DeviceMethodResponse.send
     name: 'send(status: number, payload?: any, done?: function)'
     children: []
@@ -118,17 +132,3 @@ items:
       - type: Error
         description: If this response has already been sent to the
     type: method
-  - uid: azure-iot-device.DeviceMethodResponse.status
-    name: status
-    fullName: status
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: >-
-      Status code indicating whether the method succeeded (200) or not (any
-      other number that is not 200).
-    syntax:
-      return:
-        type:
-          - number

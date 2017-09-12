@@ -4,10 +4,10 @@ items:
     name: SharedAccessSignature
     fullName: SharedAccessSignature
     children:
-      - azure-iot-common.SharedAccessSignature.create
       - azure-iot-common.SharedAccessSignature.extend
-      - azure-iot-common.SharedAccessSignature.parse
       - azure-iot-common.SharedAccessSignature.toString
+      - azure-iot-common.SharedAccessSignature.create
+      - azure-iot-common.SharedAccessSignature.parse
     langs:
       - typeScript
     type: class
@@ -16,6 +16,41 @@ items:
       when using symmetric keys (as opposed to x509 certificates) to secure the
       connection with the Azure IoT hub.
     package: azure-iot-common
+  - uid: azure-iot-common.SharedAccessSignature.extend
+    name: 'extend(expiry: number)'
+    children: []
+    langs:
+      - typeScript
+    summary: Extend the Sas and return the string form of it.
+    syntax:
+      parameters:
+        - id: expiry
+          type:
+            - number
+          description: >
+            an integer value representing the number of seconds since the epoch
+            00:00:00 UTC on 1 January 1970.
+      content: 'function extend(expiry: number)'
+      return:
+        type:
+          - string
+    exceptions:
+      - type: ReferenceError
+        description: Will be thrown if the argument is falsy.
+    type: method
+  - uid: azure-iot-common.SharedAccessSignature.toString
+    name: toString()
+    children: []
+    langs:
+      - typeScript
+    summary: Formats a SharedAccessSignatureObject into a properly formatted string.
+    syntax:
+      parameters: []
+      content: function toString()
+      return:
+        type:
+          - string
+    type: method
   - uid: azure-iot-common.SharedAccessSignature.create
     name: 'create(resourceUri: string, keyName: string, key: string, expiry: number)'
     children: []
@@ -52,28 +87,6 @@ items:
       - type: ReferenceError
         description: Will be thrown if one of the arguments is falsy.
     type: method
-  - uid: azure-iot-common.SharedAccessSignature.extend
-    name: 'extend(expiry: number)'
-    children: []
-    langs:
-      - typeScript
-    summary: Extend the Sas and return the string form of it.
-    syntax:
-      parameters:
-        - id: expiry
-          type:
-            - number
-          description: >
-            an integer value representing the number of seconds since the epoch
-            00:00:00 UTC on 1 January 1970.
-      content: 'function extend(expiry: number)'
-      return:
-        type:
-          - string
-    exceptions:
-      - type: ReferenceError
-        description: Will be thrown if the argument is falsy.
-    type: method
   - uid: azure-iot-common.SharedAccessSignature.parse
     name: 'parse(source: string, requiredFields?: string[])'
     children: []
@@ -101,17 +114,4 @@ items:
     exceptions:
       - type: FormatError
         description: Will be thrown if the source string is malformed.
-    type: method
-  - uid: azure-iot-common.SharedAccessSignature.toString
-    name: toString()
-    children: []
-    langs:
-      - typeScript
-    summary: Formats a SharedAccessSignatureObject into a properly formatted string.
-    syntax:
-      parameters: []
-      content: function toString()
-      return:
-        type:
-          - string
     type: method

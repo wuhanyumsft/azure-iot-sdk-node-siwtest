@@ -56,7 +56,7 @@ function generatePackageDoc(packagePath, dest) {
             var packageDest = dest + '/' + packageName;
             fse.mkdirpSync(packageDest);
             child_process.execSync('typedoc --json ' + dir + '/api.json ' + dir + '/src --module commonjs --ignoreCompilerErrors');
-            child_process.execFileSync('node', ['node_modules/type2docfx/dist/main', dir + '/api.json', packageDest]);
+            child_process.execFileSync('node', ['node_modules/type2docfx/dist/main', dir + '/api.json', packageDest, '--disableAlphabetOrder']);
             var subToc = yaml.safeLoad(fs.readFileSync(packageDest + '/toc.yml'));
             toc.push(subToc[0]);
             fse.removeSync(packageDest + '/toc.yml');

@@ -6,11 +6,11 @@ items:
     children:
       - azure-iothub.JobClient.cancelJob
       - azure-iothub.JobClient.createQuery
-      - azure-iothub.JobClient.fromConnectionString
-      - azure-iothub.JobClient.fromSharedAccessSignature
       - azure-iothub.JobClient.getJob
       - azure-iothub.JobClient.scheduleDeviceMethod
       - azure-iothub.JobClient.scheduleTwinUpdate
+      - azure-iothub.JobClient.fromConnectionString
+      - azure-iothub.JobClient.fromSharedAccessSignature
     langs:
       - typeScript
     type: class
@@ -81,52 +81,6 @@ items:
       return:
         type:
           - azure-iothub.Query
-    type: method
-  - uid: azure-iothub.JobClient.fromConnectionString
-    name: 'fromConnectionString(connectionString: string)'
-    children: []
-    langs:
-      - typeScript
-    summary: Constructs a JobClient object from the given connection string.
-    syntax:
-      parameters:
-        - id: connectionString
-          type:
-            - string
-          description: |
-            A connection string which encapsulates the
-                                                              appropriate (read and/or write) Registry
-                                                              permissions.
-      content: 'function fromConnectionString(connectionString: string)'
-      return:
-        type:
-          - azure-iothub.JobClient
-    exceptions:
-      - type: ReferenceError
-        description: If the connectionString argument is falsy.
-    type: method
-  - uid: azure-iothub.JobClient.fromSharedAccessSignature
-    name: 'fromSharedAccessSignature(sharedAccessSignature: string)'
-    children: []
-    langs:
-      - typeScript
-    summary: Constructs a JobClient object from the given shared access signature.
-    syntax:
-      parameters:
-        - id: sharedAccessSignature
-          type:
-            - string
-          description: |
-            A shared access signature which encapsulates
-                                                         the appropriate (read and/or write) Registry
-                                                         permissions.
-      content: 'function fromSharedAccessSignature(sharedAccessSignature: string)'
-      return:
-        type:
-          - azure-iothub.JobClient
-    exceptions:
-      - type: ReferenceError
-        description: If the sharedAccessSignature argument is falsy.
     type: method
   - uid: azure-iothub.JobClient.getJob
     name: 'getJob(jobId: string, done: JobCallback)'
@@ -273,4 +227,50 @@ items:
           falsy.
       - type: TypeError
         description: If the callback is not the last parameter
+    type: method
+  - uid: azure-iothub.JobClient.fromConnectionString
+    name: 'fromConnectionString(connectionString: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: Constructs a JobClient object from the given connection string.
+    syntax:
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: |
+            A connection string which encapsulates the
+                                                              appropriate (read and/or write) Registry
+                                                              permissions.
+      content: 'function fromConnectionString(connectionString: string)'
+      return:
+        type:
+          - azure-iothub.JobClient
+    exceptions:
+      - type: ReferenceError
+        description: If the connectionString argument is falsy.
+    type: method
+  - uid: azure-iothub.JobClient.fromSharedAccessSignature
+    name: 'fromSharedAccessSignature(sharedAccessSignature: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: Constructs a JobClient object from the given shared access signature.
+    syntax:
+      parameters:
+        - id: sharedAccessSignature
+          type:
+            - string
+          description: |
+            A shared access signature which encapsulates
+                                                         the appropriate (read and/or write) Registry
+                                                         permissions.
+      content: 'function fromSharedAccessSignature(sharedAccessSignature: string)'
+      return:
+        type:
+          - azure-iothub.JobClient
+    exceptions:
+      - type: ReferenceError
+        description: If the sharedAccessSignature argument is falsy.
     type: method

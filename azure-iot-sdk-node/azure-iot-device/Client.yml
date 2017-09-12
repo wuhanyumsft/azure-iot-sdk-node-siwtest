@@ -40,7 +40,7 @@ items:
 
       to create an IoT Hub device client.
     extends:
-      - EventEmitter
+      - [EventEmitter]{@link https://nodejs.org/api/events.html}
     package: azure-iot-device
   - uid: azure-iot-device.Client.BlobUpload
     name: BlobUpload

@@ -40,7 +40,7 @@ items:
 
       to create an IoT Hub device client.
     extends:
-      - azure-iot-device.Client
+      - '@azure-iot-device.Twin<@azure-iot-device.Twin>'
     package: azure-iot-device
   - uid: azure-iot-device.Client.BlobUpload
     name: BlobUpload

@@ -14,6 +14,13 @@ items:
       the Device Identity Registry.
     extends:
       - Error
+    source:
+      path: errors.ts
+      startLine: 252
+      remote:
+        path: common/core/src\errors.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
   - uid: azure-iot-common.DeviceAlreadyExistsError.constructor
     name: 'DeviceAlreadyExistsError(message?: string)'

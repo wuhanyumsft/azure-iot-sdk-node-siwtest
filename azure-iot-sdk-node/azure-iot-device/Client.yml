@@ -40,7 +40,14 @@ items:
 
       to create an IoT Hub device client.
     extends:
-      - '[EventEmitter]{@link https://nodejs.org/api/events.html}'
+      - EventEmitter
+    source:
+      path: client.ts
+      startLine: 32
+      remote:
+        path: device/core/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device
   - uid: azure-iot-device.Client.BlobUpload
     name: BlobUpload
@@ -52,6 +59,13 @@ items:
       - typeScript
     type: interface
     summary: ''
+    source:
+      path: client.ts
+      startLine: 818
+      remote:
+        path: device/core/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device
   - uid: azure-iot-device.Client.BlobUpload.updateSharedAccessSignature
     name: 'updateSharedAccessSignature(sharedAccessSignature: string)'
@@ -108,6 +122,13 @@ items:
     summary: ''
     extends:
       - any
+    source:
+      path: client.ts
+      startLine: 803
+      remote:
+        path: device/core/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device
   - uid: azure-iot-device.Client.Config.hubName
     name: hubName
@@ -132,6 +153,13 @@ items:
       - typeScript
     type: interface
     summary: ''
+    source:
+      path: client.ts
+      startLine: 823
+      remote:
+        path: device/core/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device
   - uid: azure-iot-device.Client.DeviceMethodRequest.methodName
     name: methodName
@@ -182,6 +210,13 @@ items:
       - typeScript
     type: interface
     summary: ''
+    source:
+      path: client.ts
+      startLine: 829
+      remote:
+        path: device/core/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device
   - uid: azure-iot-device.Client.DeviceMethodResponse.isResponseComplete
     name: isResponseComplete
@@ -273,6 +308,13 @@ items:
     summary: ''
     extends:
       - EventEmitter
+    source:
+      path: client.ts
+      startLine: 807
+      remote:
+        path: device/core/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device
   - uid: azure-iot-device.Client.Transport.abandon
     name: 'abandon(message: Message, done: function)'

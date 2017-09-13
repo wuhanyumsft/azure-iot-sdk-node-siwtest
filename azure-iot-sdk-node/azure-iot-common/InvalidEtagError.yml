@@ -14,6 +14,13 @@ items:
       date.
     extends:
       - Error
+    source:
+      path: errors.ts
+      startLine: 280
+      remote:
+        path: common/core/src\errors.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
   - uid: azure-iot-common.InvalidEtagError.constructor
     name: 'InvalidEtagError(message?: string)'

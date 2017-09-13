@@ -18,4 +18,11 @@ items:
       [fromSharedAccessSignature](xref:azure-iothub.Client.fromSharedAccessSignature).
     extends:
       - EventEmitter
+    source:
+      path: amqp.ts
+      startLine: 54
+      remote:
+        path: service/src\amqp.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub

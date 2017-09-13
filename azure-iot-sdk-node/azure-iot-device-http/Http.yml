@@ -17,4 +17,11 @@ items:
       a transport.
     extends:
       - EventEmitter
+    source:
+      path: http.ts
+      startLine: 50
+      remote:
+        path: device/transport/http/src\http.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device-http

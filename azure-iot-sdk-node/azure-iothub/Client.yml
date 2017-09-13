@@ -37,6 +37,13 @@ items:
       to create an IoT Hub service Client.
     extends:
       - EventEmitter
+    source:
+      path: client.ts
+      startLine: 27
+      remote:
+        path: service/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver
     name: ServiceReceiver
@@ -51,6 +58,13 @@ items:
     summary: ''
     extends:
       - any
+    source:
+      path: client.ts
+      startLine: 293
+      remote:
+        path: service/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
   - uid: azure-iothub.Client.ServiceReceiver.abandon
     name: 'abandon(message: Message, done?: Callback<MessageAbandoned>)'
@@ -124,6 +138,13 @@ items:
     summary: ''
     extends:
       - EventEmitter
+    source:
+      path: client.ts
+      startLine: 299
+      remote:
+        path: service/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
   - uid: azure-iothub.Client.Transport.connect
     name: 'connect(done?: Callback<Connected>)'
@@ -219,6 +240,13 @@ items:
       - typeScript
     type: interface
     summary: ''
+    source:
+      path: client.ts
+      startLine: 286
+      remote:
+        path: service/src\client.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
   - uid: azure-iothub.Client.TransportConfigOptions.host
     name: host

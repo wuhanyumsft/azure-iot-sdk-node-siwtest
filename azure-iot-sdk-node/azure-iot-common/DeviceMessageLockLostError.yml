@@ -14,6 +14,13 @@ items:
       associated with the message is lost.
     extends:
       - Error
+    source:
+      path: errors.ts
+      startLine: 266
+      remote:
+        path: common/core/src\errors.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
   - uid: azure-iot-common.DeviceMessageLockLostError.constructor
     name: 'DeviceMessageLockLostError(message?: string)'

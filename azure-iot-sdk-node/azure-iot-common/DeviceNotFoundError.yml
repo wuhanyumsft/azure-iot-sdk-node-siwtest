@@ -14,6 +14,13 @@ items:
       registry.
     extends:
       - Error
+    source:
+      path: errors.ts
+      startLine: 54
+      remote:
+        path: common/core/src\errors.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
   - uid: azure-iot-common.DeviceNotFoundError.constructor
     name: 'DeviceNotFoundError(message?: string)'

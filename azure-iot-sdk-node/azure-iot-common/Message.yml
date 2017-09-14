@@ -44,7 +44,7 @@ items:
       parameters:
         - id: data
           type:
-            - Message.BufferConvertible
+            - BufferConvertible
           description: >
             a Node
             [Buffer](https://nodejs.org/api/globals.html#globals_class_buffer)
@@ -142,7 +142,7 @@ items:
     syntax:
       return:
         type:
-          - azure-iot-common.Properties
+          - '@azure-iot-common.Properties'
   - uid: azure-iot-common.Message.to
     name: to
     fullName: to
@@ -193,5 +193,5 @@ items:
       content: function getData()
       return:
         type:
-          - Message.BufferConvertible
+          - BufferConvertible
     type: method

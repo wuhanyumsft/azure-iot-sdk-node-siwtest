@@ -44,7 +44,7 @@ items:
           description: ''
         - id: transport
           type:
-            - azure-iot-device.Client.Transport
+            - '@azure-iot-device.Client.Transport'
           description: ''
       content: 'new DeviceMethodResponse(requestId: string, transport: Transport)'
     type: constructor

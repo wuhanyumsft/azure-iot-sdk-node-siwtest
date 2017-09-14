@@ -130,12 +130,12 @@ items:
           description: string from which the connection string will be extracted
         - id: requiredFields
           type:
-            - string
+            - 'string[]'
           description: |
             array of strings listing the fields that are expected to be found.
           optional: true
       content: 'function parse(source: string, requiredFields?: string[])'
       return:
         type:
-          - azure-iot-common.ConnectionString
+          - '@azure-iot-common.ConnectionString'
     type: method

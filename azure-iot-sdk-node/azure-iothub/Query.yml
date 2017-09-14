@@ -87,7 +87,7 @@ items:
           description: Continuation Token used for paging through results (optional)
         - id: done
           type:
-            - Callback<Twin>
+            - 'Callback<@azure-iothub.Twin[]>'
           description: |
             The callback that will be called with either an Error object or
                                                       the results of the query.

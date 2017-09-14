@@ -46,7 +46,7 @@ items:
     syntax:
       return:
         type:
-          - any
+          - 'any[]'
   - uid: azure-iot-common.Properties.add
     name: 'add(itemKey: string, itemValue: string)'
     children: []

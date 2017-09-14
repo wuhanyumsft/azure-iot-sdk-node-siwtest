@@ -89,7 +89,7 @@ items:
         expiry: number)
       return:
         type:
-          - azure-iot-common.SharedAccessSignature
+          - '@azure-iot-common.SharedAccessSignature'
     exceptions:
       - type: ReferenceError
         description: Will be thrown if one of the arguments is falsy.
@@ -110,14 +110,14 @@ items:
             token.
         - id: requiredFields
           type:
-            - string
+            - 'string[]'
           description: |
             an array of fields that we expect to find in the source string.
           optional: true
       content: 'function parse(source: string, requiredFields?: string[])'
       return:
         type:
-          - azure-iot-common.SharedAccessSignature
+          - '@azure-iot-common.SharedAccessSignature'
     exceptions:
       - type: FormatError
         description: Will be thrown if the source string is malformed.

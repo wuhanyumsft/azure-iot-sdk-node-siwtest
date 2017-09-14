@@ -47,7 +47,7 @@ items:
           description: The identifier of an existing job.
         - id: done
           type:
-            - JobClient.JobCallback
+            - JobCallback
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -87,7 +87,7 @@ items:
         pageSize?: number)
       return:
         type:
-          - azure-iothub.Query
+          - '@azure-iothub.Query'
     type: method
   - uid: azure-iothub.JobClient.getJob
     name: 'getJob(jobId: string, done: JobCallback)'
@@ -103,7 +103,7 @@ items:
           description: The identifier of an existing job.
         - id: done
           type:
-            - JobClient.JobCallback
+            - JobCallback
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -135,7 +135,7 @@ items:
                                                  on which this job should be run.
         - id: methodParams
           type:
-            - azure-iothub.DeviceMethodParams
+            - '@azure-iothub.DeviceMethodParams'
           description: >-
             An object describing the method and shall have the following
             properties:
@@ -154,7 +154,7 @@ items:
           optional: true
         - id: done
           type:
-            - JobClient.JobCallback
+            - JobCallback
           description: |
             The function to call when the operation is
                                                  complete. `done` will be called with three
@@ -215,7 +215,7 @@ items:
           optional: true
         - id: done
           type:
-            - JobClient.JobCallback
+            - JobCallback
           description: |
             The function to call when the operation is
                                                  complete. `done` will be called with three
@@ -253,7 +253,7 @@ items:
       content: 'function fromConnectionString(connectionString: string)'
       return:
         type:
-          - azure-iothub.JobClient
+          - '@azure-iothub.JobClient'
     exceptions:
       - type: ReferenceError
         description: If the connectionString argument is falsy.
@@ -276,7 +276,7 @@ items:
       content: 'function fromSharedAccessSignature(sharedAccessSignature: string)'
       return:
         type:
-          - azure-iothub.JobClient
+          - '@azure-iothub.JobClient'
     exceptions:
       - type: ReferenceError
         description: If the sharedAccessSignature argument is falsy.

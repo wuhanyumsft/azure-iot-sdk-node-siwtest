@@ -8,7 +8,7 @@
     "glob": "^7.1.2",
     "js-yaml": "^3.10.0",
     "path": "^0.12.7",
-    "type2docfx": "^0.9.22"
+    "type2docfx": "^0.9.23"
   },
   "devDependencies": {},
   "scripts": {

@@ -412,7 +412,7 @@ items:
       parameters:
         - id: messages
           type:
-            - Message
+            - 'Message[]'
           description: ''
         - id: done
           type:
@@ -470,7 +470,7 @@ items:
       parameters:
         - id: transport
           type:
-            - azure-iot-device.Client.Transport
+            - '@azure-iot-device.Client.Transport'
           description: |-
             An object that implements the interface
                                                expected of a transport object, e.g.,
@@ -577,7 +577,7 @@ items:
 
         - id: twin
           type:
-            - azure-iot-device.Twin
+            - '@azure-iot-device.Twin'
           description: ''
           optional: true
       content: 'function getTwin(done: function, twin?: Twin)'
@@ -692,7 +692,7 @@ items:
       parameters:
         - id: messages
           type:
-            - Message
+            - 'Message[]'
           description: |-
             Array of [Message](xref:azure-iot-common.Message)
                                                            objects to be sent as a batch.
@@ -842,7 +842,7 @@ items:
       content: 'function fromConnectionString(connStr: string, transportCtor: any)'
       return:
         type:
-          - azure-iot-device.Client
+          - '@azure-iot-device.Client'
     exceptions:
       - type: ReferenceError
         description: If the connStr parameter is falsy.
@@ -874,7 +874,7 @@ items:
         transportCtor: any)
       return:
         type:
-          - azure-iot-device.Client
+          - '@azure-iot-device.Client'
     exceptions:
       - type: ReferenceError
         description: If the connStr parameter is falsy.

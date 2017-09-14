@@ -80,7 +80,7 @@ items:
     syntax:
       return:
         type:
-          - azure-iothub.Registry.DeviceRegistryOperationError
+          - '@azure-iothub.Registry.DeviceRegistryOperationError[]'
   - uid: azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
     name: isSuccessful
     fullName: isSuccessful
@@ -329,14 +329,14 @@ items:
       parameters:
         - id: devices
           type:
-            - azure-iothub.Registry.DeviceDescription
+            - '@azure-iothub.Registry.DeviceDescription[]'
           description: |-
             An array of objects which must include a `deviceId`
                                            property whose value is a valid device
                                            identifier.
         - id: done
           type:
-            - Registry.BulkDeviceIdentityCallback
+            - BulkDeviceIdentityCallback
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -364,7 +364,7 @@ items:
             information.
         - id: done
           type:
-            - Registry.JobCallback
+            - JobCallback
           description: >
             The function to call with two arguments: an error object if an error
             happened,
@@ -381,13 +381,13 @@ items:
       parameters:
         - id: deviceInfo
           type:
-            - azure-iothub.Registry.DeviceDescription
+            - '@azure-iothub.Registry.DeviceDescription'
           description: |-
             The object must include a `deviceId` property
                                            with a valid device identifier.
         - id: done
           type:
-            - Registry.DeviceCallback
+            - DeviceCallback
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -422,7 +422,7 @@ items:
       content: 'function createQuery(sqlQuery: string, pageSize?: number)'
       return:
         type:
-          - azure-iothub.Query
+          - '@azure-iothub.Query'
     exceptions:
       - type: ReferenceError
         description: If the sqlQuery argument is falsy.
@@ -445,7 +445,7 @@ items:
           description: The identifier of an existing device identity.
         - id: done
           type:
-            - Registry.ResponseCallback
+            - ResponseCallback
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -480,7 +480,7 @@ items:
             exported data.
         - id: done
           type:
-            - Registry.JobCallback
+            - JobCallback
           description: >
             The function to call when the job has been created, with two
             arguments: an error object if an
@@ -505,7 +505,7 @@ items:
           description: The identifier of an existing device identity.
         - id: done
           type:
-            - Registry.DeviceCallback
+            - DeviceCallback
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -532,7 +532,7 @@ items:
             information.
         - id: done
           type:
-            - Registry.JobCallback
+            - JobCallback
           description: >
             The function to call with two arguments: an error object if an error
             happened,
@@ -549,7 +549,7 @@ items:
       parameters:
         - id: done
           type:
-            - Callback<RegistryStatistics>
+            - Callback<@azure-iothub.Registry.RegistryStatistics>
           description: |
             The callback that will be called with either an Error object or
                                           the device registry statistics.
@@ -569,7 +569,7 @@ items:
           description: The device identifier.
         - id: done
           type:
-            - Registry.ResponseCallback
+            - ResponseCallback
           description: |
             The callback that will be called with either an Error object or
                                             the device twin instance.
@@ -599,7 +599,7 @@ items:
             import process.
         - id: done
           type:
-            - Registry.JobCallback
+            - JobCallback
           description: >
             The function to call when the job has been created, with two
             arguments: an error object if an
@@ -620,7 +620,7 @@ items:
       parameters:
         - id: done
           type:
-            - Callback<Device>
+            - 'Callback<@azure-iothub.Device[]>'
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -661,7 +661,7 @@ items:
       parameters:
         - id: devices
           type:
-            - azure-iothub.Registry.DeviceDescription
+            - '@azure-iothub.Registry.DeviceDescription[]'
           description: |-
             An array of objects which must include a `deviceId`
                                            property whose value is a valid device
@@ -675,7 +675,7 @@ items:
                                            must match.
         - id: done
           type:
-            - Registry.BulkDeviceIdentityCallback
+            - BulkDeviceIdentityCallback
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -699,14 +699,14 @@ items:
       parameters:
         - id: deviceInfo
           type:
-            - azure-iothub.Registry.DeviceDescription
+            - '@azure-iothub.Registry.DeviceDescription'
           description: |-
             An object which must include a `deviceId`
                                            property whose value is a valid device
                                            identifier.
         - id: done
           type:
-            - Registry.DeviceCallback
+            - DeviceCallback
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -729,7 +729,7 @@ items:
       parameters:
         - id: devices
           type:
-            - azure-iothub.Registry.DeviceDescription
+            - '@azure-iothub.Registry.DeviceDescription[]'
           description: |-
             An array of objects which must include a `deviceId`
                                            property whose value is a valid device
@@ -743,7 +743,7 @@ items:
                                            must match.
         - id: done
           type:
-            - Registry.BulkDeviceIdentityCallback
+            - BulkDeviceIdentityCallback
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three
@@ -783,7 +783,7 @@ items:
                                             the device twin has been updated since the etag was obtained.
         - id: done
           type:
-            - Registry.ResponseCallback
+            - ResponseCallback
           description: |
             The callback that will be called with either an Error object or
                                             the device twin instance.
@@ -809,7 +809,7 @@ items:
       content: 'function fromConnectionString(value: string)'
       return:
         type:
-          - azure-iothub.Registry
+          - '@azure-iothub.Registry'
     type: method
   - uid: azure-iothub.Registry.fromSharedAccessSignature
     name: 'fromSharedAccessSignature(value: string)'
@@ -829,5 +829,5 @@ items:
       content: 'function fromSharedAccessSignature(value: string)'
       return:
         type:
-          - azure-iothub.Registry
+          - '@azure-iothub.Registry'
     type: method

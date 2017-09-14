@@ -4,44 +4,321 @@ items:
     name: Registry
     fullName: Registry
     children:
-      - azure-iothub.Registry.addDevices
       - azure-iothub.Registry.BulkRegistryOperationResult
+      - azure-iothub.Registry.DeviceDescription
+      - azure-iothub.Registry.DeviceRegistryOperationError
+      - azure-iothub.Registry.JobStatus
+      - azure-iothub.Registry.QueryDescription
+      - azure-iothub.Registry.RegistryStatistics
+      - azure-iothub.Registry.TransportConfig
+      - azure-iothub.Registry.addDevices
       - azure-iothub.Registry.cancelJob
       - azure-iothub.Registry.create
       - azure-iothub.Registry.createQuery
       - azure-iothub.Registry.delete
-      - azure-iothub.Registry.DeviceDescription
-      - azure-iothub.Registry.DeviceRegistryOperationError
       - azure-iothub.Registry.exportDevicesToBlob
-      - azure-iothub.Registry.fromConnectionString
-      - azure-iothub.Registry.fromSharedAccessSignature
       - azure-iothub.Registry.get
       - azure-iothub.Registry.getJob
       - azure-iothub.Registry.getRegistryStatistics
       - azure-iothub.Registry.getTwin
       - azure-iothub.Registry.importDevicesFromBlob
-      - azure-iothub.Registry.JobStatus
       - azure-iothub.Registry.list
       - azure-iothub.Registry.listJobs
-      - azure-iothub.Registry.QueryDescription
-      - azure-iothub.Registry.constructor
-      - azure-iothub.Registry.RegistryStatistics
       - azure-iothub.Registry.removeDevices
-      - azure-iothub.Registry.TransportConfig
       - azure-iothub.Registry.update
       - azure-iothub.Registry.updateDevices
       - azure-iothub.Registry.updateTwin
+      - azure-iothub.Registry.fromConnectionString
+      - azure-iothub.Registry.fromSharedAccessSignature
     langs:
       - typeScript
     type: class
-    summary: |-
-      Constructs a Registry object with the given configuration
-                       object. The Registry class provides access to the IoT Hub
-                       identity service. Normally, consumers will call one of the
-                       factory methods, e.g.,
-                       [fromSharedAccessSignature](xref:azure-iothub.Registry.fromConnectionString),
-                       to create a Registry object.
+    summary: >
+      The Registry class provides access to the IoT Hub device identity service.
+
+      Users of the SDK should instantiate this class with one of the factory
+      methods:
+
+      [fromConnectionString](xref:azure-iothub.Registry.fromConnectionString) or
+      [fromSharedAccessSignature](xref:azure-iothub.Registry.fromSharedAccessSignature).
+
+      The protocol used for device identity registry operations is HTTPS.
+    source:
+      path: registry.ts
+      startLine: 24
+      remote:
+        path: service/src\registry.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
+  - uid: azure-iothub.Registry.BulkRegistryOperationResult
+    name: BulkRegistryOperationResult
+    fullName: BulkRegistryOperationResult
+    children:
+      - azure-iothub.Registry.BulkRegistryOperationResult.errors
+      - azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: registry.ts
+      startLine: 813
+      remote:
+        path: service/src\registry.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
+    package: azure-iothub
+  - uid: azure-iothub.Registry.BulkRegistryOperationResult.errors
+    name: errors
+    fullName: errors
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - azure-iothub.Registry.DeviceRegistryOperationError
+  - uid: azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
+    name: isSuccessful
+    fullName: isSuccessful
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - boolean
+  - uid: azure-iothub.Registry.DeviceDescription
+    name: DeviceDescription
+    fullName: DeviceDescription
+    children:
+      - azure-iothub.Registry.DeviceDescription.deviceId
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: registry.ts
+      startLine: 802
+      remote:
+        path: service/src\registry.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
+    package: azure-iothub
+  - uid: azure-iothub.Registry.DeviceDescription.deviceId
+    name: deviceId
+    fullName: deviceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Registry.DeviceRegistryOperationError
+    name: DeviceRegistryOperationError
+    fullName: DeviceRegistryOperationError
+    children:
+      - azure-iothub.Registry.DeviceRegistryOperationError.deviceId
+      - azure-iothub.Registry.DeviceRegistryOperationError.errorCode
+      - azure-iothub.Registry.DeviceRegistryOperationError.errorStatus
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: registry.ts
+      startLine: 807
+      remote:
+        path: service/src\registry.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
+    package: azure-iothub
+  - uid: azure-iothub.Registry.DeviceRegistryOperationError.deviceId
+    name: deviceId
+    fullName: deviceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorCode
+    name: errorCode
+    fullName: errorCode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - Error
+  - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorStatus
+    name: errorStatus
+    fullName: errorStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Registry.JobStatus
+    name: JobStatus
+    fullName: JobStatus
+    children: []
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: registry.ts
+      startLine: 784
+      remote:
+        path: service/src\registry.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
+    package: azure-iothub
+  - uid: azure-iothub.Registry.QueryDescription
+    name: QueryDescription
+    fullName: QueryDescription
+    children:
+      - azure-iothub.Registry.QueryDescription.query
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: registry.ts
+      startLine: 787
+      remote:
+        path: service/src\registry.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
+    package: azure-iothub
+  - uid: azure-iothub.Registry.QueryDescription.query
+    name: query
+    fullName: query
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Registry.RegistryStatistics
+    name: RegistryStatistics
+    fullName: RegistryStatistics
+    children:
+      - azure-iothub.Registry.RegistryStatistics.disabledDeviceCount
+      - azure-iothub.Registry.RegistryStatistics.enabledDeviceCount
+      - azure-iothub.Registry.RegistryStatistics.totalDeviceCount
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: registry.ts
+      startLine: 791
+      remote:
+        path: service/src\registry.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
+    package: azure-iothub
+  - uid: azure-iothub.Registry.RegistryStatistics.disabledDeviceCount
+    name: disabledDeviceCount
+    fullName: disabledDeviceCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iothub.Registry.RegistryStatistics.enabledDeviceCount
+    name: enabledDeviceCount
+    fullName: enabledDeviceCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iothub.Registry.RegistryStatistics.totalDeviceCount
+    name: totalDeviceCount
+    fullName: totalDeviceCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - number
+  - uid: azure-iothub.Registry.TransportConfig
+    name: TransportConfig
+    fullName: TransportConfig
+    children:
+      - azure-iothub.Registry.TransportConfig.host
+      - azure-iothub.Registry.TransportConfig.sharedAccessSignature
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: registry.ts
+      startLine: 779
+      remote:
+        path: service/src\registry.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
+    package: azure-iothub
+  - uid: azure-iothub.Registry.TransportConfig.host
+    name: host
+    fullName: host
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Registry.TransportConfig.sharedAccessSignature
+    name: sharedAccessSignature
+    fullName: sharedAccessSignature
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
   - uid: azure-iothub.Registry.addDevices
     name: 'addDevices(devices: DeviceDescription[], done: BulkDeviceIdentityCallback)'
     children: []
@@ -71,41 +348,6 @@ items:
         function addDevices(devices: DeviceDescription[], done:
         BulkDeviceIdentityCallback)
     type: method
-  - uid: azure-iothub.Registry.BulkRegistryOperationResult
-    name: BulkRegistryOperationResult
-    fullName: BulkRegistryOperationResult
-    children:
-      - azure-iothub.Registry.BulkRegistryOperationResult.errors
-      - azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Registry.BulkRegistryOperationResult.errors
-    name: errors
-    fullName: errors
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - azure-iothub.Registry.DeviceRegistryOperationError
-  - uid: azure-iothub.Registry.BulkRegistryOperationResult.isSuccessful
-    name: isSuccessful
-    fullName: isSuccessful
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - boolean
   - uid: azure-iothub.Registry.cancelJob
     name: 'cancelJob(jobId: string, done: JobCallback)'
     children: []
@@ -214,76 +456,6 @@ items:
                                            debugging.
       content: 'function delete(deviceId: string, done: ResponseCallback)'
     type: method
-  - uid: azure-iothub.Registry.DeviceDescription
-    name: DeviceDescription
-    fullName: DeviceDescription
-    children:
-      - azure-iothub.Registry.DeviceDescription.deviceId
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Registry.DeviceDescription.deviceId
-    name: deviceId
-    fullName: deviceId
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Registry.DeviceRegistryOperationError
-    name: DeviceRegistryOperationError
-    fullName: DeviceRegistryOperationError
-    children:
-      - azure-iothub.Registry.DeviceRegistryOperationError.deviceId
-      - azure-iothub.Registry.DeviceRegistryOperationError.errorCode
-      - azure-iothub.Registry.DeviceRegistryOperationError.errorStatus
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Registry.DeviceRegistryOperationError.deviceId
-    name: deviceId
-    fullName: deviceId
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorCode
-    name: errorCode
-    fullName: errorCode
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - Error
-  - uid: azure-iothub.Registry.DeviceRegistryOperationError.errorStatus
-    name: errorStatus
-    fullName: errorStatus
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
   - uid: azure-iothub.Registry.exportDevicesToBlob
     name: >-
       exportDevicesToBlob(outputBlobContainerUri: string, excludeKeys: boolean,
@@ -316,52 +488,6 @@ items:
       content: >-
         function exportDevicesToBlob(outputBlobContainerUri: string,
         excludeKeys: boolean, done: JobCallback)
-    type: method
-  - uid: azure-iothub.Registry.fromConnectionString
-    name: 'fromConnectionString(value: string)'
-    children: []
-    langs:
-      - typeScript
-    summary: |-
-      Constructs a Registry object from the given connection
-                       string using the default transport
-                       ([Http](xref:azure-iothub.Http)).
-    syntax:
-      parameters:
-        - id: value
-          type:
-            - string
-          description: |-
-            A connection string which encapsulates the
-                                         appropriate (read and/or write) Registry
-                                         permissions.
-      content: 'function fromConnectionString(value: string)'
-      return:
-        type:
-          - azure-iothub.Registry
-    type: method
-  - uid: azure-iothub.Registry.fromSharedAccessSignature
-    name: 'fromSharedAccessSignature(value: string)'
-    children: []
-    langs:
-      - typeScript
-    summary: |-
-      Constructs a Registry object from the given shared access
-                         signature using the default transport
-                         ([Http](xref:azure-iothub.Http)).
-    syntax:
-      parameters:
-        - id: value
-          type:
-            - string
-          description: |-
-            A shared access signature which encapsulates
-                                         the appropriate (read and/or write) Registry
-                                         permissions.
-      content: 'function fromSharedAccessSignature(value: string)'
-      return:
-        type:
-          - azure-iothub.Registry
     type: method
   - uid: azure-iothub.Registry.get
     name: 'get(deviceId: string, done: DeviceCallback)'
@@ -482,15 +608,6 @@ items:
         function importDevicesFromBlob(inputBlobContainerUri: string,
         outputBlobContainerUri: string, done: JobCallback)
     type: method
-  - uid: azure-iothub.Registry.JobStatus
-    name: JobStatus
-    fullName: JobStatus
-    children: []
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
   - uid: azure-iothub.Registry.list
     name: 'list(done: Callback<Device[]>)'
     children: []
@@ -532,95 +649,6 @@ items:
                                          (null otherwise) and the list of past jobs as an argument.
       content: 'function listJobs(done: Callback<any>)'
     type: method
-  - uid: azure-iothub.Registry.QueryDescription
-    name: QueryDescription
-    fullName: QueryDescription
-    children:
-      - azure-iothub.Registry.QueryDescription.query
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Registry.QueryDescription.query
-    name: query
-    fullName: query
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Registry.constructor
-    name: 'Registry(config: TransportConfig, restApiClient?: RestApiClient)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: config
-          type:
-            - azure-iothub.Registry.TransportConfig
-          description: ''
-        - id: restApiClient
-          type:
-            - azure-iothub.RestApiClient
-          description: ''
-          optional: true
-      content: 'new Registry(config: TransportConfig, restApiClient?: RestApiClient)'
-    type: constructor
-  - uid: azure-iothub.Registry.RegistryStatistics
-    name: RegistryStatistics
-    fullName: RegistryStatistics
-    children:
-      - azure-iothub.Registry.RegistryStatistics.disabledDeviceCount
-      - azure-iothub.Registry.RegistryStatistics.enabledDeviceCount
-      - azure-iothub.Registry.RegistryStatistics.totalDeviceCount
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Registry.RegistryStatistics.disabledDeviceCount
-    name: disabledDeviceCount
-    fullName: disabledDeviceCount
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - number
-  - uid: azure-iothub.Registry.RegistryStatistics.enabledDeviceCount
-    name: enabledDeviceCount
-    fullName: enabledDeviceCount
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - number
-  - uid: azure-iothub.Registry.RegistryStatistics.totalDeviceCount
-    name: totalDeviceCount
-    fullName: totalDeviceCount
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - number
   - uid: azure-iothub.Registry.removeDevices
     name: >-
       removeDevices(devices: DeviceDescription[], forceRemove: boolean, done:
@@ -659,41 +687,6 @@ items:
         function removeDevices(devices: DeviceDescription[], forceRemove:
         boolean, done: BulkDeviceIdentityCallback)
     type: method
-  - uid: azure-iothub.Registry.TransportConfig
-    name: TransportConfig
-    fullName: TransportConfig
-    children:
-      - azure-iothub.Registry.TransportConfig.host
-      - azure-iothub.Registry.TransportConfig.sharedAccessSignature
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Registry.TransportConfig.host
-    name: host
-    fullName: host
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Registry.TransportConfig.sharedAccessSignature
-    name: sharedAccessSignature
-    fullName: sharedAccessSignature
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
   - uid: azure-iothub.Registry.update
     name: 'update(deviceInfo: DeviceDescription, done: DeviceCallback)'
     children: []
@@ -797,4 +790,44 @@ items:
       content: >-
         function updateTwin(deviceId: string, patch: any, etag: string, done:
         ResponseCallback)
+    type: method
+  - uid: azure-iothub.Registry.fromConnectionString
+    name: 'fromConnectionString(value: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: Constructs a Registry object from the given connection string.
+    syntax:
+      parameters:
+        - id: value
+          type:
+            - string
+          description: |-
+            A connection string which encapsulates the
+                                         appropriate (read and/or write) Registry
+                                         permissions.
+      content: 'function fromConnectionString(value: string)'
+      return:
+        type:
+          - azure-iothub.Registry
+    type: method
+  - uid: azure-iothub.Registry.fromSharedAccessSignature
+    name: 'fromSharedAccessSignature(value: string)'
+    children: []
+    langs:
+      - typeScript
+    summary: Constructs a Registry object from the given shared access signature.
+    syntax:
+      parameters:
+        - id: value
+          type:
+            - string
+          description: |-
+            A shared access signature which encapsulates
+                                         the appropriate (read and/or write) Registry
+                                         permissions.
+      content: 'function fromSharedAccessSignature(value: string)'
+      return:
+        type:
+          - azure-iothub.Registry
     type: method

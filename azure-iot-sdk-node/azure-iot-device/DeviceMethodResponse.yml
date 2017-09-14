@@ -8,19 +8,27 @@ items:
       - azure-iot-device.DeviceMethodResponse.isResponseComplete
       - azure-iot-device.DeviceMethodResponse.payload
       - azure-iot-device.DeviceMethodResponse.requestId
-      - azure-iot-device.DeviceMethodResponse.send
       - azure-iot-device.DeviceMethodResponse.status
+      - azure-iot-device.DeviceMethodResponse.send
     langs:
       - typeScript
     type: class
-    summary: |-
-      `DeviceMethodResponse` provides functionality that allows
-                       a device method implementation to construct and send a
-                       response back to the service for a device method call. An
-                       instance of this class is passed as the second parameter
-                       to the callback registered via the
-                       <xref:azure-iot-device.Client%23onDeviceMethod> method.
-                       method.
+    summary: >-
+      a <xref:azure-iot-device.DeviceMethodResponse> object is provided to the
+      user with each <xref:azure-iot-device.DeviceMethodRequest> allowing the
+      user to construct and send a
+
+      well-formatted response back to the service for each device method call.
+
+      An instance of this class is passed as the second parameter to the
+      callback registered via <xref:azure-iot-device.Client.onDeviceMethod>.
+    source:
+      path: device_method/device_method_response.ts
+      startLine: 12
+      remote:
+        path: device/core/src\device_method/device_method_response.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device
   - uid: azure-iot-device.DeviceMethodResponse.constructor
     name: 'DeviceMethodResponse(requestId: string, transport: Transport)'
@@ -47,7 +55,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Boolean indicating whether the response has been sent already.
     syntax:
       return:
         type:
@@ -59,7 +67,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The payload of the response, sent back to the caller on the service side.'
     syntax:
       return:
         type:
@@ -71,11 +79,27 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The request identifier supplied by the service for this device method
+      call.
     syntax:
       return:
         type:
           - string
+  - uid: azure-iot-device.DeviceMethodResponse.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Status code indicating whether the method succeeded (200) or not (any
+      other number that is not 200).
+    syntax:
+      return:
+        type:
+          - number
   - uid: azure-iot-device.DeviceMethodResponse.send
     name: 'send(status: number, payload?: any, done?: function)'
     children: []
@@ -115,15 +139,3 @@ items:
       - type: Error
         description: If this response has already been sent to the
     type: method
-  - uid: azure-iot-device.DeviceMethodResponse.status
-    name: status
-    fullName: status
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - number

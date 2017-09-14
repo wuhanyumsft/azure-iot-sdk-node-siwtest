@@ -3,38 +3,16 @@ items:
   - uid: azure-iot-common.TransportConfigured
     name: TransportConfigured
     fullName: TransportConfigured
-    children:
-      - azure-iot-common.TransportConfigured.constructor
-      - azure-iot-common.TransportConfigured.transportObj
+    children: []
     langs:
       - typeScript
     type: class
     summary: Result returned when a transport is successfully configured.
+    source:
+      path: results.ts
+      startLine: 130
+      remote:
+        path: common/core/src\results.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
-  - uid: azure-iot-common.TransportConfigured.constructor
-    name: 'TransportConfigured(transportObj?: any)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: transportObj
-          type:
-            - any
-          description: ''
-          optional: true
-      content: 'new TransportConfigured(transportObj?: any)'
-    type: constructor
-  - uid: azure-iot-common.TransportConfigured.transportObj
-    name: transportObj
-    fullName: transportObj
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - any

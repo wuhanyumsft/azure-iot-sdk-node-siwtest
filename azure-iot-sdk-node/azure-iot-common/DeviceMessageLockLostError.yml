@@ -6,15 +6,21 @@ items:
     children:
       - azure-iot-common.DeviceMessageLockLostError.constructor
       - azure-iot-common.DeviceMessageLockLostError.Error
-      - azure-iot-common.DeviceMessageLockLostError.message
-      - azure-iot-common.DeviceMessageLockLostError.name
-      - azure-iot-common.DeviceMessageLockLostError.stack
     langs:
       - typeScript
     type: class
     summary: >-
       Error thrown when settling a message fails because the lock token
       associated with the message is lost.
+    extends:
+      - Error
+    source:
+      path: errors.ts
+      startLine: 266
+      remote:
+        path: common/core/src\errors.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
   - uid: azure-iot-common.DeviceMessageLockLostError.constructor
     name: 'DeviceMessageLockLostError(message?: string)'
@@ -43,39 +49,3 @@ items:
       return:
         type:
           - ErrorConstructor
-  - uid: azure-iot-common.DeviceMessageLockLostError.message
-    name: message
-    fullName: message
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.DeviceMessageLockLostError.name
-    name: name
-    fullName: name
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.DeviceMessageLockLostError.stack
-    name: stack
-    fullName: stack
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string

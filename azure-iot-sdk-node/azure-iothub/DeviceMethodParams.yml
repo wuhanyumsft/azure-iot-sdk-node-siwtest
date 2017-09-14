@@ -11,7 +11,16 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      Describes the parameters that are available for use with direct methods
+      (also called device methods)
+    source:
+      path: interfaces.ts
+      startLine: 16
+      remote:
+        path: service/src\interfaces.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
   - uid: azure-iothub.DeviceMethodParams.connectTimeoutInSeconds
     name: connectTimeoutInSeconds
@@ -20,7 +29,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The maximum time the service should try to connect to the device before
+      declaring the device is unreachable.
     syntax:
       return:
         type:
@@ -32,7 +43,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The name of the method to call on the device.
     syntax:
       return:
         type:
@@ -44,7 +55,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The method payload that will be sent to the device.
     syntax:
       return:
         type:
@@ -56,7 +67,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The maximum time a device should take to respond to the method.
     syntax:
       return:
         type:

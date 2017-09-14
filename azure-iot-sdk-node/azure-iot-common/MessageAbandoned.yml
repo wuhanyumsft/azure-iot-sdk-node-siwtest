@@ -3,38 +3,16 @@ items:
   - uid: azure-iot-common.MessageAbandoned
     name: MessageAbandoned
     fullName: MessageAbandoned
-    children:
-      - azure-iot-common.MessageAbandoned.constructor
-      - azure-iot-common.MessageAbandoned.transportObj
+    children: []
     langs:
       - typeScript
     type: class
     summary: Result returned when a message was successfully abandoned.
+    source:
+      path: results.ts
+      startLine: 71
+      remote:
+        path: common/core/src\results.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
-  - uid: azure-iot-common.MessageAbandoned.constructor
-    name: 'MessageAbandoned(transportObj?: any)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: transportObj
-          type:
-            - any
-          description: ''
-          optional: true
-      content: 'new MessageAbandoned(transportObj?: any)'
-    type: constructor
-  - uid: azure-iot-common.MessageAbandoned.transportObj
-    name: transportObj
-    fullName: transportObj
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - any

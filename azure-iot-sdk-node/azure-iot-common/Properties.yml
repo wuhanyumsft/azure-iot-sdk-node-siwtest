@@ -4,18 +4,49 @@ items:
     name: Properties
     fullName: Properties
     children:
+      - azure-iot-common.Properties.propertyList
       - azure-iot-common.Properties.add
       - azure-iot-common.Properties.count
       - azure-iot-common.Properties.getItem
       - azure-iot-common.Properties.getValue
-      - azure-iot-common.Properties.propertyList
     langs:
       - typeScript
     type: class
-    summary: |-
-      Collection of user defined properties. Values can only be
-                 strings.
+    summary: >-
+      Collection of user defined properties of a <xref:azure-iot-common.Message>
+      object that are going to be sent alongside the body of the message
+
+      and can be used for
+      [routing](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-process-d2c).
+
+      Values can only be strings.
+    source:
+      path: properties.ts
+      startLine: 12
+      remote:
+        path: common/core/src\properties.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
+  - uid: azure-iot-common.Properties.propertyList
+    name: propertyList
+    fullName: propertyList
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      Array containing the properties stored as key/value pairs
+      ```json
+      [
+        { key: 'prop1', value: 'value1' },
+        { key: 'prop2', value: 'value2' }
+      ]
+      ```
+    syntax:
+      return:
+        type:
+          - any
   - uid: azure-iot-common.Properties.add
     name: 'add(itemKey: string, itemValue: string)'
     children: []
@@ -84,15 +115,3 @@ items:
         type:
           - any
     type: method
-  - uid: azure-iot-common.Properties.propertyList
-    name: propertyList
-    fullName: propertyList
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - any

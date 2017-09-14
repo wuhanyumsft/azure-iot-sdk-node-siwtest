@@ -5,11 +5,17 @@ items:
     fullName: SharedAccessSignatureUpdated
     children:
       - azure-iot-common.SharedAccessSignatureUpdated.needToReconnect
-      - azure-iot-common.SharedAccessSignatureUpdated.constructor
     langs:
       - typeScript
     type: class
     summary: Result returned when a SAS token has been successfully updated.
+    source:
+      path: results.ts
+      startLine: 148
+      remote:
+        path: common/core/src\results.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
   - uid: azure-iot-common.SharedAccessSignatureUpdated.needToReconnect
     name: needToReconnect
@@ -18,22 +24,8 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Boolean indicating whether the client needs to reconnect or not.
     syntax:
       return:
         type:
           - boolean
-  - uid: azure-iot-common.SharedAccessSignatureUpdated.constructor
-    name: 'SharedAccessSignatureUpdated(needToReconnect: boolean)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: needToReconnect
-          type:
-            - boolean
-          description: ''
-      content: 'new SharedAccessSignatureUpdated(needToReconnect: boolean)'
-    type: constructor

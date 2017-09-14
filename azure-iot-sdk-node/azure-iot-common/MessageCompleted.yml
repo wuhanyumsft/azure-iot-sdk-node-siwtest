@@ -3,38 +3,16 @@ items:
   - uid: azure-iot-common.MessageCompleted
     name: MessageCompleted
     fullName: MessageCompleted
-    children:
-      - azure-iot-common.MessageCompleted.constructor
-      - azure-iot-common.MessageCompleted.transportObj
+    children: []
     langs:
       - typeScript
     type: class
     summary: Result returned when a message was successfully rejected.
+    source:
+      path: results.ts
+      startLine: 35
+      remote:
+        path: common/core/src\results.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
-  - uid: azure-iot-common.MessageCompleted.constructor
-    name: 'MessageCompleted(transportObj?: any)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: transportObj
-          type:
-            - any
-          description: ''
-          optional: true
-      content: 'new MessageCompleted(transportObj?: any)'
-    type: constructor
-  - uid: azure-iot-common.MessageCompleted.transportObj
-    name: transportObj
-    fullName: transportObj
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - any

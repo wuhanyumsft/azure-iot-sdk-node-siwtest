@@ -4,34 +4,19 @@ items:
     name: Disconnected
     fullName: Disconnected
     children:
-      - azure-iot-common.Disconnected.constructor
       - azure-iot-common.Disconnected.reason
-      - azure-iot-common.Disconnected.transportObj
     langs:
       - typeScript
     type: class
     summary: Result returned when a transport is successfully disconnected.
+    source:
+      path: results.ts
+      startLine: 107
+      remote:
+        path: common/core/src\results.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
-  - uid: azure-iot-common.Disconnected.constructor
-    name: 'Disconnected(transportObj?: any, reason?: string)'
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    syntax:
-      parameters:
-        - id: transportObj
-          type:
-            - any
-          description: ''
-          optional: true
-        - id: reason
-          type:
-            - string
-          description: ''
-          optional: true
-      content: 'new Disconnected(transportObj?: any, reason?: string)'
-    type: constructor
   - uid: azure-iot-common.Disconnected.reason
     name: reason
     fullName: reason
@@ -39,20 +24,8 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The reason why the disconnected event is emitted.
     syntax:
       return:
         type:
           - string
-  - uid: azure-iot-common.Disconnected.transportObj
-    name: transportObj
-    fullName: transportObj
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - any

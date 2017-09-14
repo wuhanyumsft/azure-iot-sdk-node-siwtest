@@ -3,8 +3,7 @@ items:
   - uid: azure-iot-device-http.Http
     name: Http
     fullName: Http
-    children:
-      - azure-iot-device-http.Http.defaultMaxListeners
+    children: []
     langs:
       - typeScript
     type: class
@@ -16,16 +15,13 @@ items:
       <xref:azure-iot-device.Client> class to be used as
 
       a transport.
+    extends:
+      - EventEmitter
+    source:
+      path: http.ts
+      startLine: 50
+      remote:
+        path: device/transport/http/src\http.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device-http
-  - uid: azure-iot-device-http.Http.defaultMaxListeners
-    name: defaultMaxListeners
-    fullName: defaultMaxListeners
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - number

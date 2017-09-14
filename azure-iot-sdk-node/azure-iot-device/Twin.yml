@@ -4,11 +4,10 @@ items:
     name: Twin
     fullName: Twin
     children:
-      - azure-iot-device.Twin.defaultMaxListeners
+      - azure-iot-device.Twin.properties
       - azure-iot-device.Twin.desiredPath
       - azure-iot-device.Twin.errorEvent
       - azure-iot-device.Twin.postEvent
-      - azure-iot-device.Twin.properties
       - azure-iot-device.Twin.responseEvent
       - azure-iot-device.Twin.subscribedEvent
       - azure-iot-device.Twin.timeout
@@ -33,19 +32,30 @@ items:
       For more information see [Understanding Device
       Twins](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins).
 
+    extends:
+      - EventEmitter
+    source:
+      path: twin.ts
+      startLine: 29
+      remote:
+        path: device/core/src\twin.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device
-  - uid: azure-iot-device.Twin.defaultMaxListeners
-    name: defaultMaxListeners
-    fullName: defaultMaxListeners
+  - uid: azure-iot-device.Twin.properties
+    name: properties
+    fullName: properties
     children: []
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The desired and reported properties dictionnaries (respectively in
+      `properties.desired` and `properties.reported`).
     syntax:
       return:
         type:
-          - number
+          - any
   - uid: azure-iot-device.Twin.desiredPath
     name: desiredPath
     fullName: desiredPath
@@ -82,20 +92,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-device.Twin.properties
-    name: properties
-    fullName: properties
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: >-
-      The desired and reported properties dictionnaries (respectively in
-      `properties.desired` and `properties.reported`).
-    syntax:
-      return:
-        type:
-          - any
   - uid: azure-iot-device.Twin.responseEvent
     name: responseEvent
     fullName: responseEvent

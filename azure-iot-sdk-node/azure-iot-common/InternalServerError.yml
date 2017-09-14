@@ -4,30 +4,24 @@ items:
     name: InternalServerError
     fullName: InternalServerError
     children:
-      - azure-iot-common.InternalServerError.Error
       - azure-iot-common.InternalServerError.constructor
-      - azure-iot-common.InternalServerError.message
-      - azure-iot-common.InternalServerError.name
-      - azure-iot-common.InternalServerError.stack
+      - azure-iot-common.InternalServerError.Error
     langs:
       - typeScript
     type: class
     summary: >-
       Error thrown when an internal server error occured. You may have found a
       bug?
+    extends:
+      - Error
+    source:
+      path: errors.ts
+      startLine: 153
+      remote:
+        path: common/core/src\errors.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
-  - uid: azure-iot-common.InternalServerError.Error
-    name: Error
-    fullName: Error
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - ErrorConstructor
   - uid: azure-iot-common.InternalServerError.constructor
     name: 'InternalServerError(message?: string)'
     children: []
@@ -43,9 +37,9 @@ items:
           optional: true
       content: 'new InternalServerError(message?: string)'
     type: constructor
-  - uid: azure-iot-common.InternalServerError.message
-    name: message
-    fullName: message
+  - uid: azure-iot-common.InternalServerError.Error
+    name: Error
+    fullName: Error
     children: []
     langs:
       - typeScript
@@ -54,28 +48,4 @@ items:
     syntax:
       return:
         type:
-          - string
-  - uid: azure-iot-common.InternalServerError.name
-    name: name
-    fullName: name
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.InternalServerError.stack
-    name: stack
-    fullName: stack
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
+          - ErrorConstructor

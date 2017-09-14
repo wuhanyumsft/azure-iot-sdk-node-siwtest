@@ -20,6 +20,13 @@ items:
       <xref:azure-iothub.Registry.createQuery> APIs
 
       and should not try to instantiate this class directly.
+    source:
+      path: query.ts
+      startLine: 15
+      remote:
+        path: service/src\query.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
   - uid: azure-iothub.Query.continuationToken
     name: continuationToken
@@ -80,7 +87,7 @@ items:
           description: Continuation Token used for paging through results (optional)
         - id: done
           type:
-            - Callback<Twin>
+            - 'Callback<@azure-iothub.Twin[]>'
           description: |
             The callback that will be called with either an Error object or
                                                       the results of the query.

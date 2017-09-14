@@ -3,8 +3,7 @@ items:
   - uid: azure-iot-device-mqtt.Mqtt
     name: Mqtt
     fullName: Mqtt
-    children:
-      - azure-iot-device-mqtt.Mqtt.defaultMaxListeners
+    children: []
     langs:
       - typeScript
     type: class
@@ -15,16 +14,13 @@ items:
 
       This class is not meant to be used directly, instead it should just be
       passed to the [client](xref:azure-iot-device.Client) object.
+    extends:
+      - EventEmitter
+    source:
+      path: mqtt.ts
+      startLine: 32
+      remote:
+        path: device/transport/mqtt/src\mqtt.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device-mqtt
-  - uid: azure-iot-device-mqtt.Mqtt.defaultMaxListeners
-    name: defaultMaxListeners
-    fullName: defaultMaxListeners
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - number

@@ -6,15 +6,21 @@ items:
     children:
       - azure-iot-common.DeviceAlreadyExistsError.constructor
       - azure-iot-common.DeviceAlreadyExistsError.Error
-      - azure-iot-common.DeviceAlreadyExistsError.message
-      - azure-iot-common.DeviceAlreadyExistsError.name
-      - azure-iot-common.DeviceAlreadyExistsError.stack
     langs:
       - typeScript
     type: class
     summary: >-
       Error thrown when the device id used for device creation already exists in
       the Device Identity Registry.
+    extends:
+      - Error
+    source:
+      path: errors.ts
+      startLine: 252
+      remote:
+        path: common/core/src\errors.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
   - uid: azure-iot-common.DeviceAlreadyExistsError.constructor
     name: 'DeviceAlreadyExistsError(message?: string)'
@@ -43,39 +49,3 @@ items:
       return:
         type:
           - ErrorConstructor
-  - uid: azure-iot-common.DeviceAlreadyExistsError.message
-    name: message
-    fullName: message
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.DeviceAlreadyExistsError.name
-    name: name
-    fullName: name
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.DeviceAlreadyExistsError.stack
-    name: stack
-    fullName: stack
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string

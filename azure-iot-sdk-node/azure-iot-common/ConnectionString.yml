@@ -7,16 +7,23 @@ items:
       - azure-iot-common.ConnectionString.DeviceId
       - azure-iot-common.ConnectionString.GatewayHostName
       - azure-iot-common.ConnectionString.HostName
-      - azure-iot-common.ConnectionString.parse
       - azure-iot-common.ConnectionString.SharedAccessKey
       - azure-iot-common.ConnectionString.SharedAccessKeyName
       - azure-iot-common.ConnectionString.x509
+      - azure-iot-common.ConnectionString.parse
     langs:
       - typeScript
     type: class
     summary: >-
       Describes the parameters that enable a device or cloud application to
       connect to an Azure IoT hub.
+    source:
+      path: connection_string.ts
+      startLine: 13
+      remote:
+        path: common/core/src\connection_string.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
   - uid: azure-iot-common.ConnectionString.DeviceId
     name: DeviceId
@@ -49,6 +56,8 @@ items:
       return:
         type:
           - string
+    deprecated:
+      content: ''
   - uid: azure-iot-common.ConnectionString.HostName
     name: HostName
     fullName: HostName
@@ -61,31 +70,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iot-common.ConnectionString.parse
-    name: 'parse(source: string, requiredFields?: string[])'
-    children: []
-    langs:
-      - typeScript
-    summary: >-
-      Parses a string and returns the corresponding
-      <xref:azure-iot-common.ConnectionString> object.
-    syntax:
-      parameters:
-        - id: source
-          type:
-            - string
-          description: string from which the connection string will be extracted
-        - id: requiredFields
-          type:
-            - string
-          description: |
-            array of strings listing the fields that are expected to be found.
-          optional: true
-      content: 'function parse(source: string, requiredFields?: string[])'
-      return:
-        type:
-          - azure-iot-common.ConnectionString
-    type: method
   - uid: azure-iot-common.ConnectionString.SharedAccessKey
     name: SharedAccessKey
     fullName: SharedAccessKey
@@ -130,3 +114,28 @@ items:
       return:
         type:
           - string
+  - uid: azure-iot-common.ConnectionString.parse
+    name: 'parse(source: string, requiredFields?: string[])'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Parses a string and returns the corresponding
+      <xref:azure-iot-common.ConnectionString> object.
+    syntax:
+      parameters:
+        - id: source
+          type:
+            - string
+          description: string from which the connection string will be extracted
+        - id: requiredFields
+          type:
+            - 'string[]'
+          description: |
+            array of strings listing the fields that are expected to be found.
+          optional: true
+      content: 'function parse(source: string, requiredFields?: string[])'
+      return:
+        type:
+          - '@azure-iot-common.ConnectionString'
+    type: method

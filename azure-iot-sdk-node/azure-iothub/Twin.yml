@@ -4,12 +4,13 @@ items:
     name: Twin
     fullName: Twin
     children:
+      - azure-iothub.Twin.constructor
       - azure-iothub.Twin.deviceId
       - azure-iothub.Twin.etag
-      - azure-iothub.Twin.get
       - azure-iothub.Twin.properties
       - azure-iothub.Twin.tags
-      - azure-iothub.Twin.constructor
+      - azure-iothub.Twin.get
+      - azure-iothub.Twin.toJSON
       - azure-iothub.Twin.update
     langs:
       - typeScript
@@ -35,7 +36,39 @@ items:
 
       The recommended way to obtain a <xref:azure-iothub.Twin> for a specific
       device is to use the <xref:azure-iothub.Registry.getTwin> method.
+    source:
+      path: twin.ts
+      startLine: 45
+      remote:
+        path: service/src\twin.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
+  - uid: azure-iothub.Twin.constructor
+    name: 'Twin(device: DeviceIdentity, registryClient: Registry)'
+    children: []
+    langs:
+      - typeScript
+    summary: >-
+      Instantiates a new <xref:azure-iothub.Twin>. The recommended way to get a
+      new <xref:azure-iothub.Twin> object is to use the
+      <xref:azure-iothub.Registry.getTwin> method.
+    syntax:
+      parameters:
+        - id: device
+          type:
+            - DeviceIdentity
+          description: >-
+            A device identifier string or an object describing the device. If an
+            Object,
+                                                it must contain a deviceId property.
+        - id: registryClient
+          type:
+            - '@azure-iothub.Registry'
+          description: |
+            The HTTP registry client used to execute REST API calls.
+      content: 'new Twin(device: DeviceIdentity, registryClient: Registry)'
+    type: constructor
   - uid: azure-iothub.Twin.deviceId
     name: deviceId
     fullName: deviceId
@@ -64,27 +97,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iothub.Twin.get
-    name: 'get(done: Callback<Twin>)'
-    children: []
-    langs:
-      - typeScript
-    summary: Gets the latest version of this device twin from the IoT Hub service.
-    syntax:
-      parameters:
-        - id: done
-          type:
-            - Callback<Twin>
-          description: |
-            The function to call when the operation is
-                                           complete. `done` will be called with three
-                                           arguments: an Error object (can be null), a
-                                           [Twin](xref:azure-iothub.Twin)
-                                           object representing the created device
-                                           identity, and a transport-specific response
-                                           object useful for logging or debugging.
-      content: 'function get(done: Callback<Twin>)'
-    type: method
   - uid: azure-iothub.Twin.properties
     name: properties
     fullName: properties
@@ -113,31 +125,40 @@ items:
       return:
         type:
           - '[key: string]: string'
-  - uid: azure-iothub.Twin.constructor
-    name: 'Twin(device: DeviceIdentity, registryClient: Registry)'
+  - uid: azure-iothub.Twin.get
+    name: 'get(done: Callback<Twin>)'
     children: []
     langs:
       - typeScript
-    summary: >-
-      Instantiates a new <xref:azure-iothub.Twin>. The recommended way to get a
-      new <xref:azure-iothub.Twin> object is to use the
-      <xref:azure-iothub.Registry.getTwin> method.
+    summary: Gets the latest version of this device twin from the IoT Hub service.
     syntax:
       parameters:
-        - id: device
+        - id: done
           type:
-            - DeviceIdentity
-          description: >-
-            A device identifier string or an object describing the device. If an
-            Object,
-                                                it must contain a deviceId property.
-        - id: registryClient
-          type:
-            - azure-iothub.Registry
+            - Callback<@azure-iothub.Twin>
           description: |
-            The HTTP registry client used to execute REST API calls.
-      content: 'new Twin(device: DeviceIdentity, registryClient: Registry)'
-    type: constructor
+            The function to call when the operation is
+                                           complete. `done` will be called with three
+                                           arguments: an Error object (can be null), a
+                                           [Twin](xref:azure-iothub.Twin)
+                                           object representing the created device
+                                           identity, and a transport-specific response
+                                           object useful for logging or debugging.
+      content: 'function get(done: Callback<Twin>)'
+    type: method
+  - uid: azure-iothub.Twin.toJSON
+    name: toJSON()
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      parameters: []
+      content: function toJSON()
+      return:
+        type:
+          - object
+    type: method
   - uid: azure-iothub.Twin.update
     name: 'update(patch: any, done: Callback<Twin>)'
     children: []
@@ -152,7 +173,7 @@ items:
           description: Object containing the new values to apply to this device twin.
         - id: done
           type:
-            - Callback<Twin>
+            - Callback<@azure-iothub.Twin>
           description: |
             The function to call when the operation is
                                            complete. `done` will be called with three

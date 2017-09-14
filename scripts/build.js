@@ -52,11 +52,14 @@ function generatePackageDoc(packagePath, dest) {
     var packageName = fse.readJsonSync(packagePath).name;
     if (packagesToFilter.indexOf(packageName) < 0) {
         console.log(packageName);
-        if (fse.existsSync(dir + '/src')) {
+        var sourceCodeBasePath = dir + '/src';
+        if (fse.existsSync(sourceCodeBasePath)) {
             var packageDest = dest + '/' + packageName;
             fse.mkdirpSync(packageDest);
             child_process.execSync('typedoc --json ' + dir + '/api.json ' + dir + '/src --module commonjs --ignoreCompilerErrors');
-            child_process.execFileSync('node', ['node_modules/type2docfx/dist/main', dir + '/api.json', packageDest]);
+            var basePath = sourceCodeBasePath.replace(src + '/', '');
+            child_process.execFileSync('node', ['node_modules/type2docfx/dist/main', dir + '/api.json', packageDest, 'repo.json',
+             '--disableAlphabetOrder', '--basePath', basePath]);
             var subToc = yaml.safeLoad(fs.readFileSync(packageDest + '/toc.yml'));
             toc.push(subToc[0]);
             fse.removeSync(packageDest + '/toc.yml');

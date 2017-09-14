@@ -6,13 +6,19 @@ items:
     children:
       - azure-iot-common.DeviceTimeoutError.constructor
       - azure-iot-common.DeviceTimeoutError.Error
-      - azure-iot-common.DeviceTimeoutError.message
-      - azure-iot-common.DeviceTimeoutError.name
-      - azure-iot-common.DeviceTimeoutError.stack
     langs:
       - typeScript
     type: class
     summary: Error thrown when the device doesn't process the method call in time.
+    extends:
+      - Error
+    source:
+      path: errors.ts
+      startLine: 365
+      remote:
+        path: common/core/src\errors.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
   - uid: azure-iot-common.DeviceTimeoutError.constructor
     name: 'DeviceTimeoutError(message?: string)'
@@ -41,39 +47,3 @@ items:
       return:
         type:
           - ErrorConstructor
-  - uid: azure-iot-common.DeviceTimeoutError.message
-    name: message
-    fullName: message
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.DeviceTimeoutError.name
-    name: name
-    fullName: name
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.DeviceTimeoutError.stack
-    name: stack
-    fullName: stack
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string

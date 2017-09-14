@@ -8,8 +8,8 @@ items:
       - azure-iot-device.DeviceMethodResponse.isResponseComplete
       - azure-iot-device.DeviceMethodResponse.payload
       - azure-iot-device.DeviceMethodResponse.requestId
-      - azure-iot-device.DeviceMethodResponse.send
       - azure-iot-device.DeviceMethodResponse.status
+      - azure-iot-device.DeviceMethodResponse.send
     langs:
       - typeScript
     type: class
@@ -22,6 +22,13 @@ items:
 
       An instance of this class is passed as the second parameter to the
       callback registered via <xref:azure-iot-device.Client.onDeviceMethod>.
+    source:
+      path: device_method/device_method_response.ts
+      startLine: 12
+      remote:
+        path: device/core/src\device_method/device_method_response.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-device
   - uid: azure-iot-device.DeviceMethodResponse.constructor
     name: 'DeviceMethodResponse(requestId: string, transport: Transport)'
@@ -37,7 +44,7 @@ items:
           description: ''
         - id: transport
           type:
-            - azure-iot-device.Client.Transport
+            - '@azure-iot-device.Client.Transport'
           description: ''
       content: 'new DeviceMethodResponse(requestId: string, transport: Transport)'
     type: constructor
@@ -79,6 +86,20 @@ items:
       return:
         type:
           - string
+  - uid: azure-iot-device.DeviceMethodResponse.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Status code indicating whether the method succeeded (200) or not (any
+      other number that is not 200).
+    syntax:
+      return:
+        type:
+          - number
   - uid: azure-iot-device.DeviceMethodResponse.send
     name: 'send(status: number, payload?: any, done?: function)'
     children: []
@@ -118,17 +139,3 @@ items:
       - type: Error
         description: If this response has already been sent to the
     type: method
-  - uid: azure-iot-device.DeviceMethodResponse.status
-    name: status
-    fullName: status
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: >-
-      Status code indicating whether the method succeeded (200) or not (any
-      other number that is not 200).
-    syntax:
-      return:
-        type:
-          - number

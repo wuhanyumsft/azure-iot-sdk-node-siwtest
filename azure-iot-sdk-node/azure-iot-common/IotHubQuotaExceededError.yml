@@ -4,11 +4,8 @@ items:
     name: IotHubQuotaExceededError
     fullName: IotHubQuotaExceededError
     children:
-      - azure-iot-common.IotHubQuotaExceededError.Error
       - azure-iot-common.IotHubQuotaExceededError.constructor
-      - azure-iot-common.IotHubQuotaExceededError.message
-      - azure-iot-common.IotHubQuotaExceededError.name
-      - azure-iot-common.IotHubQuotaExceededError.stack
+      - azure-iot-common.IotHubQuotaExceededError.Error
     langs:
       - typeScript
     type: class
@@ -18,19 +15,16 @@ items:
 
       To learn more about quotas, see [Azure IoT Hub quotas and
       throttling](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-quotas-throttling)
+    extends:
+      - Error
+    source:
+      path: errors.ts
+      startLine: 125
+      remote:
+        path: common/core/src\errors.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iot-common
-  - uid: azure-iot-common.IotHubQuotaExceededError.Error
-    name: Error
-    fullName: Error
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - ErrorConstructor
   - uid: azure-iot-common.IotHubQuotaExceededError.constructor
     name: 'IotHubQuotaExceededError(message?: string)'
     children: []
@@ -46,9 +40,9 @@ items:
           optional: true
       content: 'new IotHubQuotaExceededError(message?: string)'
     type: constructor
-  - uid: azure-iot-common.IotHubQuotaExceededError.message
-    name: message
-    fullName: message
+  - uid: azure-iot-common.IotHubQuotaExceededError.Error
+    name: Error
+    fullName: Error
     children: []
     langs:
       - typeScript
@@ -57,28 +51,4 @@ items:
     syntax:
       return:
         type:
-          - string
-  - uid: azure-iot-common.IotHubQuotaExceededError.name
-    name: name
-    fullName: name
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iot-common.IotHubQuotaExceededError.stack
-    name: stack
-    fullName: stack
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
+          - ErrorConstructor

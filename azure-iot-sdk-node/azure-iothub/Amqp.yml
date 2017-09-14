@@ -3,8 +3,7 @@ items:
   - uid: azure-iothub.Amqp
     name: Amqp
     fullName: Amqp
-    children:
-      - azure-iothub.Amqp.defaultMaxListeners
+    children: []
     langs:
       - typeScript
     type: class
@@ -17,16 +16,13 @@ items:
       <xref:azure-iothub.Client> factory methods:
       [fromConnectionString](xref:azure-iothub.Client.fromConnectionString) or
       [fromSharedAccessSignature](xref:azure-iothub.Client.fromSharedAccessSignature).
+    extends:
+      - EventEmitter
+    source:
+      path: amqp.ts
+      startLine: 54
+      remote:
+        path: service/src\amqp.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
-  - uid: azure-iothub.Amqp.defaultMaxListeners
-    name: defaultMaxListeners
-    fullName: defaultMaxListeners
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - number

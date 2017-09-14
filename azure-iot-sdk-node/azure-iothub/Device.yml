@@ -5,11 +5,12 @@ items:
     fullName: Device
     children:
       - azure-iothub.Device.Authentication
+      - azure-iothub.Device.X509Thumbprints
+      - azure-iothub.Device.constructor
       - azure-iothub.Device.authentication
       - azure-iothub.Device.cloudToDeviceMessageCount
       - azure-iothub.Device.connectionState
       - azure-iothub.Device.connectionStateUpdatedTime
-      - azure-iothub.Device.constructor
       - azure-iothub.Device.deviceId
       - azure-iothub.Device.etag
       - azure-iothub.Device.generationId
@@ -17,8 +18,6 @@ items:
       - azure-iothub.Device.status
       - azure-iothub.Device.statusReason
       - azure-iothub.Device.statusUpdatedTime
-      - azure-iothub.Device.X509Thumbprints
-      - azure-iothub.Device._SymmetricKey
     langs:
       - typeScript
     type: class
@@ -38,7 +37,16 @@ items:
 
       but this will be removed in a future major version update and customers
       should instead use plain JSON objects.
+    source:
+      path: device.ts
+      startLine: 37
+      remote:
+        path: service/src\device.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
+    deprecated:
+      content: ''
   - uid: azure-iothub.Device.Authentication
     name: Authentication
     fullName: Authentication
@@ -50,6 +58,13 @@ items:
       - typeScript
     type: interface
     summary: ''
+    source:
+      path: device.ts
+      startLine: 140
+      remote:
+        path: service/src\device.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
     package: azure-iothub
   - uid: azure-iothub.Device.Authentication.SymmetricKey
     name: SymmetricKey
@@ -62,7 +77,7 @@ items:
     syntax:
       return:
         type:
-          - azure-iothub.Device._SymmetricKey
+          - _SymmetricKey
   - uid: azure-iothub.Device.Authentication.symmetricKey
     name: symmetricKey
     fullName: symmetricKey
@@ -74,7 +89,7 @@ items:
     syntax:
       return:
         type:
-          - azure-iothub.Device._SymmetricKey
+          - _SymmetricKey
   - uid: azure-iothub.Device.Authentication.x509Thumbprint
     name: x509Thumbprint
     fullName: x509Thumbprint
@@ -86,7 +101,67 @@ items:
     syntax:
       return:
         type:
-          - azure-iothub.Device.X509Thumbprints
+          - '@azure-iothub.Device.X509Thumbprints'
+  - uid: azure-iothub.Device.X509Thumbprints
+    name: X509Thumbprints
+    fullName: X509Thumbprints
+    children:
+      - azure-iothub.Device.X509Thumbprints.primaryThumbprint
+      - azure-iothub.Device.X509Thumbprints.secondaryThumbprint
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: device.ts
+      startLine: 146
+      remote:
+        path: service/src\device.ts
+        repo: 'https://github.com/Azure/azure-iot-sdk-node.git'
+        branch: doc-patches
+    package: azure-iothub
+  - uid: azure-iothub.Device.X509Thumbprints.primaryThumbprint
+    name: primaryThumbprint
+    fullName: primaryThumbprint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.X509Thumbprints.secondaryThumbprint
+    name: secondaryThumbprint
+    fullName: secondaryThumbprint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      return:
+        type:
+          - string
+  - uid: azure-iothub.Device.constructor
+    name: 'Device(jsonData?: any)'
+    children: []
+    langs:
+      - typeScript
+    summary: 'Instantiate a new <xref:azure-iothub.Device> object.'
+    syntax:
+      parameters:
+        - id: jsonData
+          type:
+            - any
+          description: >
+            An optional JSON representation of the device, which will be mapped
+            to properties in the object. If no argument is provided, Device
+            roperties will be assigned default values.
+          optional: true
+      content: 'new Device(jsonData?: any)'
+    type: constructor
   - uid: azure-iothub.Device.authentication
     name: authentication
     fullName: authentication
@@ -98,7 +173,7 @@ items:
     syntax:
       return:
         type:
-          - azure-iothub.Device.Authentication
+          - '@azure-iothub.Device.Authentication'
   - uid: azure-iothub.Device.cloudToDeviceMessageCount
     name: cloudToDeviceMessageCount
     fullName: cloudToDeviceMessageCount
@@ -133,7 +208,7 @@ items:
     syntax:
       return:
         type:
-          - Device.ConnectionState
+          - ConnectionState
   - uid: azure-iothub.Device.connectionStateUpdatedTime
     name: connectionStateUpdatedTime
     fullName: connectionStateUpdatedTime
@@ -146,24 +221,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-iothub.Device.constructor
-    name: 'Device(jsonData?: any)'
-    children: []
-    langs:
-      - typeScript
-    summary: 'Instantiate a new <xref:azure-iothub.Device> object.'
-    syntax:
-      parameters:
-        - id: jsonData
-          type:
-            - any
-          description: >
-            An optional JSON representation of the device, which will be mapped
-            to properties in the object. If no argument is provided, Device
-            roperties will be assigned default values.
-          optional: true
-      content: 'new Device(jsonData?: any)'
-    type: constructor
   - uid: azure-iothub.Device.deviceId
     name: deviceId
     fullName: deviceId
@@ -231,7 +288,7 @@ items:
     syntax:
       return:
         type:
-          - Device.DeviceStatus
+          - DeviceStatus
   - uid: azure-iothub.Device.statusReason
     name: statusReason
     fullName: statusReason
@@ -252,76 +309,6 @@ items:
       - typeScript
     type: property
     summary: Timestamp representing the last time `status` changed.
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Device.X509Thumbprints
-    name: X509Thumbprints
-    fullName: X509Thumbprints
-    children:
-      - azure-iothub.Device.X509Thumbprints.primaryThumbprint
-      - azure-iothub.Device.X509Thumbprints.secondaryThumbprint
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Device.X509Thumbprints.primaryThumbprint
-    name: primaryThumbprint
-    fullName: primaryThumbprint
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Device.X509Thumbprints.secondaryThumbprint
-    name: secondaryThumbprint
-    fullName: secondaryThumbprint
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Device._SymmetricKey
-    name: _SymmetricKey
-    fullName: _SymmetricKey
-    children:
-      - azure-iothub.Device._SymmetricKey.primaryKey
-      - azure-iothub.Device._SymmetricKey.secondaryKey
-    langs:
-      - typeScript
-    type: interface
-    summary: ''
-    package: azure-iothub
-  - uid: azure-iothub.Device._SymmetricKey.primaryKey
-    name: primaryKey
-    fullName: primaryKey
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      return:
-        type:
-          - string
-  - uid: azure-iothub.Device._SymmetricKey.secondaryKey
-    name: secondaryKey
-    fullName: secondaryKey
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
     syntax:
       return:
         type:
